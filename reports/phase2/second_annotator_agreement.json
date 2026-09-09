@@ -1,0 +1,9 @@
+{
+  "status": "OBSERVED",
+  "annotator_id": "annotator_2",
+  "n_labeled": 50,
+  "n_unlabeled": 0,
+  "unlabeled_ids": [],
+  "intent_exact_agreement_vs_gold": 0.62,
+  "escalate_exact_agreement_vs_gold": 0.72
+}

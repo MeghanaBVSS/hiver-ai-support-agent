@@ -1,0 +1,952 @@
+{
+  "status": "OBSERVED",
+  "brand": "hulu_support",
+  "llm_status": "NOT_RUN_NO_KEY",
+  "systems": {
+    "majority": {
+      "intent": {
+        "accuracy": 0.12562814070351758,
+        "macro_f1": 0.022321428571428572,
+        "weighted_f1": 0.028041995692749462,
+        "per_class": {
+          "app_device_issue": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 19
+          },
+          "billing_subscription": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 19
+          },
+          "content_availability": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 20
+          },
+          "feedback_complaint": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 20
+          },
+          "how_to_feature": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 21
+          },
+          "live_tv_issues": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 21
+          },
+          "login_account": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 20
+          },
+          "other_ambiguous": {
+            "precision": 0.12562814070351758,
+            "recall": 1.0,
+            "f1": 0.22321428571428573,
+            "support": 25
+          },
+          "playback_error": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 21
+          },
+          "service_outage": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 13
+          }
+        },
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            19,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            19,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            20,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            20,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            21,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            21,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            20,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            25,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            21,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            13,
+            0,
+            0
+          ]
+        ],
+        "labels": [
+          "app_device_issue",
+          "billing_subscription",
+          "content_availability",
+          "feedback_complaint",
+          "how_to_feature",
+          "live_tv_issues",
+          "login_account",
+          "other_ambiguous",
+          "playback_error",
+          "service_outage"
+        ]
+      },
+      "escalation": {
+        "escalation_precision": 0.4371859296482412,
+        "escalation_recall": 1.0,
+        "unsafe_auto_handle_rate": 0.0,
+        "auto_handle_coverage": 0.0,
+        "notes": [
+          "Do not optimize auto_handle_coverage alone.",
+          "unsafe_auto_handle_rate is the primary safety metric."
+        ]
+      },
+      "n_predictions": 199,
+      "reply_quality": {
+        "correctness": "NOT YET MEASURED",
+        "groundedness": "NOT YET MEASURED",
+        "helpfulness": "NOT YET MEASURED",
+        "actionability": "NOT YET MEASURED",
+        "brand_style_fit": "NOT YET MEASURED",
+        "note": "Requires human ratings / validated judge agreement."
+      }
+    },
+    "tfidf_logreg": {
+      "intent": {
+        "accuracy": 0.6934673366834171,
+        "macro_f1": 0.6682599906920463,
+        "weighted_f1": 0.6749026123000524,
+        "per_class": {
+          "app_device_issue": {
+            "precision": 0.6,
+            "recall": 0.9473684210526315,
+            "f1": 0.7346938775510204,
+            "support": 19
+          },
+          "billing_subscription": {
+            "precision": 0.8636363636363636,
+            "recall": 1.0,
+            "f1": 0.926829268292683,
+            "support": 19
+          },
+          "content_availability": {
+            "precision": 0.75,
+            "recall": 0.6,
+            "f1": 0.6666666666666666,
+            "support": 20
+          },
+          "feedback_complaint": {
+            "precision": 1.0,
+            "recall": 0.85,
+            "f1": 0.918918918918919,
+            "support": 20
+          },
+          "how_to_feature": {
+            "precision": 0.5,
+            "recall": 0.09523809523809523,
+            "f1": 0.16,
+            "support": 21
+          },
+          "live_tv_issues": {
+            "precision": 0.8260869565217391,
+            "recall": 0.9047619047619048,
+            "f1": 0.8636363636363636,
+            "support": 21
+          },
+          "login_account": {
+            "precision": 1.0,
+            "recall": 0.75,
+            "f1": 0.8571428571428571,
+            "support": 20
+          },
+          "other_ambiguous": {
+            "precision": 0.34615384615384615,
+            "recall": 0.72,
+            "f1": 0.4675324675324675,
+            "support": 25
+          },
+          "playback_error": {
+            "precision": 0.8888888888888888,
+            "recall": 0.7619047619047619,
+            "f1": 0.8205128205128205,
+            "support": 21
+          },
+          "service_outage": {
+            "precision": 1.0,
+            "recall": 0.15384615384615385,
+            "f1": 0.26666666666666666,
+            "support": 13
+          }
+        },
+        "confusion_matrix": [
+          [
+            18,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            19,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            12,
+            0,
+            0,
+            0,
+            0,
+            7,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            17,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            2,
+            2,
+            0,
+            0,
+            2,
+            2,
+            0,
+            12,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            19,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            15,
+            2,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            3,
+            0,
+            2,
+            0,
+            0,
+            18,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            3,
+            16,
+            0
+          ],
+          [
+            3,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            7,
+            0,
+            2
+          ]
+        ],
+        "labels": [
+          "app_device_issue",
+          "billing_subscription",
+          "content_availability",
+          "feedback_complaint",
+          "how_to_feature",
+          "live_tv_issues",
+          "login_account",
+          "other_ambiguous",
+          "playback_error",
+          "service_outage"
+        ]
+      },
+      "escalation": {
+        "escalation_precision": 0.47794117647058826,
+        "escalation_recall": 0.7471264367816092,
+        "unsafe_auto_handle_rate": 0.25287356321839083,
+        "auto_handle_coverage": 0.3165829145728643,
+        "notes": [
+          "Do not optimize auto_handle_coverage alone.",
+          "unsafe_auto_handle_rate is the primary safety metric."
+        ]
+      },
+      "n_predictions": 199,
+      "reply_quality": {
+        "correctness": "NOT YET MEASURED",
+        "groundedness": "NOT YET MEASURED",
+        "helpfulness": "NOT YET MEASURED",
+        "actionability": "NOT YET MEASURED",
+        "brand_style_fit": "NOT YET MEASURED",
+        "note": "Requires human ratings / validated judge agreement."
+      }
+    },
+    "tfidf_retrieval": {
+      "intent": {
+        "accuracy": 0.35175879396984927,
+        "macro_f1": 0.36214571012006663,
+        "weighted_f1": 0.36025187013898824,
+        "per_class": {
+          "app_device_issue": {
+            "precision": 0.47368421052631576,
+            "recall": 0.47368421052631576,
+            "f1": 0.47368421052631576,
+            "support": 19
+          },
+          "billing_subscription": {
+            "precision": 0.6923076923076923,
+            "recall": 0.47368421052631576,
+            "f1": 0.5625,
+            "support": 19
+          },
+          "content_availability": {
+            "precision": 0.5294117647058824,
+            "recall": 0.45,
+            "f1": 0.4864864864864865,
+            "support": 20
+          },
+          "feedback_complaint": {
+            "precision": 1.0,
+            "recall": 0.2,
+            "f1": 0.3333333333333333,
+            "support": 20
+          },
+          "how_to_feature": {
+            "precision": 0.25,
+            "recall": 0.047619047619047616,
+            "f1": 0.08,
+            "support": 21
+          },
+          "live_tv_issues": {
+            "precision": 0.5,
+            "recall": 0.2857142857142857,
+            "f1": 0.36363636363636365,
+            "support": 21
+          },
+          "login_account": {
+            "precision": 0.8571428571428571,
+            "recall": 0.3,
+            "f1": 0.4444444444444444,
+            "support": 20
+          },
+          "other_ambiguous": {
+            "precision": 0.16964285714285715,
+            "recall": 0.76,
+            "f1": 0.2773722627737226,
+            "support": 25
+          },
+          "playback_error": {
+            "precision": 0.5555555555555556,
+            "recall": 0.23809523809523808,
+            "f1": 0.3333333333333333,
+            "support": 21
+          },
+          "service_outage": {
+            "precision": 1.0,
+            "recall": 0.15384615384615385,
+            "f1": 0.26666666666666666,
+            "support": 13
+          }
+        },
+        "confusion_matrix": [
+          [
+            9,
+            0,
+            2,
+            0,
+            0,
+            1,
+            0,
+            7,
+            0,
+            0
+          ],
+          [
+            0,
+            9,
+            0,
+            0,
+            0,
+            0,
+            1,
+            7,
+            2,
+            0
+          ],
+          [
+            2,
+            0,
+            9,
+            0,
+            0,
+            1,
+            0,
+            8,
+            0,
+            0
+          ],
+          [
+            2,
+            2,
+            0,
+            4,
+            1,
+            0,
+            0,
+            11,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            19,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            2,
+            0,
+            0,
+            6,
+            0,
+            11,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            6,
+            11,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            2,
+            0,
+            1,
+            0,
+            0,
+            19,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            0,
+            0,
+            3,
+            0,
+            11,
+            5,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            8,
+            1,
+            2
+          ]
+        ],
+        "labels": [
+          "app_device_issue",
+          "billing_subscription",
+          "content_availability",
+          "feedback_complaint",
+          "how_to_feature",
+          "live_tv_issues",
+          "login_account",
+          "other_ambiguous",
+          "playback_error",
+          "service_outage"
+        ]
+      },
+      "escalation": {
+        "escalation_precision": 0.45121951219512196,
+        "escalation_recall": 0.8505747126436781,
+        "unsafe_auto_handle_rate": 0.14942528735632185,
+        "auto_handle_coverage": 0.17587939698492464,
+        "notes": [
+          "Do not optimize auto_handle_coverage alone.",
+          "unsafe_auto_handle_rate is the primary safety metric."
+        ]
+      },
+      "n_predictions": 199,
+      "reply_quality": {
+        "status": "OBSERVED",
+        "annotator_id": "annotator_1",
+        "correctness": 3.14,
+        "groundedness": 3.18,
+        "helpfulness": 3.06,
+        "actionability": "NOT YET MEASURED",
+        "brand_style_fit": "NOT YET MEASURED",
+        "n": 50
+      }
+    },
+    "semantic_retrieval_no_llm": {
+      "intent": {
+        "accuracy": 0.6934673366834171,
+        "macro_f1": 0.6682599906920463,
+        "weighted_f1": 0.6749026123000524,
+        "per_class": {
+          "app_device_issue": {
+            "precision": 0.6,
+            "recall": 0.9473684210526315,
+            "f1": 0.7346938775510204,
+            "support": 19
+          },
+          "billing_subscription": {
+            "precision": 0.8636363636363636,
+            "recall": 1.0,
+            "f1": 0.926829268292683,
+            "support": 19
+          },
+          "content_availability": {
+            "precision": 0.75,
+            "recall": 0.6,
+            "f1": 0.6666666666666666,
+            "support": 20
+          },
+          "feedback_complaint": {
+            "precision": 1.0,
+            "recall": 0.85,
+            "f1": 0.918918918918919,
+            "support": 20
+          },
+          "how_to_feature": {
+            "precision": 0.5,
+            "recall": 0.09523809523809523,
+            "f1": 0.16,
+            "support": 21
+          },
+          "live_tv_issues": {
+            "precision": 0.8260869565217391,
+            "recall": 0.9047619047619048,
+            "f1": 0.8636363636363636,
+            "support": 21
+          },
+          "login_account": {
+            "precision": 1.0,
+            "recall": 0.75,
+            "f1": 0.8571428571428571,
+            "support": 20
+          },
+          "other_ambiguous": {
+            "precision": 0.34615384615384615,
+            "recall": 0.72,
+            "f1": 0.4675324675324675,
+            "support": 25
+          },
+          "playback_error": {
+            "precision": 0.8888888888888888,
+            "recall": 0.7619047619047619,
+            "f1": 0.8205128205128205,
+            "support": 21
+          },
+          "service_outage": {
+            "precision": 1.0,
+            "recall": 0.15384615384615385,
+            "f1": 0.26666666666666666,
+            "support": 13
+          }
+        },
+        "confusion_matrix": [
+          [
+            18,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            19,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            12,
+            0,
+            0,
+            0,
+            0,
+            7,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            17,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            2,
+            2,
+            0,
+            0,
+            2,
+            2,
+            0,
+            12,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            19,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            15,
+            2,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            3,
+            0,
+            2,
+            0,
+            0,
+            18,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            3,
+            16,
+            0
+          ],
+          [
+            3,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            7,
+            0,
+            2
+          ]
+        ],
+        "labels": [
+          "app_device_issue",
+          "billing_subscription",
+          "content_availability",
+          "feedback_complaint",
+          "how_to_feature",
+          "live_tv_issues",
+          "login_account",
+          "other_ambiguous",
+          "playback_error",
+          "service_outage"
+        ]
+      },
+      "escalation": {
+        "escalation_precision": 0.4879518072289157,
+        "escalation_recall": 0.9310344827586207,
+        "unsafe_auto_handle_rate": 0.06896551724137931,
+        "auto_handle_coverage": 0.1658291457286432,
+        "notes": [
+          "Do not optimize auto_handle_coverage alone.",
+          "unsafe_auto_handle_rate is the primary safety metric."
+        ]
+      },
+      "n_predictions": 199,
+      "reply_quality": {
+        "status": "OBSERVED",
+        "annotator_id": "annotator_1",
+        "correctness": 2.92,
+        "groundedness": 4.86,
+        "helpfulness": 2.58,
+        "actionability": "NOT YET MEASURED",
+        "brand_style_fit": "NOT YET MEASURED",
+        "n": 50,
+        "baseline_means": {
+          "correctness": 3.14,
+          "groundedness": 3.18,
+          "helpfulness": 3.06
+        },
+        "escalation_agreement_vs_human": 0.6
+      },
+      "decision_summary": {
+        "escalation_precision": 0.4879518072289157,
+        "escalation_recall": 0.9310344827586207,
+        "unsafe_auto_handle_rate": 0.06896551724137931,
+        "coverage": 0.1658291457286432
+      }
+    },
+    "semantic_llm": {
+      "intent": "NOT YET MEASURED",
+      "escalation": "NOT YET MEASURED",
+      "reply_quality": {
+        "correctness": "NOT YET MEASURED",
+        "groundedness": "NOT YET MEASURED",
+        "helpfulness": "NOT YET MEASURED",
+        "actionability": "NOT YET MEASURED",
+        "brand_style_fit": "NOT YET MEASURED"
+      },
+      "note": "NOT_RUN_NO_KEY"
+    }
+  },
+  "reply_quality_note": "Reply dimensions measured via human ratings (annotator_1) on 50-example pack. actionability/style still NOT YET MEASURED. LLM reply ratings NOT YET MEASURED (no API key run).",
+  "human_reply_eval": {
+    "status": "OBSERVED",
+    "annotator_id": "annotator_1",
+    "n": 50,
+    "semantic_mean": {
+      "correctness": 2.92,
+      "groundedness": 4.86,
+      "helpfulness": 2.58
+    },
+    "baseline_mean": {
+      "correctness": 3.14,
+      "groundedness": 3.18,
+      "helpfulness": 3.06
+    },
+    "human_would_escalate_rate": 0.54,
+    "semantic_escalated_rate": 0.9,
+    "escalation_decision_agreement_semantic_vs_human": 0.6,
+    "pct_semantic_is_escalate_template": 0.9
+  },
+  "second_annotator": {
+    "status": "OBSERVED",
+    "annotator_id": "annotator_2",
+    "n_labeled": 50,
+    "n_unlabeled": 0,
+    "unlabeled_ids": [],
+    "intent_exact_agreement_vs_gold": 0.62,
+    "escalate_exact_agreement_vs_gold": 0.72
+  }
+}

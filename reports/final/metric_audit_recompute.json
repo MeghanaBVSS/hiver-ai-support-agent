@@ -1,0 +1,30 @@
+{
+  "golden_n": 199,
+  "gold_escalate_positives": 87,
+  "semantic_agent": {
+    "TP": 81,
+    "FP": 85,
+    "FN": 6,
+    "TN": 27,
+    "unsafe_auto_handle_rate": 0.06896551724137931,
+    "auto_handle_coverage": 0.1658291457286432,
+    "escalation_rate": 0.8341708542713567,
+    "escalation_precision": 0.4879518072289157,
+    "escalation_recall": 0.9310344827586207,
+    "intent_accuracy": 0.6934673366834171,
+    "intent_macro_f1": 0.6682599906920463,
+    "intent_weighted_f1": 0.6749026123000524
+  },
+  "failure_flag_counts": {
+    "escalation_disagreement": 91,
+    "intent_confusion": 61,
+    "long_messages": 7,
+    "short_messages": 5,
+    "rare_intents": 34,
+    "ambiguous_messages": 25
+  },
+  "over_escalation_FP": 85,
+  "under_escalation_FN": 6,
+  "escalation_disagreement_total": 91,
+  "note": "failure flags co-occur; escalation_disagreement includes over+under"
+}

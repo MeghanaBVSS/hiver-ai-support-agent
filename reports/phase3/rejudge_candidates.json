@@ -1,0 +1,21 @@
+{
+  "reason": "Largest groundedness |diff|; almost all are escalated templates \u2014 validate rubric v2",
+  "example_ids": [
+    "gold_1494174",
+    "gold_815865",
+    "gold_870898",
+    "gold_45990",
+    "gold_880253",
+    "gold_2759437",
+    "gold_2596041",
+    "gold_467845",
+    "gold_199210",
+    "gold_1461313",
+    "gold_1372321",
+    "gold_1377359",
+    "gold_1436312",
+    "gold_284187",
+    "gold_2363665"
+  ],
+  "n": 15
+}

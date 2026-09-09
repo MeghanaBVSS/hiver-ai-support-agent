@@ -1,0 +1,54 @@
+example_id,customer_tweet_id,conversation_id,customer_message,conversation_context,gold_intent_2,gold_escalate_2,annotator2_notes
+gold_2623567,2623567,root_2623567,@hulu_support got this “ https://t.co/7YVDkNKOMM operation error 0. “ Help!,[],playback_error,True,operation error code — account/device help
+gold_2575634,2575634,root_2575634,@115940 I’ve had enough of the constant buffering and loading issues. I’ve tried everything to fix it. From uninstalling &amp; reinstalling to resetting my network &amp; power cycling everything. Thought you should know of the issue again since no on there can fix it,[],playback_error,False,chronic buffering after user troubleshooting
+gold_2911030,2911030,root_2911030,@hulu_support why is the app constantly pausing and buffering lately?  It's not connection because it is happening at several different locations and devices for me.  From ps4 to Android phone.,[],playback_error,False,multi-device buffering
+gold_1355492,1355492,root_1355492,@115940 your live doesn’t work for older devices Apple TV Roku Toshiba laptop PS3  I signed up only can view on my iPhone this is worthless,[],live_tv_issues,True,Live not on older devices — entitlement/device
+gold_2377725,2377725,root_2377725,@hulu_support How do I turn off autoplay for a kids’ profile on an AppleTV?,[],how_to_feature,False,kids autoplay setting
+gold_1740549,1740549,root_1740553,"@hulu_support Np. I can test further. I’m trying to remember if it was only when I used my Chromecast or not. I know one ep was 4:3, the next 16:9.",[],app_device_issue,False,aspect ratio / Chromecast follow-up
+gold_1681450,1681450,root_1681450,@hulu_support Fire TV app doesnt work. Tried writing support email - got auto reply. Tried calling - 1+ hr wait? Lost potential customer ✌️👋,[],app_device_issue,True,Fire TV broken + contact failure
+gold_2251699,2251699,root_2251699,@hulu_support Am I able to access Hulu Live TV on my desktop computer? I don't see my DVR or live TV access when I login.,[],login_account,True,Live TV missing after login — entitlement
+gold_954498,954498,root_954498,@hulu_support wait time today to try and figure out why I haven’t been able to log in for five days https://t.co/lgt47x96X7,[],login_account,True,cannot login 5 days
+gold_1363688,1363688,root_1363688,@hulu_support hey can you guys help me? I can’t login to my iPhone app but i can login to your website???,[],login_account,True,iPhone app login fail vs web ok
+gold_961348,961348,root_961348,"Dear @hulu_support
+If you want me to pay for next month of Hulu Live, I want a refund for Oct. 
+Couldn’t see Raiders, then issues w/Cubs, AL https://t.co/tUGxt6t3jr",[],billing_subscription,True,explicit refund
+gold_1224206,1224206,root_1224206,Why do I have to pay for Hulu and have to watch commercials? 🤔😭 @115940,[],billing_subscription,True,pay + ads complaint
+gold_592886,592886,root_592886,I can’t wait to cancel @115940 tomorrow.  Cord cutting experiment abject failure.,[],feedback_complaint,True,cancel threat
+gold_2791262,2791262,root_2791262,Why is season 3 of Rick and Morty STILL NOT ON @115940 😤,[],content_availability,False,Rick and Morty S3 request
+gold_1187464,1187464,root_1187464,@115940 it says the newest episode of Lucifer was supposed o be available at midnight it’s 1 am when will I get to watch it,[],content_availability,False,episode availability timing
+gold_998322,998322,root_998322,@hulu_support hulu isn’t connecting. Seems it’s affecting alot of users. When will it be fixed?,[],service_outage,True,many users cannot connect
+gold_2516231,2516231,root_2454264,"@hulu_support I'm not wasting mine or anyone else's time doing that. It's not my connection.  I stream all other apps fine. How about you please Google ""issues streaming Hulu on firestick"". It's not just me",[],playback_error,True,Firestick streaming; refuses more steps
+gold_2157419,2157419,root_2157419,"@hulu_support there is an outage for casting. Across multiple accounts, chromecast devices and wifi we all are experiencing an ""Error"" splash screen on our tv's",[],service_outage,True,casting outage across accounts/devices
+gold_2209356,2209356,root_2209356,Anyone else having trouble with Hulu? Had to refresh the page 8 times to get the new episode of Bobs Burgers to play. @hulu_support Is it just me or...?,[],service_outage,True,widespread play trouble / refresh loop
+gold_2363665,2363665,root_2363665,@hulu_support so once again your business has mess up my account how is it every month it's mess up do y'all not know how to fix this if I wanted to go on there &amp; fix it every month I wouldn't have set it up for every month. Ugh getting on my last nerves,[],billing_subscription,True,monthly account mess / billing
+gold_2753119,2753119,root_2753120,@hulu_support That’s no problem. How do I disconnect the accounts? Spoke to Spotify and was told Hulu would handle it.,[],billing_subscription,True,disconnect Spotify/Hulu accounts
+gold_996994,996994,root_996994,@hulu_support how do I watch the alcs?,[],how_to_feature,False,how to watch ALCS
+gold_2575622,2575622,root_2575622,Hulu trash as hell,[],feedback_complaint,True,pure complaint
+gold_1101079,1101079,root_1101079,This new update is horrible. Everytime I try and watch something it stops like 10 minutes in and says it can be loaded 😡 @115940 .,[],playback_error,False,update causes mid-play failure
+gold_2333553,2333553,root_2333553,@hulu_support Please stop sending everyone to bad links...if you don’t have a true solution just say so.  misleading behavior is a horrible trait to exhibit.,[],feedback_complaint,True,bad links / misleading support
+gold_2575590,2575590,root_2575590,@115940 what’s up with the 5 episode maximum? Get with it already! Geesh!,[],other_ambiguous,True,5 episode max unclear
+gold_116350,116350,root_116350,"@hulu_support Trying to add the SNL Thanksgiving Special and am getting ""check your internet connection and try again. Error Code: Network Error: 400"". Our internet connection is fine and we just finished watching Blossom. Heads up, @115940",[],playback_error,True,network error 400 adding content
+gold_962964,962964,root_962964,@115940 for the last three days I have been trying to watch Hulu and I keep getting error 😞,[],playback_error,False,3 days of errors
+gold_7640,7640,cust_7640,"@hulu_support Has been this way for months.  Doesn't that tell you how much we hate the ""new experience?""  Can't even get a live person - twitter bot",[],feedback_complaint,True,hate new experience; wants live person
+gold_775201,775201,root_775201,"@hulu_support can’t get Hulu to play anything right now! Chat is worthless too, keeps disconnecting me. Please fix this! Reset router done.",[],playback_error,True,cannot play + chat disconnecting
+gold_2181625,2181625,root_2181625,"I've seen the same commercial 7 times in the same episode that I've been watching on @115940
+Can y'all not",[],feedback_complaint,False,repeat commercials — not billing; disagree gold billing
+gold_2365549,2365549,root_2365549,@hulu_support horrible stuttering issues all day today. Only happens with #hulu and not Amazon Prime or Netflix. Deleted and re-installed the app and still having the issue.,[],playback_error,True,all-day stutter after reinstall
+gold_2754550,2754550,root_2754550,"@hulu_support hello, I cancelled my subscription in August yet I still got charged apparently every month since then. Please reverse the charges! https://t.co/l4PVeomLtY",[],billing_subscription,True,charged after cancel — refund
+gold_188077,188077,root_188078,"@hulu_support Hbo free trial claims a month in app, only a week through account. Which is correct - and what about Cinemax and showtime?",[],billing_subscription,True,HBO trial length conflict
+gold_2032180,2032180,root_2032180,@hulu_support my account works on ps4 but wont open on my blu ray player now,[],app_device_issue,True,works PS4 not blu-ray
+gold_870898,870898,root_870898,"Tried out @hulu_support only because they have South Park, and it is ABSOLUTE TRASH... switching back to @116602 #sad",[],feedback_complaint,True,churn / trash product
+gold_404842,404842,root_404842,@115940 why can’t I just go to straight live tv? Why start at the beginning of a game and call the pregame advertisement?? #help,[],live_tv_issues,False,Live TV start-at-beginning UX
+gold_303365,303365,root_303365,"Seriously, @115940. How do I fix this? Because I’m getting annoyed with having to skip to the end of this same ep of Nashville time and again",[],app_device_issue,False,resume/skip episode bug
+gold_564410,564410,root_564410,"@hulu_support Your stream of the SEC Championship game is completely unwatchable. Buffering every few seconds, losing it's spot, ""parts of the stream missing"" errors, and complete playback failure.",[],live_tv_issues,False,SEC game unwatchable buffering
+gold_2196355,2196355,root_2196355,@hulu_support why is there no new episode this week for The Good Dr??,[],content_availability,False,missing weekly episode
+gold_2584541,2584541,root_2584541,@115940 What’s going on with your system? Favorites won’t automatically upload. Now the watched shows don’t get marked off. Your service is starting to suck a bit.,[],app_device_issue,True,favorites/watched sync broken
+gold_714050,714050,root_714050,@hulu_support how do you watch tv on a laptop?,[],how_to_feature,False,watch on laptop
+gold_1597543,1597543,root_1597543,@hulu_support why the constant buffering? Just switched from sling...I may have to switch back?,[],playback_error,False,constant buffering vs sling
+gold_1377359,1377359,root_1377359,@hulu_support The website is not allowing me to stream their shows. Anyone else having this problem??,[],service_outage,False,outage report
+gold_655277,655277,root_655279,@hulu_support @267250 Been not one improvement in 2 months. Hulu doesn’t care about customer feedback.,[],feedback_complaint,True,no improvement / doesn't care
+gold_199210,199210,root_199210,@hulu_support The Purge: Election Year is showing up on my Hulu app but not my tv. It doesn’t say it’s part of the HBO preview weekend. Help,[],other_ambiguous,True,insufficient info
+gold_959076,959076,root_959074,"@hulu_support The program is over now, so, I guess we’ll just have to try again next time we have a problem.",[],other_ambiguous,True,follow-up after program ended — thin context
+gold_2788559,2788559,root_2788559,"i’m still mad that @115940 took top gun off, put it back!!!",[],content_availability,False,Top Gun removed — put back
+gold_1504506,1504506,root_1504502,@hulu_support Is 100mbps fast enough? It is for netflix 🤔,[],how_to_feature,False,bandwidth adequacy question
+gold_2642114,2642114,root_2642114,@hulu_support why the buffering-buffering-buffering all the time on live shows?  On-Demand seems okay.  This has been going on for weeks.,[],live_tv_issues,False,live buffering weeks; on-demand ok

@@ -1,0 +1,53 @@
+# Default Phase 0 configuration.
+# Override via environment variables (see src/config.py) or a local YAML copy.
+
+project:
+  name: hiver-ai-support-agent
+  phase: final  # experiment frozen; see reports/final/EXPERIMENT_FREEZE.md
+
+paths:
+  data_path: null  # set via DATA_PATH or place file under data/raw/
+  raw_dir: data/raw
+  interim_dir: data/interim
+  processed_dir: data/processed
+  reports_dir: reports
+  evaluation_dir: evaluation
+  golden_dir: evaluation/golden
+  results_dir: evaluation/results
+
+data:
+  selected_brand: hulu_support  # Phase 1 evidence-based selection; see evaluation/brand_selection.csv
+  sample_size: null     # null = load all rows at DATA_PATH
+  random_seed: 42
+  train_ratio: 0.7
+  valid_ratio: 0.15
+  test_ratio: 0.15
+  # Prefer conversation-level split to prevent leakage.
+  split_strategy: conversation  # conversation | temporal
+
+models:
+  embedding_model: sentence-transformers/all-MiniLM-L6-v2  # optional; default index uses tfidf_svd
+  embedding_backend: tfidf_svd  # tfidf_svd | sentence_transformers | auto
+  llm_model: null  # set via LLM_MODEL env; secrets via API keys in env only
+  retrieval_top_k: 5
+  min_retrieval_similarity: 0.15
+
+policy:
+  escalation_threshold: 0.55  # conservative: escalate when confidence below this
+  prefer_safety_over_coverage: true
+  # Phase-2 grounded thresholds are tuned on validation and saved to
+  # data/processed/agent_artifacts/policy_thresholds.json (not golden).
+
+intent:
+  proposed_min_intents: 6
+  proposed_max_intents: 12
+  discovery_n_clusters: 10
+  discovery_sample_size: 2000
+
+golden:
+  target_size_min: 150
+  target_size_max: 250
+  human_judge_agreement_sample: 50
+
+evaluation:
+  random_seed: 42

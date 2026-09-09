@@ -1,0 +1,55 @@
+{
+  "strongest_within_1": [
+    [
+      "actionability",
+      0.88
+    ],
+    [
+      "helpfulness",
+      0.82
+    ],
+    [
+      "correctness",
+      0.72
+    ],
+    [
+      "brand_style",
+      0.56
+    ],
+    [
+      "groundedness",
+      0.12
+    ]
+  ],
+  "weakest_within_1": [
+    [
+      "groundedness",
+      0.12
+    ],
+    [
+      "brand_style",
+      0.56
+    ],
+    [
+      "correctness",
+      0.72
+    ],
+    [
+      "helpfulness",
+      0.82
+    ],
+    [
+      "actionability",
+      0.88
+    ]
+  ],
+  "systematic_escalation_penalty_on_groundedness": {
+    "supported": true,
+    "evidence": [
+      "escalated within\u00b11=0.022222222222222223",
+      "non_escalated within\u00b11=1.0",
+      "judge mean g escalated=1.8666666666666667 vs human=5.0",
+      "hypothesis broad covers 70% of |diff|>1 disagreements"
+    ]
+  }
+}

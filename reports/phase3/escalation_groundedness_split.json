@@ -1,0 +1,32 @@
+{
+  "escalated": {
+    "n": 45,
+    "human_groundedness_mean": 5.0,
+    "human_groundedness_median": 5.0,
+    "judge_groundedness_mean": 1.8666666666666667,
+    "judge_groundedness_median": 2.0,
+    "within_1_agreement": 0.022222222222222223,
+    "exact_agreement": 0.0,
+    "mean_judge_minus_human": -3.1333333333333333
+  },
+  "non_escalated": {
+    "n": 5,
+    "human_groundedness_mean": 3.6,
+    "human_groundedness_median": 3.0,
+    "judge_groundedness_mean": 3.2,
+    "judge_groundedness_median": 3.0,
+    "within_1_agreement": 1.0,
+    "exact_agreement": 0.6,
+    "mean_judge_minus_human": -0.4
+  },
+  "all": {
+    "n": 50,
+    "human_groundedness_mean": 4.86,
+    "human_groundedness_median": 5.0,
+    "judge_groundedness_mean": 2.0,
+    "judge_groundedness_median": 2.0,
+    "within_1_agreement": 0.12,
+    "exact_agreement": 0.06,
+    "mean_judge_minus_human": -2.86
+  }
+}

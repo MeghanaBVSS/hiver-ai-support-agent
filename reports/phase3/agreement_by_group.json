@@ -1,0 +1,173 @@
+{
+  "status": "OBSERVED",
+  "groups": {
+    "all": {
+      "correctness": {
+        "n": 50,
+        "exact_agreement": 0.36,
+        "agreement_within_1": 0.72,
+        "mae": 0.94,
+        "spearman": 0.1621298270264759,
+        "weighted_kappa": 0.15126772668672106,
+        "mean_judge_minus_human": -0.66
+      },
+      "groundedness": {
+        "n": 50,
+        "exact_agreement": 0.06,
+        "agreement_within_1": 0.12,
+        "mae": 2.86,
+        "spearman": -0.2881522852849563,
+        "weighted_kappa": -0.02558635394456288,
+        "mean_judge_minus_human": -2.86
+      },
+      "helpfulness": {
+        "n": 50,
+        "exact_agreement": 0.32,
+        "agreement_within_1": 0.82,
+        "mae": 0.88,
+        "spearman": 0.3605665378738239,
+        "weighted_kappa": 0.21090387374461972,
+        "mean_judge_minus_human": 0.84
+      },
+      "actionability": {
+        "n": 50,
+        "exact_agreement": 0.38,
+        "agreement_within_1": 0.88,
+        "mae": 0.78,
+        "spearman": 0.0922636321267014,
+        "weighted_kappa": 0.0956468424279584,
+        "mean_judge_minus_human": 0.14
+      },
+      "brand_style": {
+        "n": 50,
+        "exact_agreement": 0.06,
+        "agreement_within_1": 0.56,
+        "mae": 1.38,
+        "spearman": 0.15015273295726664,
+        "weighted_kappa": 0.010507880910682887,
+        "mean_judge_minus_human": 1.38
+      },
+      "escalation_decision_human_vs_system": {
+        "exact_agreement": 0.6,
+        "n": 50,
+        "note": "Binary: human_escalation vs whether semantic reply is escalate-template"
+      },
+      "judge_escalation_appropriateness_summary": {
+        "mean": 2.86,
+        "median": 3.0
+      }
+    },
+    "escalated": {
+      "correctness": {
+        "n": 45,
+        "exact_agreement": 0.37777777777777777,
+        "agreement_within_1": 0.6888888888888889,
+        "mae": 0.9555555555555556,
+        "spearman": 0.1945557714769893,
+        "weighted_kappa": 0.12314886983632112,
+        "mean_judge_minus_human": -0.8222222222222222
+      },
+      "groundedness": {
+        "n": 45,
+        "exact_agreement": 0.0,
+        "agreement_within_1": 0.022222222222222223,
+        "mae": 3.1333333333333333,
+        "spearman": null,
+        "weighted_kappa": 0.0,
+        "mean_judge_minus_human": -3.1333333333333333
+      },
+      "helpfulness": {
+        "n": 45,
+        "exact_agreement": 0.35555555555555557,
+        "agreement_within_1": 0.8888888888888888,
+        "mae": 0.7555555555555555,
+        "spearman": 0.429975911121047,
+        "weighted_kappa": 0.253956292388847,
+        "mean_judge_minus_human": 0.7111111111111111
+      },
+      "actionability": {
+        "n": 45,
+        "exact_agreement": 0.4222222222222222,
+        "agreement_within_1": 0.9333333333333333,
+        "mae": 0.6444444444444445,
+        "spearman": 0.1486378900271161,
+        "weighted_kappa": 0.13413963716327637,
+        "mean_judge_minus_human": -0.06666666666666667
+      },
+      "brand_style": {
+        "n": 45,
+        "exact_agreement": 0.06666666666666667,
+        "agreement_within_1": 0.6,
+        "mae": 1.3333333333333333,
+        "spearman": null,
+        "weighted_kappa": 0.0,
+        "mean_judge_minus_human": 1.3333333333333333
+      },
+      "escalation_decision_human_vs_system": {
+        "exact_agreement": 0.5777777777777777,
+        "n": 45,
+        "note": "Binary: human_escalation vs whether semantic reply is escalate-template"
+      },
+      "judge_escalation_appropriateness_summary": {
+        "mean": 3.022222222222222,
+        "median": 3.0
+      }
+    },
+    "non_escalated": {
+      "correctness": {
+        "n": 5,
+        "exact_agreement": 0.2,
+        "agreement_within_1": 1.0,
+        "mae": 0.8,
+        "spearman": 0.9176629354822471,
+        "weighted_kappa": 0.6551724137931034,
+        "mean_judge_minus_human": 0.8
+      },
+      "groundedness": {
+        "n": 5,
+        "exact_agreement": 0.6,
+        "agreement_within_1": 1.0,
+        "mae": 0.4,
+        "spearman": 0.8838834764831843,
+        "weighted_kappa": 0.7058823529411764,
+        "mean_judge_minus_human": -0.4
+      },
+      "helpfulness": {
+        "n": 5,
+        "exact_agreement": 0.0,
+        "agreement_within_1": 0.2,
+        "mae": 2.0,
+        "spearman": 0.6454972243679028,
+        "weighted_kappa": 0.09836065573770492,
+        "mean_judge_minus_human": 2.0
+      },
+      "actionability": {
+        "n": 5,
+        "exact_agreement": 0.0,
+        "agreement_within_1": 0.4,
+        "mae": 2.0,
+        "spearman": 0.0,
+        "weighted_kappa": 0.016393442622950727,
+        "mean_judge_minus_human": 2.0
+      },
+      "brand_style": {
+        "n": 5,
+        "exact_agreement": 0.0,
+        "agreement_within_1": 0.2,
+        "mae": 1.8,
+        "spearman": null,
+        "weighted_kappa": 0.0,
+        "mean_judge_minus_human": 1.8
+      },
+      "escalation_decision_human_vs_system": {
+        "exact_agreement": 0.8,
+        "n": 5,
+        "note": "Binary: human_escalation vs whether semantic reply is escalate-template"
+      },
+      "judge_escalation_appropriateness_summary": {
+        "mean": 1.4,
+        "median": 1.0
+      }
+    }
+  }
+}

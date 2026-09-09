@@ -1,0 +1,742 @@
+[
+  {
+    "conversation_id": "conv_000738_1104054",
+    "tweet_count": 232,
+    "unique_authors": 82,
+    "unique_customer_authors": 81,
+    "has_missing_parent": false,
+    "timestamp_min": "Fri Oct 20 00:02:24 +0000 2017",
+    "timestamp_max": "Wed Oct 25 22:43:19 +0000 2017",
+    "representative_tweets": [
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@251323 We definitely agree. Please try calling us/chatting us as our phone/chat team would be best able to take a closer look."
+      },
+      {
+        "inbound": true,
+        "author_id": "251323",
+        "text": "@hulu_support Point is I shouldn't have to restart my Roku EVERY SINGLE TIME I want to watch live TV. Here's what I see when trying to watch LA/TOR now. https://t.co/KtOHjkFE0i"
+      },
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@251323 Oh no! Restarting didn't help? If you're still running into trouble, please reach out here: https://t.co/6YdK7bvQN7."
+      },
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@435113 Apologies! The issue has since been resolved (https://t.co/az3EROTani). We hope you caught the end!"
+      },
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@543295 Our sincere apologies for the hiccup, Ross. Our team pushed out a fix for this. Please reboot device in use &amp; you'll be all set. \ud83d\udc9a"
+      }
+    ],
+    "likely_unrelated_merge": true
+  },
+  {
+    "conversation_id": "conv_002356_1409337",
+    "tweet_count": 159,
+    "unique_authors": 74,
+    "unique_customer_authors": 73,
+    "has_missing_parent": false,
+    "timestamp_min": "Fri Nov 03 00:02:51 +0000 2017",
+    "timestamp_max": "Wed Nov 01 22:53:20 +0000 2017",
+    "representative_tweets": [
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@447585 We're definitely sorry to hear the link didn't redirect you appropriately the first time. Rest assured we've expressed your input."
+      },
+      {
+        "inbound": true,
+        "author_id": "447585",
+        "text": "@hulu_support I followed the link this morning and NOW it took me to a page citing other apps that can be used using Hulu as a provider. Wish I'd got this"
+      },
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@447585 That's not good! We haven't had similar reports regarding the link, but we'll share your feedback &amp; investigate on our end."
+      },
+      {
+        "inbound": true,
+        "author_id": "447585",
+        "text": "@hulu_support Following the link, whether on phone or PC, it went straight to the home Service page. Unless that was the intent..."
+      },
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@118989 Sorry for the trouble. If there are ongoing issues, don't hesitate to let us know what device you're using as well as behavior."
+      }
+    ],
+    "likely_unrelated_merge": true
+  },
+  {
+    "conversation_id": "conv_000879_11272",
+    "tweet_count": 110,
+    "unique_authors": 43,
+    "unique_customer_authors": 42,
+    "has_missing_parent": false,
+    "timestamp_min": "Fri Nov 03 01:57:46 +0000 2017",
+    "timestamp_max": "Wed Nov 01 23:24:38 +0000 2017",
+    "representative_tweets": [
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@118149 Sorry for the trouble! Try a quick reboot of your device+modem/router. If no change, call/chat us: https://t.co/6YdK7bvQN7."
+      },
+      {
+        "inbound": true,
+        "author_id": "118149",
+        "text": "@hulu_support Still having this issue!"
+      },
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "\u26a0\ufe0f  We're currently investigating reports of playback trouble and login issues with a very high priority. We'll update here accordingly."
+      },
+      {
+        "inbound": true,
+        "author_id": "483955",
+        "text": "@hulu_support Why isn\u2019t last nites episode of @168148 on @115940 ?!"
+      },
+      {
+        "inbound": true,
+        "author_id": "487743",
+        "text": "@hulu_support I've been having to activate the same device (xbox one) every time I've tried to use Hulu for the last couple of days."
+      }
+    ],
+    "likely_unrelated_merge": true
+  },
+  {
+    "conversation_id": "conv_000354_1051419",
+    "tweet_count": 94,
+    "unique_authors": 39,
+    "unique_customer_authors": 38,
+    "has_missing_parent": false,
+    "timestamp_min": "Fri Nov 10 00:29:05 +0000 2017",
+    "timestamp_max": "Wed Oct 25 23:04:10 +0000 2017",
+    "representative_tweets": [
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@368467 Oh no! We'd hate to lose you, Maureen. \ud83d\udc9a  We'd love to gather any feedback you have for our devs here: https://t.co/n4qDfJdbFR."
+      },
+      {
+        "inbound": true,
+        "author_id": "368468",
+        "text": "@hulu_support @368467 You guys are never going to stop the \"Oh No!\" stuff, are you? You desperately need someone else handling your Twitter support."
+      },
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@168341 Oh no! \ud83d\ude2d If troubleshooting (https://t.co/wAoEicy9CF) isn't resolving, call or chat for further help: https://t.co/6YdK7bvQN7."
+      },
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@379646 We're working on finalizing those details! We don't have a date to share just yet, but keep tabs on: https://t.co/r9MCqHxrfq"
+      },
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@413666 We're sorry to hear this! Have you seen: https://t.co/zS2PPOcsyE? If that doesn't help\u2014please @ us some pain-points. We'll help!"
+      }
+    ],
+    "likely_unrelated_merge": true
+  },
+  {
+    "conversation_id": "conv_000733_1103174",
+    "tweet_count": 90,
+    "unique_authors": 28,
+    "unique_customer_authors": 27,
+    "has_missing_parent": false,
+    "timestamp_min": "Fri Oct 20 00:43:30 +0000 2017",
+    "timestamp_max": "Wed Oct 25 04:47:36 +0000 2017",
+    "representative_tweets": [
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@380332 Let's see if we can help! Which device are you using to stream? See if these steps lead to an improvement: https://t.co/HXpLyTU79x."
+      },
+      {
+        "inbound": true,
+        "author_id": "380332",
+        "text": "@hulu_support Roku 4"
+      },
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@380332 Got it. Are you noticing buffering w/a certain channel? Try a quick reboot of your Roku+modem along w/: https://t.co/wAoEicy9CF."
+      },
+      {
+        "inbound": true,
+        "author_id": "380332",
+        "text": "@hulu_support Done all that, this is a server, Hulu issue,"
+      },
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@380332 Sorry to hear those didn't do the trick! Please call us/chat us so we can take a closer look on our end: https://t.co/6YdK7bvQN7."
+      }
+    ],
+    "likely_unrelated_merge": true
+  },
+  {
+    "conversation_id": "conv_012565_561095",
+    "tweet_count": 89,
+    "unique_authors": 38,
+    "unique_customer_authors": 37,
+    "has_missing_parent": false,
+    "timestamp_min": "Sat Dec 02 22:22:11 +0000 2017",
+    "timestamp_max": "Sun Dec 03 22:03:56 +0000 2017",
+    "representative_tweets": [
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@251295 Apologies for the inconvenience, Blake. Did you try using your Hulu info to stream from: https://t.co/sZ0gQ0NN1O? We appreciate your patience while our team works through t"
+      },
+      {
+        "inbound": true,
+        "author_id": "251296",
+        "text": "@hulu_support @251295 That doesn't work for certain locations, stop using it as a backstop!"
+      },
+      {
+        "inbound": true,
+        "author_id": "251297",
+        "text": "@hulu_support @251295 Doesn't work in WI @hulu_support....really hoping there won't be a problem with the Badger game...you know the MOST IMPORTANT BADGER FOOTBALL GAME OF THE SEAS"
+      },
+      {
+        "inbound": true,
+        "author_id": "251295",
+        "text": "@hulu_support The game is gonna be over before you fix it. Sheesh."
+      },
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@251297 Sorry for the trouble, Blake! Thanks for bearing with us. We're continuously working to improve our Live TV experience."
+      }
+    ],
+    "likely_unrelated_merge": true
+  },
+  {
+    "conversation_id": "conv_000969_115034",
+    "tweet_count": 65,
+    "unique_authors": 20,
+    "unique_customer_authors": 19,
+    "has_missing_parent": false,
+    "timestamp_min": "Fri Nov 24 01:12:49 +0000 2017",
+    "timestamp_max": "Wed Nov 22 22:57:07 +0000 2017",
+    "representative_tweets": [
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@141572 To clarify, which device is this occurring on? Also it looks like you're on the Netflix app instead of Hulu? Just let us know!"
+      },
+      {
+        "inbound": true,
+        "author_id": "141572",
+        "text": "@hulu_support No shows, network etc ... https://t.co/a0j0xqc9zJ"
+      },
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@141572 Oh no! Which device are you on? Is the app just not loading, or is it a particular show/network? Try: https://t.co/HXpLyTU79x."
+      },
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@143719 DVR records content added to My Stuff (https://t.co/aLzDvfBwEu). Have you tried the following steps: https://t.co/Vhwt8NxkrE?"
+      },
+      {
+        "inbound": true,
+        "author_id": "143719",
+        "text": "@hulu_support And are you kidding about that\u201dtroubleshooting\u201d?? Telling your customers to uninstall and reinstall isn\u2019t going to fix your broken af DVR. I\u2019m paying $40 a month for "
+      }
+    ],
+    "likely_unrelated_merge": true
+  },
+  {
+    "conversation_id": "conv_001848_1283516",
+    "tweet_count": 61,
+    "unique_authors": 20,
+    "unique_customer_authors": 19,
+    "has_missing_parent": false,
+    "timestamp_min": "Fri Oct 13 20:22:46 +0000 2017",
+    "timestamp_max": "Wed Oct 25 16:21:49 +0000 2017",
+    "representative_tweets": [
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@420242 Sorry! There's no news to share at this time, but we do plan on updating more devices. We'll definitely share your interest!"
+      },
+      {
+        "inbound": true,
+        "author_id": "420242",
+        "text": "@hulu_support @170140 And this has been a problem since (from what I can tell) MAY. C'mon guys...yer killin' me."
+      },
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@480680 Oh no! That's definitely not intended. Try out these steps: https://t.co/wAoEicy9CF and https://t.co/HXpLyTU79x. Any change?"
+      },
+      {
+        "inbound": true,
+        "author_id": "480681",
+        "text": "@hulu_support @480680 Mine still doing the same thing. I've restarted ROKU and my router to many times to count.  Please fix. Just want Hulu to work like before."
+      },
+      {
+        "inbound": true,
+        "author_id": "535475",
+        "text": "@480680 @hulu_support @170140 I now have issues loading it on my fire tv. Have to log on 7 times to get and very slow to load while online. Only Hulu app and reinstalled"
+      }
+    ],
+    "likely_unrelated_merge": true
+  },
+  {
+    "conversation_id": "conv_004452_17750",
+    "tweet_count": 59,
+    "unique_authors": 25,
+    "unique_customer_authors": 24,
+    "has_missing_parent": false,
+    "timestamp_min": "Mon Oct 30 00:17:07 +0000 2017",
+    "timestamp_max": "Wed Nov 01 04:58:01 +0000 2017",
+    "representative_tweets": [
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@119932 Oh no! Not a fan of something in particular? Have you already seen: https://t.co/zS2PPOcsyE ?"
+      },
+      {
+        "inbound": true,
+        "author_id": "119932",
+        "text": "@hulu_support Once that is sorted can you do something about this abortion of a user interface? At least on PS4 it is literally the worst."
+      },
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "Pardon the interruption, folks. We're working to resolve the live playback issues ASAP. As an alternate for now: https://t.co/CZkXOBQ1aK."
+      },
+      {
+        "inbound": true,
+        "author_id": "737272",
+        "text": "@hulu_support Fox sports go app streams better , come on hulu."
+      },
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "UPDATE: Aaand we're back, just in time for Sunday football! Thanks for your patience, everyone."
+      }
+    ],
+    "likely_unrelated_merge": true
+  },
+  {
+    "conversation_id": "conv_000387_1059881",
+    "tweet_count": 55,
+    "unique_authors": 18,
+    "unique_customer_authors": 17,
+    "has_missing_parent": false,
+    "timestamp_min": "Fri Oct 13 03:34:02 +0000 2017",
+    "timestamp_max": "Wed Oct 18 23:24:31 +0000 2017",
+    "representative_tweets": [
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@198706 Thanks for the request! We'll share this while we continue to investigate. You can join the convo: https://t.co/n4qDfJdbFR."
+      },
+      {
+        "inbound": true,
+        "author_id": "139003",
+        "text": "@hulu_support @198706 You\u2019ve been \u201cinvestigating\u201d for months. When do you get around to \u201cfixing\u201d?"
+      },
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@198706 Our apologies for the continued trouble, AG! Rest assured we are actively working to address reports and implement feedback."
+      },
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@388879 Yikes! That's not good, but we'd love to help. What device are you using? Is it hardwired? Check out: https://t.co/HXpLyTU79x. \u2705"
+      },
+      {
+        "inbound": true,
+        "author_id": "388879",
+        "text": "@334580 @416616 @hulu_support Watching the WS on Fox and zero issues. Change to the Lakers game on ESPN and it buffers every 10 secs. Same thing happened during MNF."
+      }
+    ],
+    "likely_unrelated_merge": true
+  },
+  {
+    "conversation_id": "conv_001060_1168120",
+    "tweet_count": 48,
+    "unique_authors": 5,
+    "unique_customer_authors": 4,
+    "has_missing_parent": false,
+    "timestamp_min": "Fri Oct 27 05:07:23 +0000 2017",
+    "timestamp_max": "Wed Oct 25 23:36:29 +0000 2017",
+    "representative_tweets": [
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@394763 Hi, Autumn! We sure do! We offer seasons 1-7 with your Hulu subscription. \ud83d\udc4d\ud83c\udffd"
+      },
+      {
+        "inbound": true,
+        "author_id": "394763",
+        "text": "@hulu_support Hulu is the real MVP"
+      },
+      {
+        "inbound": true,
+        "author_id": "394763",
+        "text": "Hey @115940 do you have Army Wives?"
+      },
+      {
+        "inbound": true,
+        "author_id": "394764",
+        "text": "@394763 @118306 @hulu_support Lol"
+      },
+      {
+        "inbound": true,
+        "author_id": "394764",
+        "text": "@394763 @118306 @hulu_support Not the MVP. https://t.co/mS3DZ6JTN2"
+      }
+    ],
+    "likely_unrelated_merge": true
+  },
+  {
+    "conversation_id": "conv_004888_191898",
+    "tweet_count": 47,
+    "unique_authors": 14,
+    "unique_customer_authors": 13,
+    "has_missing_parent": false,
+    "timestamp_min": "Fri Oct 06 05:47:43 +0000 2017",
+    "timestamp_max": "Wed Sep 27 20:05:57 +0000 2017",
+    "representative_tweets": [
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@117294 The feedback is appreciated! We'll share this with our team. Feel free to post other requests here: https://t.co/n4qDfJdbFR."
+      },
+      {
+        "inbound": true,
+        "author_id": "117294",
+        "text": "@hulu_support I have already responded there (along with hundreds of thousands) but there is no satisfaction of response.  Seriously, fix this hot mess"
+      },
+      {
+        "inbound": true,
+        "author_id": "117294",
+        "text": "@hulu_support (2)   b. Do away with all the clicks, i.e. \"ok\", \"back arrow\", \"up page\"\n        c. Do away with auto play.  Default to NEVER"
+      },
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@117294 We'll continue to pass along your input while we work to make improvements: https://t.co/vIaXcS3oNC , https://t.co/aLiMNa5EGq."
+      },
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "Update: Users can perform a system Update (Settings&gt; System&gt; System Restart) to start importing their Watchlist to the new Hulu Experience."
+      }
+    ],
+    "likely_unrelated_merge": true
+  },
+  {
+    "conversation_id": "conv_014260_884323",
+    "tweet_count": 43,
+    "unique_authors": 4,
+    "unique_customer_authors": 3,
+    "has_missing_parent": false,
+    "timestamp_min": "Fri Oct 20 20:39:33 +0000 2017",
+    "timestamp_max": "Thu Oct 26 22:48:20 +0000 2017",
+    "representative_tweets": [
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@196367 Happy to clear up confusion, don't hesitate to tweet us again in the future. We apologize for any misinformation previously shared."
+      },
+      {
+        "inbound": true,
+        "author_id": "196367",
+        "text": "@hulu_support I got that confusion because the only time I see @38977 in the channel lineup is when the news is on"
+      },
+      {
+        "inbound": true,
+        "author_id": "196367",
+        "text": "@hulu_support @330002 That answers that question.   Thank you"
+      },
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@196367 Got it! When WDEF News 12 Now isn't listed, can you still select Browse &gt; Networks &gt; A-Z &gt; CBS? If so, does the right content play?"
+      },
+      {
+        "inbound": true,
+        "author_id": "196367",
+        "text": "@hulu_support CBS is there whether WDEF is or not"
+      }
+    ],
+    "likely_unrelated_merge": false
+  },
+  {
+    "conversation_id": "conv_002352_1409013",
+    "tweet_count": 38,
+    "unique_authors": 15,
+    "unique_customer_authors": 14,
+    "has_missing_parent": false,
+    "timestamp_min": "Fri Nov 03 04:42:28 +0000 2017",
+    "timestamp_max": "Wed Sep 27 02:56:00 +0000 2017",
+    "representative_tweets": [
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@447504 Truly sorry to hear this! Please give u a call/chat when you get a minute here: https://t.co/6YdK7bvQN7. We'll sort this out! \u2705"
+      },
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@500993 Oh no! This shouldn't still be happening. If: https://t.co/HiTFsfb2rK doesn't help, reach out here: https://t.co/6YdK7bvQN7."
+      },
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@160129 We're working to include as much feedback as possible into future updates. Feel free to send any requests or ideas our way."
+      },
+      {
+        "inbound": true,
+        "author_id": "160129",
+        "text": "@hulu_support Already voted for every topic on the front page denouncing your \"update\". A scathing indictment of your piss poor design team.  Hot garbage!"
+      },
+      {
+        "inbound": true,
+        "author_id": "160129",
+        "text": "@hulu_support What does it matter?  I can complain on your forums for a rollback and that your design team deserves to be fired; nothing will happen."
+      }
+    ],
+    "likely_unrelated_merge": true
+  },
+  {
+    "conversation_id": "conv_006032_218671",
+    "tweet_count": 37,
+    "unique_authors": 9,
+    "unique_customer_authors": 8,
+    "has_missing_parent": true,
+    "timestamp_min": "Fri Oct 06 03:47:10 +0000 2017",
+    "timestamp_max": "Wed Oct 04 03:10:06 +0000 2017",
+    "representative_tweets": [
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@117294 Hi there! We're hard at work implementing improvements based on feedback: https://t.co/vIaXcS3oNC, https://t.co/aLiMNa5EGq. \u2705\ud83d\udc4d"
+      },
+      {
+        "inbound": true,
+        "author_id": "168154",
+        "text": "@hulu_support @117294 Does this work with the Android TV hulu? I have a current generation Nvidia Shield Pro."
+      },
+      {
+        "inbound": true,
+        "author_id": "117294",
+        "text": "@hulu_support There is nothing on this link that shows any changes have been made based on the hundreds of thousands of complaint?"
+      },
+      {
+        "inbound": true,
+        "author_id": "117294",
+        "text": "@hulu_support @168155 It's a nightmare.  Listen to your customers and fix it."
+      },
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@168154 We do not currently support Android TV with Live TV but we'll share the interest. For devices, see: https://t.co/S7I5SNUS3g."
+      }
+    ],
+    "likely_unrelated_merge": true
+  },
+  {
+    "conversation_id": "conv_000115_1016280",
+    "tweet_count": 36,
+    "unique_authors": 11,
+    "unique_customer_authors": 10,
+    "has_missing_parent": false,
+    "timestamp_min": "Fri Oct 13 01:18:15 +0000 2017",
+    "timestamp_max": "Wed Oct 18 20:59:12 +0000 2017",
+    "representative_tweets": [
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@205303 Hey Andrew! We're beta testing the feature on site and plan to launch on more in the future. No ETA to share just yet though..."
+      },
+      {
+        "inbound": true,
+        "author_id": "205303",
+        "text": "@hulu_support Awesome. Checked it out in the browser. Looks good. Need to be able to pin it in place. Also when are we getting picture in picture?"
+      },
+      {
+        "inbound": true,
+        "author_id": "205303",
+        "text": "@hulu_support Another thing. Super irritating to the wife. When you open a live sport event needs to start live rather than restarting in DVR mode."
+      },
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@205303 Thanks for circling back up with us! This is really great and valid feedback. We'll pass your concerns along to the right people."
+      },
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@372611 Thanks for inquiring! We're actively working to expand our live offering, so we'll be sure to pass this along to the team! \ud83d\udc4d"
+      }
+    ],
+    "likely_unrelated_merge": true
+  },
+  {
+    "conversation_id": "conv_000014_1002502",
+    "tweet_count": 35,
+    "unique_authors": 3,
+    "unique_customer_authors": 2,
+    "has_missing_parent": false,
+    "timestamp_min": "Mon Oct 23 06:01:29 +0000 2017",
+    "timestamp_max": "Wed Oct 25 23:51:13 +0000 2017",
+    "representative_tweets": [
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@167059 Oh no! What device are you using? Are your speeds meeting our recommendations here: https://t.co/8x1k3V3gxT? Keep us posted!"
+      },
+      {
+        "inbound": true,
+        "author_id": "167059",
+        "text": "@hulu_support My download speed is 19.86, when I had Hulu in January of this year didn't have this issue. Just joined again last month."
+      },
+      {
+        "inbound": true,
+        "author_id": "167059",
+        "text": "@hulu_support I contacted Hulu to fix my buffering. Still buffers, tried at my son's same result. I had Sling, never buffered like this."
+      },
+      {
+        "inbound": true,
+        "author_id": "167059",
+        "text": "@hulu_support I am using Fire Tv, I use to use Roku 3 before I cancelled I January."
+      },
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@167059 Thanks for the details! Is the issue streaming live TV or on-demand? Any errors pop up? For now, try: https://t.co/TR6ei0cnf1."
+      }
+    ],
+    "likely_unrelated_merge": false
+  },
+  {
+    "conversation_id": "conv_006427_223679",
+    "tweet_count": 35,
+    "unique_authors": 2,
+    "unique_customer_authors": 1,
+    "has_missing_parent": false,
+    "timestamp_min": "Mon Aug 07 18:49:44 +0000 2017",
+    "timestamp_max": "Wed Aug 30 22:10:40 +0000 2017",
+    "representative_tweets": [
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@169452 Thanks for keeping us in the loop, Drew! If this happens again, please follow up with us here: https://t.co/6YdK7bvQN7."
+      },
+      {
+        "inbound": true,
+        "author_id": "169452",
+        "text": "@hulu_support As you can see it's been ongoing for months. I'll do that when I have a chance."
+      },
+      {
+        "inbound": true,
+        "author_id": "169452",
+        "text": "@hulu_support Red lobster on svu again"
+      },
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@169452 Ah, thanks! We appreciate you sending this over\u2014we'll continue to share these details with our team here."
+      },
+      {
+        "inbound": true,
+        "author_id": "169452",
+        "text": "@hulu_support Red lobster ad this time on SVU"
+      }
+    ],
+    "likely_unrelated_merge": false
+  },
+  {
+    "conversation_id": "conv_011294_334710",
+    "tweet_count": 29,
+    "unique_authors": 2,
+    "unique_customer_authors": 1,
+    "has_missing_parent": false,
+    "timestamp_min": "Sat Oct 07 20:27:05 +0000 2017",
+    "timestamp_max": "Thu Oct 05 01:41:25 +0000 2017",
+    "representative_tweets": [
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@195764 Hi Andrew! If an episode has aired within the last week, you'll see a \"New\" icon on the ep thumbnail: https://t.co/xycpYI5fM7"
+      },
+      {
+        "inbound": true,
+        "author_id": "195764",
+        "text": "@hulu_support Ok clearly I don't matter since your helping people who don't even have a problem anymore guess I'll just go back to Netflix"
+      },
+      {
+        "inbound": true,
+        "author_id": "195764",
+        "text": "@hulu_support Ya I finally noticed that I have To go out of my way why don't you just inform us when a show we watch has a new ep why did you go backwards"
+      },
+      {
+        "inbound": true,
+        "author_id": "195764",
+        "text": "@hulu_support I see you guys are helping others why don't you want to answer this why don't you put shows with new eps to the top of the list anymore"
+      },
+      {
+        "inbound": true,
+        "author_id": "195764",
+        "text": "@115940 why don't you tell us when shows have new episodes anymore why did you guys go so far backwards"
+      }
+    ],
+    "likely_unrelated_merge": false
+  },
+  {
+    "conversation_id": "conv_011343_339880",
+    "tweet_count": 29,
+    "unique_authors": 2,
+    "unique_customer_authors": 1,
+    "has_missing_parent": false,
+    "timestamp_min": "Fri Oct 13 04:30:14 +0000 2017",
+    "timestamp_max": "Wed Oct 11 01:18:16 +0000 2017",
+    "representative_tweets": [
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@197172 Yikes! If you're watching Live TV, it does demand more from your connection. Let us know if these: https://t.co/DPycTgStSF help."
+      },
+      {
+        "inbound": true,
+        "author_id": "197172",
+        "text": "@hulu_support Tried it. Still buffering to a point where it says cant play video. I have 40 meg sustained connection. My Roku is hardwired from router"
+      },
+      {
+        "inbound": true,
+        "author_id": "197172",
+        "text": "@hulu_support I love the interface. Only problem i have is the buffering. Why does it buffer so much?"
+      },
+      {
+        "inbound": false,
+        "author_id": "hulu_support",
+        "text": "@197172 Oh no! Thanks for this update. Call/chat (https://t.co/6YdK7bvQN7) if these don't take care of it for you: https://t.co/wAoEicy9CF."
+      },
+      {
+        "inbound": true,
+        "author_id": "197172",
+        "text": "@hulu_support Still buffering"
+      }
+    ],
+    "likely_unrelated_merge": false
+  }
+]

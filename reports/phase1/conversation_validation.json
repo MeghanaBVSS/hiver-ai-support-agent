@@ -1,0 +1,25 @@
+{
+  "status": "OBSERVED",
+  "brand": "hulu_support",
+  "approach": "connected_components_undirected",
+  "n_conversations": 15082,
+  "n_pairs_first_support": 21468,
+  "n_missing_parent_convs": 558,
+  "turn_stats": {
+    "count": 15082.0,
+    "mean": 3.149184458294656,
+    "std": 3.626541409832618,
+    "min": 1.0,
+    "25%": 2.0,
+    "50%": 2.0,
+    "75%": 4.0,
+    "max": 232.0
+  },
+  "n_convs_turns_gt_10": 210,
+  "n_convs_turns_eq_1": 15,
+  "notes": [
+    "Connected components keep sibling support replies together.",
+    "Coverage>1 vs @mentions occurs because brand replies to customers without literal @brand in text after anonymization.",
+    "Inference context must exclude future support messages; pair records use other inbound texts in the same conversation only."
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "status": "OBSERVED",
+  "source_path": "/home/mani/Music/Hiver/hiver-ai-support-agent/data/processed/hulu_support_tweets.parquet",
+  "file": {
+    "path": "/home/mani/Music/Hiver/hiver-ai-support-agent/data/processed/hulu_support_tweets.parquet",
+    "filename": "hulu_support_tweets.parquet",
+    "size_bytes": 4633402,
+    "size_mb": 4.419,
+    "exists": true
+  },
+  "row_count": 47496,
+  "column_count": 7,
+  "columns": [
+    "tweet_id",
+    "author_id",
+    "inbound",
+    "created_at",
+    "text",
+    "response_tweet_id",
+    "in_response_to_tweet_id"
+  ],
+  "schema": {
+    "ok": true,
+    "missing_columns": [],
+    "unexpected_columns": [],
+    "observed_columns": [
+      "tweet_id",
+      "author_id",
+      "inbound",
+      "created_at",
+      "text",
+      "response_tweet_id",
+      "in_response_to_tweet_id"
+    ],
+    "dtypes": {
+      "tweet_id": "str",
+      "author_id": "str",
+      "inbound": "bool",
+      "created_at": "string",
+      "text": "string",
+      "response_tweet_id": "str",
+      "in_response_to_tweet_id": "str"
+    },
+    "notes": []
+  },
+  "dtypes": {
+    "tweet_id": "str",
+    "author_id": "str",
+    "inbound": "bool",
+    "created_at": "string",
+    "text": "string",
+    "response_tweet_id": "str",
+    "in_response_to_tweet_id": "str"
+  },
+  "missing_values": {
+    "tweet_id": 0,
+    "author_id": 0,
+    "inbound": 0,
+    "created_at": 0,
+    "text": 0,
+    "response_tweet_id": 17274,
+    "in_response_to_tweet_id": 14524
+  },
+  "missing_rate": {
+    "tweet_id": 0.0,
+    "author_id": 0.0,
+    "inbound": 0.0,
+    "created_at": 0.0,
+    "text": 0.0,
+    "response_tweet_id": 0.36369378473976754,
+    "in_response_to_tweet_id": 0.30579417214081184
+  },
+  "duplicate_rows": 0,
+  "duplicate_tweet_ids": 0,
+  "unique_tweet_ids": 47496,
+  "inbound_distribution": {
+    "True": 25547,
+    "False": 21949
+  },
+  "unique_authors": 13701,
+  "unique_brand_authors_outbound_non_numeric": 9,
+  "top_outbound_brands": {
+    "hulu_support": 21872,
+    "SpotifyCares": 33,
+    "sprintcare": 15,
+    "XboxSupport": 7,
+    "AmazonHelp": 7,
+    "Ask_Spectrum": 5,
+    "AppleSupport": 5,
+    "comcastcares": 4,
+    "VerizonSupport": 1
+  },
+  "timestamps": {
+    "parseable": 47496,
+    "unparseable": 0,
+    "min": "2014-08-08T02:18:50+00:00",
+    "max": "2017-12-03T23:12:39+00:00"
+  },
+  "rows_with_response_tweet_id": 30222,
+  "rows_with_in_response_to_tweet_id": 32972,
+  "unique_parent_refs": 30628,
+  "missing_parent_refs_in_file": 457,
+  "parent_coverage_in_file": 0.9850790126681468,
+  "multi_response_id_rows_in_first_5k_non_null": 322,
+  "quality_issues": [
+    "Column 'response_tweet_id' has 17274 missing values.",
+    "Column 'in_response_to_tweet_id' has 14524 missing values.",
+    "457 parent tweet refs are missing from this file (orphans / incomplete extract)."
+  ],
+  "brand": "hulu_support"
+}

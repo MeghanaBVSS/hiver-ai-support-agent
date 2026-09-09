@@ -1,0 +1,179 @@
+{
+  "n": 15,
+  "example_ids": [
+    "gold_1494174",
+    "gold_815865",
+    "gold_870898",
+    "gold_45990",
+    "gold_880253",
+    "gold_2759437",
+    "gold_2596041",
+    "gold_467845",
+    "gold_199210",
+    "gold_1461313",
+    "gold_1372321",
+    "gold_1377359",
+    "gold_1436312",
+    "gold_284187",
+    "gold_2363665"
+  ],
+  "model": "qwen2.5:3b",
+  "rubric": "v2",
+  "mean_abs_err_v1": 4.0,
+  "mean_abs_err_v2": 3.066666666666667,
+  "mean_v2_minus_v1_groundedness": 0.9333333333333333,
+  "within_1_v1": 0.0,
+  "within_1_v2": 0.13333333333333333,
+  "comparisons": [
+    {
+      "example_id": "gold_1494174",
+      "human_groundedness": 5,
+      "v1_judge_groundedness": 1,
+      "v2_judge_groundedness": 1,
+      "delta_v2_minus_v1": 0,
+      "abs_err_v1": 4,
+      "abs_err_v2": 4,
+      "reason_for_rerun": "top groundedness disagreement; test rubric v2 escalation rule"
+    },
+    {
+      "example_id": "gold_815865",
+      "human_groundedness": 5,
+      "v1_judge_groundedness": 1,
+      "v2_judge_groundedness": 3,
+      "delta_v2_minus_v1": 2,
+      "abs_err_v1": 4,
+      "abs_err_v2": 2,
+      "reason_for_rerun": "top groundedness disagreement; test rubric v2 escalation rule"
+    },
+    {
+      "example_id": "gold_870898",
+      "human_groundedness": 5,
+      "v1_judge_groundedness": 1,
+      "v2_judge_groundedness": 1,
+      "delta_v2_minus_v1": 0,
+      "abs_err_v1": 4,
+      "abs_err_v2": 4,
+      "reason_for_rerun": "top groundedness disagreement; test rubric v2 escalation rule"
+    },
+    {
+      "example_id": "gold_45990",
+      "human_groundedness": 5,
+      "v1_judge_groundedness": 1,
+      "v2_judge_groundedness": 1,
+      "delta_v2_minus_v1": 0,
+      "abs_err_v1": 4,
+      "abs_err_v2": 4,
+      "reason_for_rerun": "top groundedness disagreement; test rubric v2 escalation rule"
+    },
+    {
+      "example_id": "gold_880253",
+      "human_groundedness": 5,
+      "v1_judge_groundedness": 1,
+      "v2_judge_groundedness": 1,
+      "delta_v2_minus_v1": 0,
+      "abs_err_v1": 4,
+      "abs_err_v2": 4,
+      "reason_for_rerun": "top groundedness disagreement; test rubric v2 escalation rule"
+    },
+    {
+      "example_id": "gold_2759437",
+      "human_groundedness": 5,
+      "v1_judge_groundedness": 1,
+      "v2_judge_groundedness": 2,
+      "delta_v2_minus_v1": 1,
+      "abs_err_v1": 4,
+      "abs_err_v2": 3,
+      "reason_for_rerun": "top groundedness disagreement; test rubric v2 escalation rule"
+    },
+    {
+      "example_id": "gold_2596041",
+      "human_groundedness": 5,
+      "v1_judge_groundedness": 1,
+      "v2_judge_groundedness": 1,
+      "delta_v2_minus_v1": 0,
+      "abs_err_v1": 4,
+      "abs_err_v2": 4,
+      "reason_for_rerun": "top groundedness disagreement; test rubric v2 escalation rule"
+    },
+    {
+      "example_id": "gold_467845",
+      "human_groundedness": 5,
+      "v1_judge_groundedness": 1,
+      "v2_judge_groundedness": 3,
+      "delta_v2_minus_v1": 2,
+      "abs_err_v1": 4,
+      "abs_err_v2": 2,
+      "reason_for_rerun": "top groundedness disagreement; test rubric v2 escalation rule"
+    },
+    {
+      "example_id": "gold_199210",
+      "human_groundedness": 5,
+      "v1_judge_groundedness": 1,
+      "v2_judge_groundedness": 1,
+      "delta_v2_minus_v1": 0,
+      "abs_err_v1": 4,
+      "abs_err_v2": 4,
+      "reason_for_rerun": "top groundedness disagreement; test rubric v2 escalation rule"
+    },
+    {
+      "example_id": "gold_1461313",
+      "human_groundedness": 5,
+      "v1_judge_groundedness": 1,
+      "v2_judge_groundedness": 1,
+      "delta_v2_minus_v1": 0,
+      "abs_err_v1": 4,
+      "abs_err_v2": 4,
+      "reason_for_rerun": "top groundedness disagreement; test rubric v2 escalation rule"
+    },
+    {
+      "example_id": "gold_1372321",
+      "human_groundedness": 5,
+      "v1_judge_groundedness": 1,
+      "v2_judge_groundedness": 3,
+      "delta_v2_minus_v1": 2,
+      "abs_err_v1": 4,
+      "abs_err_v2": 2,
+      "reason_for_rerun": "top groundedness disagreement; test rubric v2 escalation rule"
+    },
+    {
+      "example_id": "gold_1377359",
+      "human_groundedness": 5,
+      "v1_judge_groundedness": 1,
+      "v2_judge_groundedness": 1,
+      "delta_v2_minus_v1": 0,
+      "abs_err_v1": 4,
+      "abs_err_v2": 4,
+      "reason_for_rerun": "top groundedness disagreement; test rubric v2 escalation rule"
+    },
+    {
+      "example_id": "gold_1436312",
+      "human_groundedness": 5,
+      "v1_judge_groundedness": 1,
+      "v2_judge_groundedness": 4,
+      "delta_v2_minus_v1": 3,
+      "abs_err_v1": 4,
+      "abs_err_v2": 1,
+      "reason_for_rerun": "top groundedness disagreement; test rubric v2 escalation rule"
+    },
+    {
+      "example_id": "gold_284187",
+      "human_groundedness": 5,
+      "v1_judge_groundedness": 1,
+      "v2_judge_groundedness": 4,
+      "delta_v2_minus_v1": 3,
+      "abs_err_v1": 4,
+      "abs_err_v2": 1,
+      "reason_for_rerun": "top groundedness disagreement; test rubric v2 escalation rule"
+    },
+    {
+      "example_id": "gold_2363665",
+      "human_groundedness": 5,
+      "v1_judge_groundedness": 1,
+      "v2_judge_groundedness": 2,
+      "delta_v2_minus_v1": 1,
+      "abs_err_v1": 4,
+      "abs_err_v2": 3,
+      "reason_for_rerun": "top groundedness disagreement; test rubric v2 escalation rule"
+    }
+  ]
+}

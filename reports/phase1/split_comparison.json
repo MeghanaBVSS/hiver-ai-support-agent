@@ -1,0 +1,32 @@
+{
+  "status": "OBSERVED",
+  "primary": "conversation_level_conservative_ids",
+  "conversation_split": {
+    "strategy": "conversation",
+    "n_train": 11143,
+    "n_valid": 2387,
+    "n_test": 2389,
+    "train_ids": "omitted",
+    "valid_ids": "omitted",
+    "test_ids": "omitted"
+  },
+  "temporal_split": {
+    "strategy": "temporal",
+    "n_train": 11143,
+    "n_valid": 2387,
+    "n_test": 2389,
+    "train_ids": "omitted",
+    "valid_ids": "omitted",
+    "test_ids": "omitted"
+  },
+  "n_pairs_before_text_dedup": 21468,
+  "n_pairs_after_removing_valid_test_texts_seen_in_train": 21432,
+  "n_exact_duplicate_texts_spanning_splits_before": 21,
+  "n_exact_duplicate_texts_spanning_splits_after": 2,
+  "leakage_conversation_overlap_ok": true,
+  "notes": [
+    "Primary split is conversation-level using conservative IDs (mega multi-customer threads split by customer tweet).",
+    "Temporal split available for drift analysis; primary experiment uses conversation split.",
+    "Valid/test rows whose normalized customer_message already appears in train were removed to enforce no duplicate customer message across splits."
+  ]
+}

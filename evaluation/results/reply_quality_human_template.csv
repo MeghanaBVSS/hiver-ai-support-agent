@@ -1,0 +1,14 @@
+# Reply quality human rating sheet (structure only)
+
+Status: **STRUCTURE READY** — fill scores manually; do not treat LLM scores as ground truth.
+
+| example_id | correctness_1to5 | groundedness_1to5 | helpfulness_1to5 | brand_style_fit_1to5 | unsupported_claims_1to5 | notes |
+|---|---|---|---|---|---|---|
+|  |  |  |  |  |  |  |
+
+Definitions:
+- correctness: addresses the customer’s actual ask
+- groundedness: supported by retrieved evidence / known policy
+- helpfulness: actionable next steps
+- brand_style_fit: tone matches brand support style
+- unsupported_claims: invents facts/actions (higher = worse)

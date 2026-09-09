@@ -1,0 +1,144 @@
+{
+  "status": "OBSERVED",
+  "golden_n": 199,
+  "note": "Flags can co-occur; percentages are not mutually exclusive.",
+  "modes": [
+    {
+      "failure_mode": "Escalation disagreement (85 over-escalate FP + 6 under-escalate FN)",
+      "flag_key": "escalation_disagreement",
+      "n_flagged_on_golden": 91,
+      "over_escalation_FP": 85,
+      "under_escalation_FN": 6,
+      "pct_of_golden": 45.7,
+      "examples": [
+        {
+          "example_id": "gold_2911030",
+          "customer_message": "@hulu_support why is the app constantly pausing and buffering lately?  It's not connection because it is happening at several different locations and devices for me.  From ps4 to Android phone.",
+          "gold_intent": "playback_error",
+          "pred_intent": "playback_error",
+          "gold_escalate": false,
+          "pred_escalate": true
+        },
+        {
+          "example_id": "gold_2721090",
+          "customer_message": "@hulu_support live games are pretty buffer heavy :-(",
+          "gold_intent": "playback_error",
+          "pred_intent": "playback_error",
+          "gold_escalate": false,
+          "pred_escalate": true
+        },
+        {
+          "example_id": "gold_1179249",
+          "customer_message": "@hulu_support Can't watch Steelers on Hulu Live, wife is MAD, getting repeated buffer bar, no picture. On hold for 20 mins so far. Help!!",
+          "gold_intent": "playback_error",
+          "pred_intent": "playback_error",
+          "gold_escalate": false,
+          "pred_escalate": true
+        }
+      ]
+    },
+    {
+      "failure_mode": "Intent confusion (esp. playback vs live_tv / ambiguous)",
+      "flag_key": "intent_confusion",
+      "n_flagged_on_golden": 61,
+      "pct_of_golden": 30.7,
+      "examples": [
+        {
+          "example_id": "gold_2623567",
+          "customer_message": "@hulu_support got this \u201c https://t.co/7YVDkNKOMM operation error 0. \u201c Help!",
+          "gold_intent": "playback_error",
+          "pred_intent": "other_ambiguous",
+          "gold_escalate": false,
+          "pred_escalate": true
+        },
+        {
+          "example_id": "gold_1372321",
+          "customer_message": "@hulu_support ok...I give up. Hulu TV \"live\" is constantly buffering and is now a solid half inning behind the WS. What do I do?",
+          "gold_intent": "playback_error",
+          "pred_intent": "live_tv_issues",
+          "gold_escalate": false,
+          "pred_escalate": true
+        },
+        {
+          "example_id": "gold_1197349",
+          "customer_message": "@hulu_support Apple TV. Just a lot of buffering. Poor picture quality. And video jumps around. (Been a little better for past little while)",
+          "gold_intent": "playback_error",
+          "pred_intent": "app_device_issue",
+          "gold_escalate": false,
+          "pred_escalate": true
+        }
+      ]
+    },
+    {
+      "failure_mode": "Rare intents underperform (how_to_feature, service_outage)",
+      "flag_key": "rare_intents",
+      "n_flagged_on_golden": 34,
+      "pct_of_golden": 17.1,
+      "examples": [
+        {
+          "example_id": "gold_45990",
+          "customer_message": "@hulu_support I just wanted to know, with the basic package (limited commercials), how many screens can you watch at the same time?",
+          "gold_intent": "how_to_feature",
+          "pred_intent": "billing_subscription",
+          "gold_escalate": false,
+          "pred_escalate": true
+        },
+        {
+          "example_id": "gold_1138538",
+          "customer_message": "Keep blaming me for your service outage @115940. Fix your fucking playback failure message so you take the blame since it's *always* you.",
+          "gold_intent": "service_outage",
+          "pred_intent": "service_outage",
+          "gold_escalate": false,
+          "pred_escalate": true
+        },
+        {
+          "example_id": "gold_2209356",
+          "customer_message": "Anyone else having trouble with Hulu? Had to refresh the page 8 times to get the new episode of Bobs Burgers to play. @hulu_support Is it just me or...?",
+          "gold_intent": "service_outage",
+          "pred_intent": "content_availability",
+          "gold_escalate": false,
+          "pred_escalate": true
+        }
+      ]
+    },
+    {
+      "failure_mode": "Ambiguous / under-specified messages",
+      "flag_key": "ambiguous_messages",
+      "n_flagged_on_golden": 25,
+      "pct_of_golden": 12.6,
+      "examples": []
+    },
+    {
+      "failure_mode": "Long multi-issue messages",
+      "flag_key": "long_messages",
+      "n_flagged_on_golden": 7,
+      "pct_of_golden": 3.5,
+      "examples": [
+        {
+          "example_id": "gold_2575634",
+          "customer_message": "@115940 I\u2019ve had enough of the constant buffering and loading issues. I\u2019ve tried everything to fix it. From uninstalling &amp; reinstalling to resetting my network &amp; power cycling everything. Thought you should know of the issue again s",
+          "gold_intent": "playback_error",
+          "pred_intent": "playback_error",
+          "gold_escalate": false,
+          "pred_escalate": true
+        },
+        {
+          "example_id": "gold_2263645",
+          "customer_message": "@115940 I've been trying 2 restart a TV Program for 72hrs and I keep getting &amp; error msg. Also I keep getting the msg. \"Hulu has stopped working\". And it keeps making me log in every time I restart it even if I can't get it working on a",
+          "gold_intent": "login_account",
+          "pred_intent": "login_account",
+          "gold_escalate": true,
+          "pred_escalate": true
+        },
+        {
+          "example_id": "gold_2818057",
+          "customer_message": "Anyone else having an issue with @115940? We are trying to watch @180562 and every time we hit play, it loads a different show... Harlots, Handmaiden's Tale, The Mindy Project. It won't load Grey's. What say you @hulu_support?",
+          "gold_intent": "service_outage",
+          "pred_intent": "other_ambiguous",
+          "gold_escalate": false,
+          "pred_escalate": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,857 @@
+[
+  {
+    "example_id": "gold_1494174",
+    "customer_message": "@hulu_support WHY IS BASKETBALL WIVES NOT ON HERE, I LITERALLY SUBSCRIBED FOR THAT IM SO DONE",
+    "retrieved_evidence": [
+      {
+        "case_id": "case_670830",
+        "similarity": 0.5597051566994087,
+        "customer_message": "@hulu_support For reference. https://t.co/VWl4AOn4Mp",
+        "support_response": "@280027 Apologies, Rob! Our team is looking into this error. Do you notice any improvement after: https://t.co/CoMmEWkQqX?",
+        "metadata": {
+          "conversation_id": "root_670830",
+          "intent": "other_ambiguous",
+          "timestamp": "",
+          "customer_tweet_id": "670830",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_819833",
+        "similarity": 0.5378350265358665,
+        "customer_message": "@hulu_support what should i do? https://t.co/TL4ynlEWNh",
+        "support_response": "@315290 Yikes! Please give these steps a shot: https://t.co/C3IOhQGizS. If the error persists, follow up here: https://t.co/6YdK7bvQN7.",
+        "metadata": {
+          "conversation_id": "root_819833",
+          "intent": "other_ambiguous",
+          "timestamp": "",
+          "customer_tweet_id": "819833",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_887336",
+        "similarity": 0.5378350265358665,
+        "customer_message": "@hulu_support No it's not that :(",
+        "support_response": "@330684 Hmm... Do you happen to recall a show/ep it aired during? Once we have more details, we're happy to see if we can track it down.",
+        "metadata": {
+          "conversation_id": "root_887340",
+          "intent": "other_ambiguous",
+          "timestamp": "",
+          "customer_tweet_id": "887336",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      }
+    ],
+    "candidate_reply": "I'm escalating this to a Hulu specialist because: ambiguous_request. A human agent can take a closer look with your account context.",
+    "human_groundedness": 5,
+    "judge_groundedness": 1,
+    "difference": -4,
+    "escalation_decision": true,
+    "escalation_reason": "ambiguous_request",
+    "system_escalated_from_reply": true,
+    "evidence_strength": 0.5491773243693244,
+    "top_similarity": 0.5597051566994087
+  },
+  {
+    "example_id": "gold_815865",
+    "customer_message": "@hulu_support Hi! I'm not seeing episode 5, season 6 of @19606 yet. Shouldn't it be available already? Past midnight on a Tuesday.",
+    "retrieved_evidence": [
+      {
+        "case_id": "case_1215997",
+        "similarity": 0.6633286223016833,
+        "customer_message": "@hulu_support Hi, why is #TheBrave episode 5 not on Hulu yet?? It aired last night. )-:",
+        "support_response": "@405332 Apologies for any frustration\u2014our team is currently looking into this! Keep the show in your Watchlist/My Stuff for all updates.",
+        "metadata": {
+          "conversation_id": "root_1215997",
+          "intent": "content_availability",
+          "timestamp": "",
+          "customer_tweet_id": "1215997",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_2801277",
+        "similarity": 0.6579340144323726,
+        "customer_message": "@hulu_support Hi,  why isn't there a season 1 for Lethal Weapon?",
+        "support_response": "@781468 Hey Nancy! Our rights allow us to offer episodes from the current season. We'll express the interest in seeing S1 join us. \ud83d\udc4d\ud83c\udffb",
+        "metadata": {
+          "conversation_id": "root_2801277",
+          "intent": "content_availability",
+          "timestamp": "",
+          "customer_tweet_id": "2801277",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_419359",
+        "similarity": 0.585212295961911,
+        "customer_message": "@hulu_support Hi there, checking back in on this. How might I learn of any progress on this issue? Has any occurred?",
+        "support_response": "@215013 We don't have an update, but can assure you we're sensitive to the needs of each user. We'll keep sharing your input, Scott!",
+        "metadata": {
+          "conversation_id": "cust_419359",
+          "intent": "other_ambiguous",
+          "timestamp": "",
+          "customer_tweet_id": "419359",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      }
+    ],
+    "candidate_reply": "I'm escalating this to a Hulu specialist because: conflicting_evidence. A human agent can take a closer look with your account context.",
+    "human_groundedness": 5,
+    "judge_groundedness": 1,
+    "difference": -4,
+    "escalation_decision": true,
+    "escalation_reason": "conflicting_evidence",
+    "system_escalated_from_reply": true,
+    "evidence_strength": 0.46547420898598574,
+    "top_similarity": 0.6633286223016833
+  },
+  {
+    "example_id": "gold_870898",
+    "customer_message": "Tried out @hulu_support only because they have South Park, and it is ABSOLUTE TRASH... switching back to @116602 #sad",
+    "retrieved_evidence": [
+      {
+        "case_id": "case_2703686",
+        "similarity": 0.5853594275035767,
+        "customer_message": "where is elf??? @116602 @115940",
+        "support_response": "@759390 We don't want to be cotton-headed ninny-muggins! We'll send a Christmas-gram to the higher ups and share your request for Elf.\ud83c\udf84",
+        "metadata": {
+          "conversation_id": "root_2703686",
+          "intent": "other_ambiguous",
+          "timestamp": "",
+          "customer_tweet_id": "2703686",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_174451",
+        "similarity": 0.5107448810429558,
+        "customer_message": "@hulu_support I tried all that. My last step is reset and restore.",
+        "support_response": "@156891 Oh no! We're sorry it came to that. Did the reset and restoration fix this issue for you? We'd found switching HDMI port can help.",
+        "metadata": {
+          "conversation_id": "cust_174451",
+          "intent": "other_ambiguous",
+          "timestamp": "",
+          "customer_tweet_id": "174451",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_525081",
+        "similarity": 0.5091779788793092,
+        "customer_message": "@115940 @116602 y'all need more novelas",
+        "support_response": "@163794 Any particular titles you would like to see, Jen? We're always happy to pass along specific requests to our content team. \ud83d\udc9a",
+        "metadata": {
+          "conversation_id": "root_525081",
+          "intent": "other_ambiguous",
+          "timestamp": "",
+          "customer_tweet_id": "525081",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      }
+    ],
+    "candidate_reply": "I'm escalating this to a Hulu specialist because: low_intent_confidence. A human agent can take a closer look with your account context.",
+    "human_groundedness": 5,
+    "judge_groundedness": 1,
+    "difference": -4,
+    "escalation_decision": true,
+    "escalation_reason": "low_intent_confidence",
+    "system_escalated_from_reply": true,
+    "evidence_strength": 0.5684873364340547,
+    "top_similarity": 0.5853594275035767
+  },
+  {
+    "example_id": "gold_45990",
+    "customer_message": "@hulu_support I just wanted to know, with the basic package (limited commercials), how many screens can you watch at the same time?",
+    "retrieved_evidence": [
+      {
+        "case_id": "case_357110",
+        "similarity": 0.557331476867405,
+        "customer_message": "@hulu_support I just bought Hulu (No Commercials) with Live TV $43.99/mo - but all I watch including reruns has commercials - why?",
+        "support_response": "@200796 Like traditional broadcast TV, our live service will have ad breaks. Though, On-Demand content should not: https://t.co/8wrwlQWDIl.",
+        "metadata": {
+          "conversation_id": "root_357110",
+          "intent": "billing_subscription",
+          "timestamp": "",
+          "customer_tweet_id": "357110",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_141914",
+        "similarity": 0.5539036750396147,
+        "customer_message": "@hulu_support I just waited the allotted time...thanks",
+        "support_response": "@148033 Got it. If you need a hand with anything else, please don't hesitate to reach back out. We're be happy to help. \ud83d\udc4d\ud83c\udffd",
+        "metadata": {
+          "conversation_id": "root_141915",
+          "intent": "other_ambiguous",
+          "timestamp": "",
+          "customer_tweet_id": "141914",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_2982128",
+        "similarity": 0.5161638671114155,
+        "customer_message": ".@115940 be breaking down all the time during commercials...",
+        "support_response": "@224385 Oh no! Thanks for reaching out about this, Micah. Can you let us know what you're watching when this happens, and which device(s) you use to stream? The more details you provide, the better we'll be able to help. For now, let's start with: https://t.co/HXpLyTU79x.",
+        "metadata": {
+          "conversation_id": "root_2982128",
+          "intent": "billing_subscription",
+          "timestamp": "",
+          "customer_tweet_id": "2982128",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      }
+    ],
+    "candidate_reply": "I'm escalating this to a Hulu specialist because: billing_refund. A human agent can take a closer look with your account context.",
+    "human_groundedness": 5,
+    "judge_groundedness": 1,
+    "difference": -4,
+    "escalation_decision": true,
+    "escalation_reason": "billing_refund",
+    "system_escalated_from_reply": true,
+    "evidence_strength": 0.4655801871777603,
+    "top_similarity": 0.557331476867405
+  },
+  {
+    "example_id": "gold_880253",
+    "customer_message": "@hulu_support where Can I have an open dialog with tech support? My @129764 times out so quick pausing and receive a lot of errors. #sos",
+    "retrieved_evidence": [
+      {
+        "case_id": "case_949697",
+        "similarity": 0.6480368206106729,
+        "customer_message": "@hulu_support Already chatting with tech support",
+        "support_response": "@172964 Thanks for letting us know! If you need assistance with anything else, don't hesitate to send a tweet our way. \ud83d\udc9a",
+        "metadata": {
+          "conversation_id": "root_945912",
+          "intent": "other_ambiguous",
+          "timestamp": "",
+          "customer_tweet_id": "949697",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_1274635",
+        "similarity": 0.6260693884654369,
+        "customer_message": "@hulu_support Your support person was a joke.",
+        "support_response": "@418366 That's not the experience we like to hear about! Please send us a DM us with the email and billing zip code on the account.",
+        "metadata": {
+          "conversation_id": "root_1274641",
+          "intent": "other_ambiguous",
+          "timestamp": "",
+          "customer_tweet_id": "1274635",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_2974734",
+        "similarity": 0.5859930544082936,
+        "customer_message": "@hulu_support Our hulu Has not worked for over a month. i have reached out many times woth no support. how do i get hulu support",
+        "support_response": "@820406 Apologies for the continued trouble, Brett! We'd love to help here, or we're also available via phone/chat for real-time assistance: https://t.co/6YdK7bvQN7. Can you let us know precisely what is going on? The more details you provide, the better we'll be able to assist.",
+        "metadata": {
+          "conversation_id": "root_2974734",
+          "intent": "how_to_feature",
+          "timestamp": "",
+          "customer_tweet_id": "2974734",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      }
+    ],
+    "candidate_reply": "I'm escalating this to a Hulu specialist because: ambiguous_request. A human agent can take a closer look with your account context.",
+    "human_groundedness": 5,
+    "judge_groundedness": 1,
+    "difference": -4,
+    "escalation_decision": true,
+    "escalation_reason": "ambiguous_request",
+    "system_escalated_from_reply": true,
+    "evidence_strength": 0.5042175910766168,
+    "top_similarity": 0.6480368206106729
+  },
+  {
+    "example_id": "gold_2759437",
+    "customer_message": "@hulu_support No. I\u2019m unsound watch espn cause Hulu keeps falling apart",
+    "retrieved_evidence": [
+      {
+        "case_id": "case_1528841",
+        "similarity": 0.6468447555152429,
+        "customer_message": "I can\u2019t watch till you get on @115940 an @202320 keeps ignoring the question on when your show will be on Hulu. https://t.co/s22dehWXxP",
+        "support_response": "@474647 Hey Rob! We don't have the rights to stream this show at this time, but we'd be happy to share your request with our team.",
+        "metadata": {
+          "conversation_id": "root_1528841",
+          "intent": "other_ambiguous",
+          "timestamp": "",
+          "customer_tweet_id": "1528841",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_2737370",
+        "similarity": 0.5835402988621643,
+        "customer_message": "@hulu_support 1.\nIt wont let me watch shows. It keeps saying someone is watching hulu but no one is !\n2. It keeps buffering every 3 seconds\n3. Every time i watch live tv on the actual tv &amp; I hit \u201clive\u201d it never works. It always plays from the beginning",
+        "support_response": "@511834 For buffering, were the steps provided of any help? For #3 this sounds like something we're looking into. Which device is used?",
+        "metadata": {
+          "conversation_id": "root_2737373",
+          "intent": "live_tv_issues",
+          "timestamp": "",
+          "customer_tweet_id": "2737370",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_1668659",
+        "similarity": 0.5586237434346368,
+        "customer_message": "hulu keeps on crashing on my phone uhh @hulu_support y\u2019all should uhh fix that",
+        "support_response": "@508136 Uh oh! What OS is your phone? Do you receive an error when this occurs? Start by uninstalling/reinstalling our app. Any change?",
+        "metadata": {
+          "conversation_id": "root_1668659",
+          "intent": "other_ambiguous",
+          "timestamp": "",
+          "customer_tweet_id": "1668659",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      }
+    ],
+    "candidate_reply": "I'm escalating this to a Hulu specialist because: low_intent_confidence. A human agent can take a closer look with your account context.",
+    "human_groundedness": 5,
+    "judge_groundedness": 1,
+    "difference": -4,
+    "escalation_decision": true,
+    "escalation_reason": "low_intent_confidence",
+    "system_escalated_from_reply": true,
+    "evidence_strength": 0.5083106877670065,
+    "top_similarity": 0.6468447555152429
+  },
+  {
+    "example_id": "gold_2596041",
+    "customer_message": "@hulu_support hello hulu, i have hulu plus yet everytime i login with my credentials it pops up as a basic hulu account.??? why",
+    "retrieved_evidence": [
+      {
+        "case_id": "case_654048",
+        "similarity": 0.629162276266238,
+        "customer_message": "@275588 What's hulu?",
+        "support_response": "@275587 Hi there! We're a digital streaming service for on-demand (https://t.co/3q8nSuKwib) and Live (https://t.co/O9QhZdLbxw) content.",
+        "metadata": {
+          "conversation_id": "root_654048",
+          "intent": "other_ambiguous",
+          "timestamp": "",
+          "customer_tweet_id": "654048",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_454480",
+        "similarity": 0.6259532907736982,
+        "customer_message": "@hulu_support can't login to my account. Called Hulu and sprint, nothing solved",
+        "support_response": "@222858 We're sorry to hear about the trouble, Steve! What happens when you try to login? Are you seeing any error messages? Let us know more details so we can better assist. \ud83d\udc4d\ud83c\udffb",
+        "metadata": {
+          "conversation_id": "root_454480",
+          "intent": "login_account",
+          "timestamp": "",
+          "customer_tweet_id": "454480",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_2145385",
+        "similarity": 0.5461930171536967,
+        "customer_message": "@hulu_support I cannot get into my Hulu account on my smartphone. What's up",
+        "support_response": "@630702 Sorry to hear about the trouble, Suda! If you're able to login elsewhere with the info, reach out: https://t.co/6YdK7bvQN7",
+        "metadata": {
+          "conversation_id": "root_2145385",
+          "intent": "other_ambiguous",
+          "timestamp": "",
+          "customer_tweet_id": "2145385",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      }
+    ],
+    "candidate_reply": "I'm escalating this to a Hulu specialist because: account_specific. A human agent can take a closer look with your account context.",
+    "human_groundedness": 5,
+    "judge_groundedness": 1,
+    "difference": -4,
+    "escalation_decision": true,
+    "escalation_reason": "account_specific",
+    "system_escalated_from_reply": true,
+    "evidence_strength": 0.4906881445170642,
+    "top_similarity": 0.629162276266238
+  },
+  {
+    "example_id": "gold_467845",
+    "customer_message": "@hulu_support My bad, I did miss the reply. I have yet to access a show that successfully links from the tv app to Hulu. Kinda stinks",
+    "retrieved_evidence": [
+      {
+        "case_id": "case_368855",
+        "similarity": 0.48964122628215107,
+        "customer_message": "@115940 the connection between the tvOS TV app and the Hulu app is completely broken. Links are incorrect, new shows also not found from https://t.co/rvdiMtY2vI, even launching the Hulu app from https://t.co/rvdiMtY2vI currently opens the App Store first\u2026 :(",
+        "support_response": "@203393 Apologies! This is a known issue our team is investigating. For now, you can still watch all of our content from the Hulu app.",
+        "metadata": {
+          "conversation_id": "root_368855",
+          "intent": "other_ambiguous",
+          "timestamp": "",
+          "customer_tweet_id": "368855",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_414486",
+        "similarity": 0.4850919800624142,
+        "customer_message": "@hulu_support It's bad again tonight",
+        "support_response": "@543332 Our apologies, Timothy. We're looking into similar reports. What device is in use? Let us know if: https://t.co/HXpLyTU79x helps.",
+        "metadata": {
+          "conversation_id": "cust_414486",
+          "intent": "other_ambiguous",
+          "timestamp": "",
+          "customer_tweet_id": "414486",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_411742",
+        "similarity": 0.4527774831813969,
+        "customer_message": "@hulu_support I have NO idea. It\u2019s a Roku TV. I install the Hulu app pushed from their site. Live TV thru this app...stinks. That\u2019s all I know. Sorry!",
+        "support_response": "@213225 Were the steps of any help? Also, if possible, can you provide us a photo of the missing images/graphics?",
+        "metadata": {
+          "conversation_id": "cust_411742",
+          "intent": "live_tv_issues",
+          "timestamp": "",
+          "customer_tweet_id": "411742",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      }
+    ],
+    "candidate_reply": "I'm escalating this to a Hulu specialist because: low_intent_confidence. A human agent can take a closer look with your account context.",
+    "human_groundedness": 5,
+    "judge_groundedness": 1,
+    "difference": -4,
+    "escalation_decision": true,
+    "escalation_reason": "low_intent_confidence",
+    "system_escalated_from_reply": true,
+    "evidence_strength": 0.4820568161317135,
+    "top_similarity": 0.48964122628215107
+  },
+  {
+    "example_id": "gold_199210",
+    "customer_message": "@hulu_support The Purge: Election Year is showing up on my Hulu app but not my tv. It doesn\u2019t say it\u2019s part of the HBO preview weekend. Help",
+    "retrieved_evidence": [
+      {
+        "case_id": "case_368855",
+        "similarity": 0.542675256946503,
+        "customer_message": "@115940 the connection between the tvOS TV app and the Hulu app is completely broken. Links are incorrect, new shows also not found from https://t.co/rvdiMtY2vI, even launching the Hulu app from https://t.co/rvdiMtY2vI currently opens the App Store first\u2026 :(",
+        "support_response": "@203393 Apologies! This is a known issue our team is investigating. For now, you can still watch all of our content from the Hulu app.",
+        "metadata": {
+          "conversation_id": "root_368855",
+          "intent": "other_ambiguous",
+          "timestamp": "",
+          "customer_tweet_id": "368855",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_2926751",
+        "similarity": 0.5104336523467284,
+        "customer_message": "@hulu_support That doesn't help me it only talks for Hulu",
+        "support_response": "@809752 It may only be enabled for our app. If disabling it following the steps provided doesn't do the trick, follow up here: https://t.co/6YdK7bvQN7.",
+        "metadata": {
+          "conversation_id": "root_2926752",
+          "intent": "other_ambiguous",
+          "timestamp": "",
+          "customer_tweet_id": "2926751",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_1755809",
+        "similarity": 0.4855480043288256,
+        "customer_message": "@hulu_support @528732 I can confirm this. Just bought a new Samsung TV this week, and 4x3 content is stretched to 16x9 in the Hulu app. \nThe Hulu app is also your older UI.",
+        "support_response": "@457534 Apologies, Ashley! Please chat w/ us here: https://t.co/6YdK7bvQN7 so we can gather a few more details to further investigate.",
+        "metadata": {
+          "conversation_id": "root_1755810",
+          "intent": "app_device_issue",
+          "timestamp": "",
+          "customer_tweet_id": "1755809",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      }
+    ],
+    "candidate_reply": "I'm escalating this to a Hulu specialist because: low_intent_confidence. A human agent can take a closer look with your account context.",
+    "human_groundedness": 5,
+    "judge_groundedness": 1,
+    "difference": -4,
+    "escalation_decision": true,
+    "escalation_reason": "low_intent_confidence",
+    "system_escalated_from_reply": true,
+    "evidence_strength": 0.46477258062124227,
+    "top_similarity": 0.542675256946503
+  },
+  {
+    "example_id": "gold_1461313",
+    "customer_message": "@hulu_support Thank you &amp; I do love the movies &amp; classic series",
+    "retrieved_evidence": [
+      {
+        "case_id": "case_1532607",
+        "similarity": 0.6068623718400735,
+        "customer_message": "@hulu_support Thank you!!!!!",
+        "support_response": "@475370 Good morning! We're happy to report this issue is now resolved. If there's anything else we can assist you with, let us know.",
+        "metadata": {
+          "conversation_id": "root_1532608",
+          "intent": "other_ambiguous",
+          "timestamp": "",
+          "customer_tweet_id": "1532607",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_1754906",
+        "similarity": 0.6068623718400735,
+        "customer_message": "@hulu_support Thank you !",
+        "support_response": "@528518 You're very welcome! If you have any other questions or feedback, feel free to send them our way! \ud83d\udc9a",
+        "metadata": {
+          "conversation_id": "root_1754907",
+          "intent": "other_ambiguous",
+          "timestamp": "",
+          "customer_tweet_id": "1754906",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_414434",
+        "similarity": 0.6068623718400735,
+        "customer_message": "@hulu_support It's back - thank you",
+        "support_response": "@580997 Apologies for the delay! We're glad to hear that all has been restored. We'll be here if you need anything else! #happystreaming",
+        "metadata": {
+          "conversation_id": "cust_414434",
+          "intent": "other_ambiguous",
+          "timestamp": "",
+          "customer_tweet_id": "414434",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      }
+    ],
+    "candidate_reply": "I'm escalating this to a Hulu specialist because: ambiguous_request. A human agent can take a closer look with your account context.",
+    "human_groundedness": 5,
+    "judge_groundedness": 1,
+    "difference": -4,
+    "escalation_decision": true,
+    "escalation_reason": "ambiguous_request",
+    "system_escalated_from_reply": true,
+    "evidence_strength": 0.5700289487880936,
+    "top_similarity": 0.6068623718400735
+  },
+  {
+    "example_id": "gold_1372321",
+    "customer_message": "@hulu_support ok...I give up. Hulu TV \"live\" is constantly buffering and is now a solid half inning behind the WS. What do I do?",
+    "retrieved_evidence": [
+      {
+        "case_id": "case_310110",
+        "similarity": 0.5621463519381904,
+        "customer_message": "@hulu_support Ok thanks alot",
+        "support_response": "@190044 You're welcome, Tom! If you ever need anything else, we'll be here to offer support. #happystreaming",
+        "metadata": {
+          "conversation_id": "root_310111",
+          "intent": "other_ambiguous",
+          "timestamp": "",
+          "customer_tweet_id": "310110",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_549963",
+        "similarity": 0.5271050189281017,
+        "customer_message": "@hulu_support Hulu Live TV Fox is apparently down.  Any ETA on when it\u2019s going to be up?  Wanting to see OK/TCU!",
+        "support_response": "@248085 Sorry to hear about the trouble, Dustin. What device is this on and what does the full error message read? What zip code are you in? Does this continue after unplugging the device, modem, and router for 2-3 mins? We're here to help!",
+        "metadata": {
+          "conversation_id": "root_549963",
+          "intent": "live_tv_issues",
+          "timestamp": "",
+          "customer_tweet_id": "549963",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_501385",
+        "similarity": 0.5185039778339976,
+        "customer_message": "@hulu_support Ok, it's not coming up on my Xbox, just standard Hulu.",
+        "support_response": "@234785 Got it, thanks for getting back to us! Is this an Xbox One or 360? Let's also double check: https://t.co/BLlbZHUTHB to make sure there aren't any alerts. Do you see the live options from Browse&gt; Networks&gt; Live? Do you get a particular error message or behavior?",
+        "metadata": {
+          "conversation_id": "root_501386",
+          "intent": "other_ambiguous",
+          "timestamp": "",
+          "customer_tweet_id": "501385",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      }
+    ],
+    "candidate_reply": "I'm escalating this to a Hulu specialist because: conflicting_evidence. A human agent can take a closer look with your account context.",
+    "human_groundedness": 5,
+    "judge_groundedness": 1,
+    "difference": -4,
+    "escalation_decision": true,
+    "escalation_reason": "conflicting_evidence",
+    "system_escalated_from_reply": true,
+    "evidence_strength": 0.47557885170130854,
+    "top_similarity": 0.5621463519381904
+  },
+  {
+    "example_id": "gold_1377359",
+    "customer_message": "@hulu_support The website is not allowing me to stream their shows. Anyone else having this problem??",
+    "retrieved_evidence": [
+      {
+        "case_id": "case_312297",
+        "similarity": 0.47349563534483174,
+        "customer_message": "@hulu_support So, problem gone, but it was... weird.",
+        "support_response": "@190580 Agreed! That's definitely odd. If it happens again try rebooting your device or navigating to Browse &gt; Networks &gt; A-Z &gt; TBS.",
+        "metadata": {
+          "conversation_id": "root_312296",
+          "intent": "other_ambiguous",
+          "timestamp": "",
+          "customer_tweet_id": "312297",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_2263525",
+        "similarity": 0.41346686334652133,
+        "customer_message": "@hulu_support It's been a week since problem first started.  A few shows, sporadically, show updates.  Bizarre.",
+        "support_response": "@658946 Our team has been working to push out a fix as quickly as possible. If you take a look today, you may see a bit of a difference.",
+        "metadata": {
+          "conversation_id": "root_2263518",
+          "intent": "other_ambiguous",
+          "timestamp": "",
+          "customer_tweet_id": "2263525",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_2100362",
+        "similarity": 0.41008323204252983,
+        "customer_message": "@hulu_support We liked having the 'album art' style picture grid for the shows rather than just text.",
+        "support_response": "@139212 Did you transfer your Watchlist? That content can be found in My Stuff. Click show thumbnail &gt; Ep tab to view eps by season.",
+        "metadata": {
+          "conversation_id": "root_2100361",
+          "intent": "other_ambiguous",
+          "timestamp": "",
+          "customer_tweet_id": "2100362",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      }
+    ],
+    "candidate_reply": "I'm escalating this to a Hulu specialist because: ambiguous_request. A human agent can take a closer look with your account context.",
+    "human_groundedness": 5,
+    "judge_groundedness": 1,
+    "difference": -4,
+    "escalation_decision": true,
+    "escalation_reason": "ambiguous_request",
+    "system_escalated_from_reply": true,
+    "evidence_strength": 0.4870715381704377,
+    "top_similarity": 0.47349563534483174
+  },
+  {
+    "example_id": "gold_1436312",
+    "customer_message": "anyone else having @115940 issue not loading today? @hulu_support",
+    "retrieved_evidence": [
+      {
+        "case_id": "case_796908",
+        "similarity": 0.6151841429927964,
+        "customer_message": "@hulu_support Clearly a @115940 issue.",
+        "support_response": "@310041 Sorry to hear that didn't work, Carl. We'll be forwarding your experience to our team so we can continue to make improvements.",
+        "metadata": {
+          "conversation_id": "root_796905",
+          "intent": "other_ambiguous",
+          "timestamp": "",
+          "customer_tweet_id": "796908",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_1532603",
+        "similarity": 0.5434253770416386,
+        "customer_message": "@198475 @hulu_support @168333 I am having the same issue. Unwatchable.",
+        "support_response": "@251837 Our apologies for the trouble, Paul! Let's try: https://t.co/HXpLyTU79x. Call/chat  us if not fixed (https://t.co/6YdK7bvQN7)",
+        "metadata": {
+          "conversation_id": "root_1532604",
+          "intent": "other_ambiguous",
+          "timestamp": "",
+          "customer_tweet_id": "1532603",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_460326",
+        "similarity": 0.5329575162387468,
+        "customer_message": "@hulu_support Seems to be issue. https://t.co/vvYKWxd8uv",
+        "support_response": "@224378 Sorry about that, Spike! Our team is working to add more affiliates across the country, so we'll be sure to share the interest in adding ABC 7 (WJLA) for the future!",
+        "metadata": {
+          "conversation_id": "root_460322",
+          "intent": "other_ambiguous",
+          "timestamp": "",
+          "customer_tweet_id": "460326",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      }
+    ],
+    "candidate_reply": "I'm escalating this to a Hulu specialist because: ambiguous_request. A human agent can take a closer look with your account context.",
+    "human_groundedness": 5,
+    "judge_groundedness": 1,
+    "difference": -4,
+    "escalation_decision": true,
+    "escalation_reason": "ambiguous_request",
+    "system_escalated_from_reply": true,
+    "evidence_strength": 0.5388055376674251,
+    "top_similarity": 0.6151841429927964
+  },
+  {
+    "example_id": "gold_284187",
+    "customer_message": "@hulu_support for some reason i cannot login into my accoun! Help!!",
+    "retrieved_evidence": [
+      {
+        "case_id": "case_85966",
+        "similarity": 0.6803760789761595,
+        "customer_message": "@hulu_support i created an account yesterday. for some reason my passwords are not working. i have rest three times now and still can't login. can you help me out?",
+        "support_response": "@134773 Sure can! For 1:1 assistance with this, please give us a call at the number here: https://t.co/LkhXOWWq74. We'll take a look and see what's going on.",
+        "metadata": {
+          "conversation_id": "root_85966",
+          "intent": "login_account",
+          "timestamp": "",
+          "customer_tweet_id": "85966",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_464796",
+        "similarity": 0.617759968893911,
+        "customer_message": "@hulu_support any reason why we only get Dallas area commercials? We live in central Mississippi",
+        "support_response": "@225548 Sometimes removing the device from the Account and adding it again (https://t.co/bnQnpHbOSi) will improve the targeting in the app. If this still continues after, give our team a call or chat using: https://t.co/6YdK7bvQN7. Hope this helps, Drew!",
+        "metadata": {
+          "conversation_id": "root_464796",
+          "intent": "billing_subscription",
+          "timestamp": "",
+          "customer_tweet_id": "464796",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_417187",
+        "similarity": 0.5993169740490321,
+        "customer_message": ".@hulu_support any reason I have to confirm my profile every time I start app....\nI only have the one profile....",
+        "support_response": "@214534 Apologies, Michael! We'll be sure to share your input with our team. We're continuing to make improvements!",
+        "metadata": {
+          "conversation_id": "root_417187",
+          "intent": "other_ambiguous",
+          "timestamp": "",
+          "customer_tweet_id": "417187",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      }
+    ],
+    "candidate_reply": "I'm escalating this to a Hulu specialist because: account_specific. A human agent can take a closer look with your account context.",
+    "human_groundedness": 5,
+    "judge_groundedness": 1,
+    "difference": -4,
+    "escalation_decision": true,
+    "escalation_reason": "account_specific",
+    "system_escalated_from_reply": true,
+    "evidence_strength": 0.5175240441539931,
+    "top_similarity": 0.6803760789761595
+  },
+  {
+    "example_id": "gold_2363665",
+    "customer_message": "@hulu_support so once again your business has mess up my account how is it every month it's mess up do y'all not know how to fix this if I wanted to go on there &amp; fix it every month I wouldn't have set it up for every month. Ugh getting on my last nerves",
+    "retrieved_evidence": [
+      {
+        "case_id": "case_2632381",
+        "similarity": 0.5897380757137249,
+        "customer_message": "Can I pay for a year of service rather than month to month @115940 ?",
+        "support_response": "@743275 Interested in paying 365 days up front? Check out a Hulu gift card as an option: https://t.co/j4R0M9mXFI! We hope that helps. \u2705",
+        "metadata": {
+          "conversation_id": "root_2632381",
+          "intent": "other_ambiguous",
+          "timestamp": "",
+          "customer_tweet_id": "2632381",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_1009684",
+        "similarity": 0.5303514740882624,
+        "customer_message": "@hulu_support I solved it. I forgot to pay this month \ud83d\ude10",
+        "support_response": "@__a__p___ Ah! Thanks for keeping us in the loop. Glad to hear things are good to go now! Let us know if we can help further down the line.",
+        "metadata": {
+          "conversation_id": "root_1009685",
+          "intent": "other_ambiguous",
+          "timestamp": "",
+          "customer_tweet_id": "1009684",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_2491788",
+        "similarity": 0.5007928455778068,
+        "customer_message": "@hulu_support almost a month after the update and still have to reload 9x per episode. How may restarts you gonna tell me to do? Please fix!",
+        "support_response": "@480681 Uh oh! Have you had a chance to try: https://t.co/wAoEicy9CF? If no luck, reach out via phone or chat: https://t.co/6YdK7bvQN7.",
+        "metadata": {
+          "conversation_id": "root_2491788",
+          "intent": "other_ambiguous",
+          "timestamp": "",
+          "customer_tweet_id": "2491788",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      }
+    ],
+    "candidate_reply": "I'm escalating this to a Hulu specialist because: billing_refund. A human agent can take a closer look with your account context.",
+    "human_groundedness": 5,
+    "judge_groundedness": 1,
+    "difference": -4,
+    "escalation_decision": true,
+    "escalation_reason": "billing_refund",
+    "system_escalated_from_reply": true,
+    "evidence_strength": 0.5653163167436231,
+    "top_similarity": 0.5897380757137249
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "target_size_min": 150,
+  "target_size_max": 250,
+  "strata": {
+    "intents": "Approximate equal allocation across proposed intents; oversample rare intents if needed for minimum support.",
+    "common_vs_uncommon": "Include both high-frequency issue templates and long-tail cases.",
+    "ambiguous": "Reserve ~10\u201315% for multi-intent / unclear asks.",
+    "difficult": "Include noisy text, heavy slang, and partial context.",
+    "escalation_worthy": "Reserve ~20% for billing/security/account-specific cases.",
+    "message_length": "Stratify short / medium / long customer messages.",
+    "multi_intent": "Include examples where two intents co-occur when present."
+  },
+  "labeling_guidelines": [
+    "Labels are assigned by humans; clustering output is proposal-only.",
+    "Each example gets: intent_id (or multi-label list), escalate (bool), escalate_reason, notes, difficulty (easy/medium/hard).",
+    "Ambiguous cases may use intent_id='ambiguous' plus free-text note.",
+    "Golden examples must be isolated from train/valid/retrieval/prompt pools before any model fitting or index build.",
+    "Record annotator id and timestamp for later agreement analysis."
+  ],
+  "isolation_rules": [
+    "Remove golden conversation_ids from train/valid/test modeling sets used for fitting.",
+    "Exclude golden customer_tweet_ids from retrieval index evidence.",
+    "Do not use golden texts as few-shot prompt exemplars.",
+    "Run check_golden_contamination() in CI before evaluation."
+  ]
+}

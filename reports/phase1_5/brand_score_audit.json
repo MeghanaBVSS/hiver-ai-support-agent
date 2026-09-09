@@ -1,0 +1,524 @@
+{
+  "status": "OBSERVED",
+  "formula": "## Suitability score formula (OBSERVED / IMPLEMENTED)\n\n```\nscore =\n  0.25 * min(inbound_mentions, 5000) / 5000\n+ 0.30 * min(unique_reply_pairs, 5000) / 5000\n+ 0.15 * min(coverage, 1.0)\n+ 0.15 * min(lexical_diversity, 1.0)\n+ 0.15 * 1[inbound>=250 AND pairs>=200]\n- mega_brand_penalty\n```\n\n### Components\n| component | weight | normalization | rationale |\n|---|---|---|---|\n| inbound @brand mentions | 0.25 | min(n,5000)/5000 | enough customer volume |\n| unique reply pairs | 0.30 | min(n,5000)/5000 | retrieval + supervision fuel |\n| response coverage | 0.15 | clip to [0,1] | linkage quality |\n| lexical diversity | 0.15 | unique/inbound clipped to 1 | issue variety proxy |\n| golden feasibility gate | 0.15 | binary | can support 150\u2013250 labels |\n| mega-brand penalty | \u22120.04 / \u22120.08 | outbound>80k / >100k | avoid Amazon-scale taxonomy sprawl |\n\nCoverage may be >1 vs @mentions when brand replies to customers without a literal\n@brand string; scoring clips coverage at 1.0.\n",
+  "default_weights": {
+    "inbound_cap": 0.25,
+    "pairs_cap": 0.3,
+    "coverage": 0.15,
+    "lexical": 0.15,
+    "golden_gate": 0.15,
+    "penalty_gt_100k": 0.08,
+    "penalty_gt_80k": 0.04,
+    "cap_n": 5000.0
+  },
+  "ranking_table": [
+    {
+      "brand": "hulu_support",
+      "total_tweets": 47496,
+      "inbound": 18615,
+      "outbound": 21872,
+      "pairs": 21468,
+      "conversation_count": 15082,
+      "diversity": 0.9857,
+      "coverage_raw": 1.1533,
+      "score": 0.9978,
+      "score_recomputed": 0.997855,
+      "volume_penalty": 0.0,
+      "rank": 1
+    },
+    {
+      "brand": "sprintcare",
+      "total_tweets": 48368,
+      "inbound": 13746,
+      "outbound": 22381,
+      "pairs": 20026,
+      "conversation_count": 14754,
+      "diversity": 0.9764,
+      "coverage_raw": 1.4569,
+      "score": 0.9965,
+      "score_recomputed": 0.99646,
+      "volume_penalty": 0.0,
+      "rank": 2
+    },
+    {
+      "brand": "SpotifyCares",
+      "total_tweets": 90131,
+      "inbound": 31353,
+      "outbound": 43265,
+      "pairs": 41585,
+      "conversation_count": 29283,
+      "diversity": 0.9759,
+      "coverage_raw": 1.3263,
+      "score": 0.9964,
+      "score_recomputed": 0.996385,
+      "volume_penalty": 0.0,
+      "rank": 3
+    },
+    {
+      "brand": "Uber_Support",
+      "total_tweets": 125689,
+      "inbound": 46624,
+      "outbound": 56270,
+      "pairs": 55182,
+      "conversation_count": 42601,
+      "diversity": 0.9656,
+      "coverage_raw": 1.1836,
+      "score": 0.9948,
+      "score_recomputed": 0.99484,
+      "volume_penalty": 0.0,
+      "rank": 4
+    },
+    {
+      "brand": "TMobileHelp",
+      "total_tweets": 75018,
+      "inbound": 21964,
+      "outbound": 34317,
+      "pairs": 33837,
+      "conversation_count": 25857,
+      "diversity": 0.9619,
+      "coverage_raw": 1.5406,
+      "score": 0.9943,
+      "score_recomputed": 0.994285,
+      "volume_penalty": 0.0,
+      "rank": 5
+    },
+    {
+      "brand": "comcastcares",
+      "total_tweets": 69612,
+      "inbound": 23278,
+      "outbound": 33031,
+      "pairs": 30369,
+      "conversation_count": 24788,
+      "diversity": 0.9613,
+      "coverage_raw": 1.3046,
+      "score": 0.9942,
+      "score_recomputed": 0.994195,
+      "volume_penalty": 0.0,
+      "rank": 6
+    },
+    {
+      "brand": "AskPlayStation",
+      "total_tweets": 42666,
+      "inbound": 22263,
+      "outbound": 19098,
+      "pairs": 18650,
+      "conversation_count": 12624,
+      "diversity": 0.9651,
+      "coverage_raw": 0.8377,
+      "score": 0.9704,
+      "score_recomputed": 0.97042,
+      "volume_penalty": 0.0,
+      "rank": 7
+    },
+    {
+      "brand": "SouthwestAir",
+      "total_tweets": 64667,
+      "inbound": 35106,
+      "outbound": 28977,
+      "pairs": 28285,
+      "conversation_count": 22159,
+      "diversity": 0.9883,
+      "coverage_raw": 0.8057,
+      "score": 0.9691,
+      "score_recomputed": 0.9691,
+      "volume_penalty": 0.0,
+      "rank": 8
+    },
+    {
+      "brand": "Delta",
+      "total_tweets": 87882,
+      "inbound": 44836,
+      "outbound": 42253,
+      "pairs": 36134,
+      "conversation_count": null,
+      "diversity": 0.9832,
+      "coverage_raw": 0.8059,
+      "score": 0.9684,
+      "score_recomputed": 0.968365,
+      "volume_penalty": 0.0,
+      "rank": 9
+    },
+    {
+      "brand": "British_Airways",
+      "total_tweets": 60457,
+      "inbound": 30856,
+      "outbound": 29361,
+      "pairs": 24084,
+      "conversation_count": null,
+      "diversity": 0.9926,
+      "coverage_raw": 0.7805,
+      "score": 0.966,
+      "score_recomputed": 0.965965,
+      "volume_penalty": 0.0,
+      "rank": 10
+    },
+    {
+      "brand": "Tesco",
+      "total_tweets": 73514,
+      "inbound": 33964,
+      "outbound": 38573,
+      "pairs": 25282,
+      "conversation_count": null,
+      "diversity": 0.9857,
+      "coverage_raw": 0.7444,
+      "score": 0.9595,
+      "score_recomputed": 0.959515,
+      "volume_penalty": 0.0,
+      "rank": 11
+    },
+    {
+      "brand": "AmericanAir",
+      "total_tweets": 86830,
+      "inbound": 49516,
+      "outbound": 36764,
+      "pairs": 36457,
+      "conversation_count": null,
+      "diversity": 0.9905,
+      "coverage_raw": 0.7363,
+      "score": 0.959,
+      "score_recomputed": 0.95902,
+      "volume_penalty": 0.0,
+      "rank": 12
+    },
+    {
+      "brand": "XboxSupport",
+      "total_tweets": 54461,
+      "inbound": 28124,
+      "outbound": 24557,
+      "pairs": 20213,
+      "conversation_count": null,
+      "diversity": 0.9797,
+      "coverage_raw": 0.7187,
+      "score": 0.9548,
+      "score_recomputed": 0.95476,
+      "volume_penalty": 0.0,
+      "rank": 13
+    },
+    {
+      "brand": "AmazonHelp",
+      "total_tweets": 367667,
+      "inbound": 135160,
+      "outbound": 169840,
+      "pairs": 154976,
+      "conversation_count": null,
+      "diversity": 0.9735,
+      "coverage_raw": 1.1466,
+      "score": 0.916,
+      "score_recomputed": 0.916025,
+      "volume_penalty": 0.08,
+      "rank": 14
+    },
+    {
+      "brand": "AppleSupport",
+      "total_tweets": 233216,
+      "inbound": 97896,
+      "outbound": 106860,
+      "pairs": 106623,
+      "conversation_count": null,
+      "diversity": 0.9703,
+      "coverage_raw": 1.0891,
+      "score": 0.9155,
+      "score_recomputed": 0.915545,
+      "volume_penalty": 0.08,
+      "rank": 15
+    }
+  ],
+  "sensitivity": {
+    "default": {
+      "top5": [
+        {
+          "brand": "hulu_support",
+          "score": 0.997855
+        },
+        {
+          "brand": "sprintcare",
+          "score": 0.99646
+        },
+        {
+          "brand": "SpotifyCares",
+          "score": 0.996385
+        },
+        {
+          "brand": "Uber_Support",
+          "score": 0.99484
+        },
+        {
+          "brand": "TMobileHelp",
+          "score": 0.994285
+        }
+      ],
+      "hulu_rank": 1,
+      "top1": "hulu_support"
+    },
+    "more_pairs": {
+      "top5": [
+        {
+          "brand": "hulu_support",
+          "score": 0.997855
+        },
+        {
+          "brand": "sprintcare",
+          "score": 0.99646
+        },
+        {
+          "brand": "SpotifyCares",
+          "score": 0.996385
+        },
+        {
+          "brand": "Uber_Support",
+          "score": 0.99484
+        },
+        {
+          "brand": "TMobileHelp",
+          "score": 0.994285
+        }
+      ],
+      "hulu_rank": 1,
+      "top1": "hulu_support"
+    },
+    "more_diversity": {
+      "top5": [
+        {
+          "brand": "hulu_support",
+          "score": 0.996425
+        },
+        {
+          "brand": "sprintcare",
+          "score": 0.9941
+        },
+        {
+          "brand": "SpotifyCares",
+          "score": 0.993975
+        },
+        {
+          "brand": "Uber_Support",
+          "score": 0.9914
+        },
+        {
+          "brand": "TMobileHelp",
+          "score": 0.990475
+        }
+      ],
+      "hulu_rank": 1,
+      "top1": "hulu_support"
+    },
+    "more_coverage": {
+      "top5": [
+        {
+          "brand": "hulu_support",
+          "score": 0.997855
+        },
+        {
+          "brand": "sprintcare",
+          "score": 0.99646
+        },
+        {
+          "brand": "SpotifyCares",
+          "score": 0.996385
+        },
+        {
+          "brand": "Uber_Support",
+          "score": 0.99484
+        },
+        {
+          "brand": "TMobileHelp",
+          "score": 0.994285
+        }
+      ],
+      "hulu_rank": 1,
+      "top1": "hulu_support"
+    },
+    "no_volume_penalty": {
+      "top5": [
+        {
+          "brand": "hulu_support",
+          "score": 0.997855
+        },
+        {
+          "brand": "sprintcare",
+          "score": 0.99646
+        },
+        {
+          "brand": "SpotifyCares",
+          "score": 0.996385
+        },
+        {
+          "brand": "AmazonHelp",
+          "score": 0.996025
+        },
+        {
+          "brand": "AppleSupport",
+          "score": 0.995545
+        }
+      ],
+      "hulu_rank": 1,
+      "top1": "hulu_support"
+    },
+    "stronger_penalty": {
+      "top5": [
+        {
+          "brand": "hulu_support",
+          "score": 0.997855
+        },
+        {
+          "brand": "sprintcare",
+          "score": 0.99646
+        },
+        {
+          "brand": "SpotifyCares",
+          "score": 0.996385
+        },
+        {
+          "brand": "Uber_Support",
+          "score": 0.99484
+        },
+        {
+          "brand": "TMobileHelp",
+          "score": 0.994285
+        }
+      ],
+      "hulu_rank": 1,
+      "top1": "hulu_support"
+    },
+    "equalish": {
+      "top5": [
+        {
+          "brand": "hulu_support",
+          "score": 0.99714
+        },
+        {
+          "brand": "sprintcare",
+          "score": 0.99528
+        },
+        {
+          "brand": "SpotifyCares",
+          "score": 0.99518
+        },
+        {
+          "brand": "Uber_Support",
+          "score": 0.99312
+        },
+        {
+          "brand": "TMobileHelp",
+          "score": 0.99238
+        }
+      ],
+      "hulu_rank": 1,
+      "top1": "hulu_support"
+    }
+  },
+  "hulu_always_rank1": true,
+  "hulu_rank_within_top3_all_settings": true,
+  "top1_set_across_settings": [
+    "hulu_support"
+  ],
+  "robustness_conclusion": "Under the Phase-1 formula with CAP=5000, many mid/large brands saturate the inbound and pairs terms, so ranking is driven mainly by clipped coverage, lexical diversity, the golden gate, and the mega-brand penalty. Across modest weight changes at CAP=5000, hulu_support remained rank-1 in this candidate set (OBSERVED). However, if CAP is raised (20000\u2013100000), volume-heavy brands can overtake Hulu \u2014 so Hulu is robust under the original capped design, but NOT robust to removing/raising the cap. Selection remains a heuristic.",
+  "cap_sensitivity": {
+    "5000": {
+      "top5": [
+        {
+          "brand": "hulu_support",
+          "score": 0.997855
+        },
+        {
+          "brand": "sprintcare",
+          "score": 0.99646
+        },
+        {
+          "brand": "SpotifyCares",
+          "score": 0.996385
+        },
+        {
+          "brand": "Uber_Support",
+          "score": 0.99484
+        },
+        {
+          "brand": "TMobileHelp",
+          "score": 0.994285
+        }
+      ],
+      "top1": "hulu_support",
+      "hulu_rank": 1
+    },
+    "20000": {
+      "top5": [
+        {
+          "brand": "SpotifyCares",
+          "score": 0.996385
+        },
+        {
+          "brand": "Uber_Support",
+          "score": 0.99484
+        },
+        {
+          "brand": "TMobileHelp",
+          "score": 0.994285
+        },
+        {
+          "brand": "comcastcares",
+          "score": 0.994195
+        },
+        {
+          "brand": "hulu_support",
+          "score": 0.980542
+        }
+      ],
+      "top1": "SpotifyCares",
+      "hulu_rank": 5
+    },
+    "50000": {
+      "top5": [
+        {
+          "brand": "Uber_Support",
+          "score": 0.97796
+        },
+        {
+          "brand": "AmazonHelp",
+          "score": 0.916025
+        },
+        {
+          "brand": "AppleSupport",
+          "score": 0.915545
+        },
+        {
+          "brand": "AmericanAir",
+          "score": 0.875342
+        },
+        {
+          "brand": "Delta",
+          "score": 0.859349
+        }
+      ],
+      "top1": "Uber_Support",
+      "hulu_rank": 12
+    },
+    "100000": {
+      "top5": [
+        {
+          "brand": "AmazonHelp",
+          "score": 0.916025
+        },
+        {
+          "brand": "AppleSupport",
+          "score": 0.910285
+        },
+        {
+          "brand": "Uber_Support",
+          "score": 0.726946
+        },
+        {
+          "brand": "SpotifyCares",
+          "score": 0.649523
+        },
+        {
+          "brand": "AmericanAir",
+          "score": 0.642181
+        }
+      ],
+      "top1": "AmazonHelp",
+      "hulu_rank": 12
+    }
+  },
+  "hulu_robust_under_original_cap": true,
+  "hulu_robust_if_cap_raised": false
+}

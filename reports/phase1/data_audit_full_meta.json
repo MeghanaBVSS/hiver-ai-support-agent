@@ -1,0 +1,19 @@
+{
+  "status": "OBSERVED",
+  "path": "/home/mani/Music/Hiver/hiver-ai-support-agent/data/raw/twcs.csv",
+  "size_bytes": 516508641,
+  "row_count": 2811774,
+  "columns": [
+    "tweet_id",
+    "author_id",
+    "inbound",
+    "created_at",
+    "text",
+    "response_tweet_id",
+    "in_response_to_tweet_id"
+  ],
+  "inbound_true": 1537843,
+  "inbound_false": 1273931,
+  "unique_brands_outbound_non_numeric": 108,
+  "provenance": "Kaggle TWCS mirrored via HuggingFace SunidhiSriram/twcs (same schema); local path data/raw/twcs.csv"
+}

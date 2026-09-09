@@ -1,0 +1,25 @@
+{
+  "status": "OBSERVED",
+  "n_human": 50,
+  "n_judge": 50,
+  "ids_match": true,
+  "missing_human_score_fields": {
+    "human_correctness": 0,
+    "human_groundedness": 0,
+    "human_helpfulness": 0,
+    "human_escalation": 0,
+    "human_actionability": 0,
+    "human_brand_style": 0
+  },
+  "missing_judge_score_fields": {
+    "judge_correctness": 0,
+    "judge_groundedness": 0,
+    "judge_helpfulness": 0,
+    "judge_actionability": 0,
+    "judge_brand_style": 0,
+    "judge_escalation_appropriateness": 0
+  },
+  "llm_reply_blank_ok": true,
+  "score_scales": "human 1-5 integers; judge 1-5 integers",
+  "candidate_system": "human_* rates semantic_reply (Phase-2 agent); baseline_* are separate comparison columns"
+}

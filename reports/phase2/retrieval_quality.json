@@ -1,0 +1,13 @@
+{
+  "status": "OBSERVED",
+  "n": 199,
+  "top1_intent_agreement": 0.4321608040201005,
+  "top3_intent_agreement": 0.5678391959798995,
+  "similarity_mean": 0.6377402366139511,
+  "similarity_median": 0.6313016603301885,
+  "similarity_p25": 0.5572074911584306,
+  "similarity_p75": 0.6896671754355935,
+  "pct_below_evidence_threshold": 0.0,
+  "pct_duplicate_conversation_in_hits": 0.0,
+  "note": "Neighbor intent agreement is a retrieval diagnostic, not reply correctness."
+}

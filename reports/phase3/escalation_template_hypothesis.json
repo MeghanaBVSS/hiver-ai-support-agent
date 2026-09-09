@@ -1,0 +1,195 @@
+{
+  "hypothesis": "Judge interprets safe escalation as insufficiently grounded.",
+  "definition_broad": "system_escalated AND human_g>=4 AND judge_g<=2",
+  "definition_strict": "broad AND (evidence_strength<0.45 OR top_sim<0.35 OR no evidence)",
+  "n_broad": 31,
+  "n_strict_weak_evidence": 2,
+  "n_groundedness_disagreements_abs_gt_1": 44,
+  "pct_of_disagreements_broad": 0.7045454545454546,
+  "pct_of_all_examples_broad": 0.62,
+  "pct_of_escalated_examples_broad": 0.6888888888888889,
+  "evidence_supports_hypothesis": true,
+  "note": "Non-escalated within\u00b11 groundedness agreement is 1.0; escalated is ~0.02 \u2014 concentration is clear.",
+  "examples_broad": [
+    {
+      "example_id": "gold_2181625",
+      "human_groundedness": 5,
+      "judge_groundedness": 2,
+      "evidence_strength": 0.5348383376112695,
+      "top_similarity": 0.7094618628358541,
+      "weak_evidence": false,
+      "escalation_reason": "billing_refund"
+    },
+    {
+      "example_id": "gold_1494174",
+      "human_groundedness": 5,
+      "judge_groundedness": 1,
+      "evidence_strength": 0.5491773243693244,
+      "top_similarity": 0.5597051566994087,
+      "weak_evidence": false,
+      "escalation_reason": "ambiguous_request"
+    },
+    {
+      "example_id": "gold_815865",
+      "human_groundedness": 5,
+      "judge_groundedness": 1,
+      "evidence_strength": 0.46547420898598574,
+      "top_similarity": 0.6633286223016833,
+      "weak_evidence": false,
+      "escalation_reason": "conflicting_evidence"
+    },
+    {
+      "example_id": "gold_870898",
+      "human_groundedness": 5,
+      "judge_groundedness": 1,
+      "evidence_strength": 0.5684873364340547,
+      "top_similarity": 0.5853594275035767,
+      "weak_evidence": false,
+      "escalation_reason": "low_intent_confidence"
+    },
+    {
+      "example_id": "gold_45990",
+      "human_groundedness": 5,
+      "judge_groundedness": 1,
+      "evidence_strength": 0.4655801871777603,
+      "top_similarity": 0.557331476867405,
+      "weak_evidence": false,
+      "escalation_reason": "billing_refund"
+    },
+    {
+      "example_id": "gold_880253",
+      "human_groundedness": 5,
+      "judge_groundedness": 1,
+      "evidence_strength": 0.5042175910766168,
+      "top_similarity": 0.6480368206106729,
+      "weak_evidence": false,
+      "escalation_reason": "ambiguous_request"
+    },
+    {
+      "example_id": "gold_1475665",
+      "human_groundedness": 5,
+      "judge_groundedness": 2,
+      "evidence_strength": 0.5370485948735687,
+      "top_similarity": 0.5936347876101261,
+      "weak_evidence": false,
+      "escalation_reason": "ambiguous_request"
+    },
+    {
+      "example_id": "gold_2759437",
+      "human_groundedness": 5,
+      "judge_groundedness": 1,
+      "evidence_strength": 0.5083106877670065,
+      "top_similarity": 0.6468447555152429,
+      "weak_evidence": false,
+      "escalation_reason": "low_intent_confidence"
+    },
+    {
+      "example_id": "gold_1767264",
+      "human_groundedness": 5,
+      "judge_groundedness": 2,
+      "evidence_strength": 0.6169171344095835,
+      "top_similarity": 0.722611164433902,
+      "weak_evidence": false,
+      "escalation_reason": "account_specific"
+    },
+    {
+      "example_id": "gold_2596041",
+      "human_groundedness": 5,
+      "judge_groundedness": 1,
+      "evidence_strength": 0.4906881445170642,
+      "top_similarity": 0.629162276266238,
+      "weak_evidence": false,
+      "escalation_reason": "account_specific"
+    },
+    {
+      "example_id": "gold_467845",
+      "human_groundedness": 5,
+      "judge_groundedness": 1,
+      "evidence_strength": 0.4820568161317135,
+      "top_similarity": 0.48964122628215107,
+      "weak_evidence": false,
+      "escalation_reason": "low_intent_confidence"
+    },
+    {
+      "example_id": "gold_199210",
+      "human_groundedness": 5,
+      "judge_groundedness": 1,
+      "evidence_strength": 0.46477258062124227,
+      "top_similarity": 0.542675256946503,
+      "weak_evidence": false,
+      "escalation_reason": "low_intent_confidence"
+    },
+    {
+      "example_id": "gold_1461313",
+      "human_groundedness": 5,
+      "judge_groundedness": 1,
+      "evidence_strength": 0.5700289487880936,
+      "top_similarity": 0.6068623718400735,
+      "weak_evidence": false,
+      "escalation_reason": "ambiguous_request"
+    },
+    {
+      "example_id": "gold_1197349",
+      "human_groundedness": 5,
+      "judge_groundedness": 2,
+      "evidence_strength": 0.5916308517017321,
+      "top_similarity": 0.6836636288550901,
+      "weak_evidence": false,
+      "escalation_reason": "low_intent_confidence"
+    },
+    {
+      "example_id": "gold_1372321",
+      "human_groundedness": 5,
+      "judge_groundedness": 1,
+      "evidence_strength": 0.47557885170130854,
+      "top_similarity": 0.5621463519381904,
+      "weak_evidence": false,
+      "escalation_reason": "conflicting_evidence"
+    },
+    {
+      "example_id": "gold_1377359",
+      "human_groundedness": 5,
+      "judge_groundedness": 1,
+      "evidence_strength": 0.4870715381704377,
+      "top_similarity": 0.47349563534483174,
+      "weak_evidence": false,
+      "escalation_reason": "ambiguous_request"
+    },
+    {
+      "example_id": "gold_1436312",
+      "human_groundedness": 5,
+      "judge_groundedness": 1,
+      "evidence_strength": 0.5388055376674251,
+      "top_similarity": 0.6151841429927964,
+      "weak_evidence": false,
+      "escalation_reason": "ambiguous_request"
+    },
+    {
+      "example_id": "gold_1138538",
+      "human_groundedness": 5,
+      "judge_groundedness": 2,
+      "evidence_strength": 0.4585066743328642,
+      "top_similarity": 0.530468625262062,
+      "weak_evidence": false,
+      "escalation_reason": "low_intent_confidence"
+    },
+    {
+      "example_id": "gold_284187",
+      "human_groundedness": 5,
+      "judge_groundedness": 1,
+      "evidence_strength": 0.5175240441539931,
+      "top_similarity": 0.6803760789761595,
+      "weak_evidence": false,
+      "escalation_reason": "account_specific"
+    },
+    {
+      "example_id": "gold_2363665",
+      "human_groundedness": 5,
+      "judge_groundedness": 1,
+      "evidence_strength": 0.5653163167436231,
+      "top_similarity": 0.5897380757137249,
+      "weak_evidence": false,
+      "escalation_reason": "billing_refund"
+    }
+  ]
+}

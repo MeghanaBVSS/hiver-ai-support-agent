@@ -1,0 +1,76 @@
+{
+  "status": "OBSERVED",
+  "timestamp_utc": "2026-09-09T10:04:23.094828+00:00",
+  "random_seed": 42,
+  "dataset_fingerprints": {
+    "twcs_csv": {
+      "path": "data/raw/twcs.csv",
+      "size_bytes": 516508641,
+      "sha256": "cd297fcfa1bf6f99938be242e8e578980bc6d1b96adc8691abec9a39175b03c0",
+      "mtime_utc": "2026-09-09T09:36:55.516043+00:00"
+    },
+    "hulu_tweets": {
+      "path": "data/processed/hulu_support_tweets.parquet",
+      "size_bytes": 4633402,
+      "sha256": "6ba440c353d8aae2f221163b51e0ab88bb27b19acc107bcd402f932f65334f07",
+      "mtime_utc": "2026-09-09T09:48:34.658622+00:00"
+    },
+    "train_labeled": {
+      "path": "data/processed/hulu_train_labeled.parquet",
+      "size_bytes": 692629,
+      "sha256": "9a6e211b27b0bd3bcfafbffcf22b633e653dcba181fed4e1e76594f44cbceae9",
+      "mtime_utc": "2026-09-09T09:54:33.283613+00:00"
+    },
+    "golden_set": {
+      "path": "evaluation/golden/golden_set.csv",
+      "size_bytes": 60474,
+      "sha256": "5a838dd491d9c40f1cbd123b0e6780d08cf4a273d9ab875f0a5bc03cdd4525fe",
+      "mtime_utc": "2026-09-09T10:04:03.815822+00:00"
+    }
+  },
+  "split_sizes": {
+    "train_labeled": 4000,
+    "valid_labeled": 800,
+    "golden": 199,
+    "pairs_by_split": {
+      "train": 14916,
+      "test": 3207,
+      "valid": 3205
+    }
+  },
+  "model_parameters": {
+    "baseline0": {
+      "type": "majority_class"
+    },
+    "baseline1": {
+      "type": "tfidf_logistic_regression",
+      "tfidf": {
+        "ngram_range": [
+          1,
+          2
+        ],
+        "min_df": 1,
+        "max_df": 0.95,
+        "stop_words": "english"
+      },
+      "logistic_regression": {
+        "max_iter": 1000,
+        "random_state": 42,
+        "class_weight": "balanced"
+      }
+    }
+  },
+  "fit_policy": {
+    "vectorizer_fit_on": "train_labeled_only",
+    "classifier_fit_on": "train_labeled_only",
+    "golden_used_for_tuning": false,
+    "golden_evaluated_once_after_fit": true
+  },
+  "metrics_snapshot": {
+    "majority_accuracy": 0.12562814070351758,
+    "majority_macro_f1": 0.022321428571428572,
+    "tfidf_accuracy": 0.6934673366834171,
+    "tfidf_macro_f1": 0.6682599906920463,
+    "tfidf_weighted_f1": 0.6749026123000524
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "undirected": {
+    "n_conversations": 15082,
+    "max_turns": 232,
+    "mean_turns": 3.149184458294656,
+    "n_turns_ge_20": 42,
+    "n_missing_parent": 558
+  },
+  "directed": {
+    "n_conversations": 15082,
+    "max_turns": 232,
+    "mean_turns": 3.149184458294656,
+    "n_turns_ge_20": 42,
+    "n_missing_parent": 558
+  },
+  "recommendation": "Use directed/thread reconstruction for modeling units when undirected components produce extreme mergers (shared viral/broadcast reply graphs). Keep undirected analysis for exploratory connectivity audits."
+}

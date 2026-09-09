@@ -1,0 +1,106 @@
+{
+  "status": "PROPOSAL_NOT_GROUND_TRUTH",
+  "methodology": [
+    "Normalize inbound customer texts (URLs/whitespace).",
+    "Embed with TF-IDF unigrams+bigrams (Phase 0; embeddings planned).",
+    "Cluster with KMeans.",
+    "Name clusters from top TF-IDF terms.",
+    "Inspect representative examples; human must finalize taxonomy."
+  ],
+  "n_texts_used": 5,
+  "n_intents_proposed": 5,
+  "proposed_intents": [
+    {
+      "intent_id": "intent_00",
+      "intent_name": "refund_charge_refund_need_refund",
+      "description": "Auto-proposed from TF-IDF KMeans top terms: refund charge, refund, need refund, need, acmehelp need, charge, password, login fails",
+      "representative_examples": [
+        "@AcmeHelp I need a refund for last charge"
+      ],
+      "possible_confusions": [
+        "password_change_password_change",
+        "login_fails_login_app",
+        "question_question_hours_hours",
+        "acmehelp_account_hacked_account_hacked"
+      ],
+      "notes": "PROPOSAL ONLY. Requires human renaming, merging/splitting, and boundary documentation before labeling a golden set.",
+      "n_examples_in_cluster": 1,
+      "status": "PROPOSAL_NOT_GROUND_TRUTH"
+    },
+    {
+      "intent_id": "intent_01",
+      "intent_name": "password_change_password_change",
+      "description": "Auto-proposed from TF-IDF KMeans top terms: password, change password, change, acmehelp change, refund, need refund, need, question hours",
+      "representative_examples": [
+        "@AcmeHelp how do I change my password?"
+      ],
+      "possible_confusions": [
+        "refund_charge_refund_need_refund",
+        "login_fails_login_app",
+        "question_question_hours_hours",
+        "acmehelp_account_hacked_account_hacked"
+      ],
+      "notes": "PROPOSAL ONLY. Requires human renaming, merging/splitting, and boundary documentation before labeling a golden set.",
+      "n_examples_in_cluster": 1,
+      "status": "PROPOSAL_NOT_GROUND_TRUTH"
+    },
+    {
+      "intent_id": "intent_02",
+      "intent_name": "login_fails_login_app",
+      "description": "Auto-proposed from TF-IDF KMeans top terms: login fails, login, app, acmehelp login, fails, fails app, refund, refund charge",
+      "representative_examples": [
+        "@AcmeHelp my login fails on the app"
+      ],
+      "possible_confusions": [
+        "refund_charge_refund_need_refund",
+        "password_change_password_change",
+        "question_question_hours_hours",
+        "acmehelp_account_hacked_account_hacked"
+      ],
+      "notes": "PROPOSAL ONLY. Requires human renaming, merging/splitting, and boundary documentation before labeling a golden set.",
+      "n_examples_in_cluster": 1,
+      "status": "PROPOSAL_NOT_GROUND_TRUTH"
+    },
+    {
+      "intent_id": "intent_03",
+      "intent_name": "question_question_hours_hours",
+      "description": "Auto-proposed from TF-IDF KMeans top terms: question, question hours, hours, acmehelp general, general, general question, need refund, refund charge",
+      "representative_examples": [
+        "@AcmeHelp general question about hours"
+      ],
+      "possible_confusions": [
+        "refund_charge_refund_need_refund",
+        "password_change_password_change",
+        "login_fails_login_app",
+        "acmehelp_account_hacked_account_hacked"
+      ],
+      "notes": "PROPOSAL ONLY. Requires human renaming, merging/splitting, and boundary documentation before labeling a golden set.",
+      "n_examples_in_cluster": 1,
+      "status": "PROPOSAL_NOT_GROUND_TRUTH"
+    },
+    {
+      "intent_id": "intent_04",
+      "intent_name": "acmehelp_account_hacked_account_hacked",
+      "description": "Auto-proposed from TF-IDF KMeans top terms: acmehelp account, hacked, account hacked, account, password, need refund, question hours, question",
+      "representative_examples": [
+        "@AcmeHelp is my account hacked?"
+      ],
+      "possible_confusions": [
+        "refund_charge_refund_need_refund",
+        "password_change_password_change",
+        "login_fails_login_app",
+        "question_question_hours_hours"
+      ],
+      "notes": "PROPOSAL ONLY. Requires human renaming, merging/splitting, and boundary documentation before labeling a golden set.",
+      "n_examples_in_cluster": 1,
+      "status": "PROPOSAL_NOT_GROUND_TRUTH"
+    }
+  ],
+  "ambiguous_multi_intent_notes": [
+    "Messages requesting both account action and troubleshooting are multi-intent.",
+    "Complaints that also ask for refunds may span billing + service_quality.",
+    "Human labeling should allow secondary_intent and ambiguous flags."
+  ],
+  "data_provenance": "SYNTHETIC_TEST_FIXTURE",
+  "provenance_note": "Derived from tests/fixtures/mini_twcs.csv for pipeline smoke checks. NOT the Kaggle corpus. Do not treat brand/intent findings as real-world results."
+}

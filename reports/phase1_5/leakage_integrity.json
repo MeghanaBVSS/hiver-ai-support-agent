@@ -1,0 +1,104 @@
+{
+  "status": "OBSERVED",
+  "all_pass": true,
+  "checks": {
+    "golden_conversation_not_in_train": {
+      "pass": true,
+      "overlap": []
+    },
+    "golden_message_not_in_retrieval": {
+      "ok": true,
+      "issues": [],
+      "details": {
+        "overlap:retrieval|test": [],
+        "overlap_count:retrieval|test": 0,
+        "overlap:retrieval|golden": [],
+        "overlap_count:retrieval|golden": 0,
+        "overlap:test|golden": [
+          "1004914",
+          "1005486",
+          "1008856",
+          "1054232",
+          "1057041",
+          "1087762",
+          "1092867",
+          "1093683",
+          "1101079",
+          "1128868",
+          "1138538",
+          "115022",
+          "1158535",
+          "116350",
+          "116359",
+          "1179249",
+          "1187448",
+          "1187464",
+          "1197349",
+          "1222103",
+          "1224206",
+          "1265463",
+          "1301682",
+          "1305445",
+          "1305880",
+          "1331619",
+          "1355492",
+          "1363688",
+          "1372321",
+          "1377357",
+          "1377359",
+          "1378378",
+          "1436312",
+          "1461313",
+          "1468793",
+          "1475655",
+          "1475665",
+          "1482133",
+          "1494174",
+          "1504506",
+          "1504510",
+          "1505080",
+          "1577090",
+          "1577095",
+          "1587983",
+          "1597543",
+          "1616405",
+          "1622827",
+          "1642447",
+          "1671824"
+        ],
+        "overlap_count:test|golden": 199
+      }
+    },
+    "golden_message_not_in_train": {
+      "ok": true,
+      "issues": [],
+      "details": {
+        "golden_in_train": [],
+        "golden_in_train_count": 0,
+        "golden_in_retrieval": [],
+        "golden_in_retrieval_count": 0
+      }
+    },
+    "test_customer_not_in_retrieval": {
+      "pass": true,
+      "overlap_count": 0
+    },
+    "no_duplicate_customer_message_across_splits": {
+      "pass": true,
+      "cross_split_norm_texts": 0
+    },
+    "no_normalized_duplicate_across_splits": {
+      "pass": true,
+      "cross_split_norm_texts": 0
+    },
+    "no_golden_conversation_support_in_train_evidence": {
+      "pass": true,
+      "note": "Verified via conversation_id disjointness between golden and train labeled set; support IDs checked when present.",
+      "golden_cid_train_cid_overlap": 0
+    },
+    "no_conversation_across_splits": {
+      "pass": true,
+      "n_bad": 0
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "status": "OBSERVED",
+  "annotator_id": "annotator_1",
+  "n": 50,
+  "semantic_mean": {
+    "correctness": 2.92,
+    "groundedness": 4.86,
+    "helpfulness": 2.58
+  },
+  "baseline_mean": {
+    "correctness": 3.14,
+    "groundedness": 3.18,
+    "helpfulness": 3.06
+  },
+  "human_would_escalate_rate": 0.54,
+  "semantic_escalated_rate": 0.9,
+  "escalation_decision_agreement_semantic_vs_human": 0.6,
+  "pct_semantic_is_escalate_template": 0.9
+}

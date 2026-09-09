@@ -1,0 +1,1027 @@
+{
+  "status": "OBSERVED",
+  "n_examples_with_flags": 130,
+  "reason_counts": {
+    "escalation_disagreement": 91,
+    "intent_confusion": 61,
+    "rare_intents": 34,
+    "ambiguous_messages": 25,
+    "long_messages": 7,
+    "short_messages": 5
+  },
+  "examples": [
+    {
+      "example_id": "gold_2911030",
+      "reasons": [
+        "escalation_disagreement"
+      ],
+      "gold_intent": "playback_error",
+      "pred_intent": "playback_error",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.48041109124626535,
+      "customer_message": "@hulu_support why is the app constantly pausing and buffering lately?  It's not connection because it is happening at several different locations and devices for me.  From ps4 to Android phone."
+    },
+    {
+      "example_id": "gold_2721090",
+      "reasons": [
+        "escalation_disagreement"
+      ],
+      "gold_intent": "playback_error",
+      "pred_intent": "playback_error",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.6626103150602963,
+      "customer_message": "@hulu_support live games are pretty buffer heavy :-("
+    },
+    {
+      "example_id": "gold_1179249",
+      "reasons": [
+        "escalation_disagreement"
+      ],
+      "gold_intent": "playback_error",
+      "pred_intent": "playback_error",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.5843437261212654,
+      "customer_message": "@hulu_support Can't watch Steelers on Hulu Live, wife is MAD, getting repeated buffer bar, no picture. On hold for 20 mins so far. Help!!"
+    },
+    {
+      "example_id": "gold_564410",
+      "reasons": [
+        "escalation_disagreement"
+      ],
+      "gold_intent": "playback_error",
+      "pred_intent": "playback_error",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.659348362320184,
+      "customer_message": "@hulu_support Your stream of the SEC Championship game is completely unwatchable. Buffering every few seconds, losing it's spot, \"parts of the stream missing\" errors, and complete playback failure."
+    },
+    {
+      "example_id": "gold_2623567",
+      "reasons": [
+        "intent_confusion",
+        "escalation_disagreement"
+      ],
+      "gold_intent": "playback_error",
+      "pred_intent": "other_ambiguous",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.7479890339403621,
+      "customer_message": "@hulu_support got this \u201c https://t.co/7YVDkNKOMM operation error 0. \u201c Help!"
+    },
+    {
+      "example_id": "gold_867746",
+      "reasons": [
+        "escalation_disagreement"
+      ],
+      "gold_intent": "playback_error",
+      "pred_intent": "playback_error",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.5350835246119952,
+      "customer_message": "@115940 my Hulu streaming has been freezing up and not working for almost 10 days now!  What's going on?"
+    },
+    {
+      "example_id": "gold_671959",
+      "reasons": [
+        "escalation_disagreement"
+      ],
+      "gold_intent": "playback_error",
+      "pred_intent": "playback_error",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.5615725081928663,
+      "customer_message": "@hulu_support Really bad buffering in the last hour. What am I paying for? I tried reinstalling the app. Could it be too much traffic? Thanks"
+    },
+    {
+      "example_id": "gold_267934",
+      "reasons": [
+        "escalation_disagreement"
+      ],
+      "gold_intent": "playback_error",
+      "pred_intent": "playback_error",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.6909975370297501,
+      "customer_message": "@hulu_support love the interface, hate the buffering. Non. Stop. Bu..........ffering."
+    },
+    {
+      "example_id": "gold_1331619",
+      "reasons": [
+        "escalation_disagreement"
+      ],
+      "gold_intent": "playback_error",
+      "pred_intent": "playback_error",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.5198343676445356,
+      "customer_message": "@hulu_support why does every channel buffer??? I did all the major steps and I still get the same issue on both my TVs"
+    },
+    {
+      "example_id": "gold_1008856",
+      "reasons": [
+        "escalation_disagreement"
+      ],
+      "gold_intent": "playback_error",
+      "pred_intent": "playback_error",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.6313016603301885,
+      "customer_message": "@hulu_support Yes I know that, I am saying that Hulu thinks it is live due to buffering however it is really 2 mins behind the actual football game"
+    },
+    {
+      "example_id": "gold_1482133",
+      "reasons": [
+        "escalation_disagreement"
+      ],
+      "gold_intent": "playback_error",
+      "pred_intent": "playback_error",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.5741336053020633,
+      "customer_message": "@hulu_support listen man my lady and I\ufe0f canceled our Verizon cable for Hulu live and all it does is skip, buffer, and jump around FIX THIS!!"
+    },
+    {
+      "example_id": "gold_889928",
+      "reasons": [
+        "escalation_disagreement"
+      ],
+      "gold_intent": "playback_error",
+      "pred_intent": "playback_error",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.7531634702962062,
+      "customer_message": "@331260 @16480 Maybe it\u2019s the @115940 app... keeps buffering for some reason"
+    },
+    {
+      "example_id": "gold_1797020",
+      "reasons": [
+        "escalation_disagreement"
+      ],
+      "gold_intent": "playback_error",
+      "pred_intent": "playback_error",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.5278756034880632,
+      "customer_message": "I'm trying to like this new @115940 live thing, but the constant buffering is really annoying."
+    },
+    {
+      "example_id": "gold_1372321",
+      "reasons": [
+        "intent_confusion",
+        "escalation_disagreement"
+      ],
+      "gold_intent": "playback_error",
+      "pred_intent": "live_tv_issues",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.5621463519381904,
+      "customer_message": "@hulu_support ok...I give up. Hulu TV \"live\" is constantly buffering and is now a solid half inning behind the WS. What do I do?"
+    },
+    {
+      "example_id": "gold_2575634",
+      "reasons": [
+        "escalation_disagreement",
+        "long_messages"
+      ],
+      "gold_intent": "playback_error",
+      "pred_intent": "playback_error",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.4885598821105186,
+      "customer_message": "@115940 I\u2019ve had enough of the constant buffering and loading issues. I\u2019ve tried everything to fix it. From uninstalling &amp; reinstalling to resetting my network &amp; power cycling everything. Thought you should know of the issue again s"
+    },
+    {
+      "example_id": "gold_1197349",
+      "reasons": [
+        "intent_confusion",
+        "escalation_disagreement"
+      ],
+      "gold_intent": "playback_error",
+      "pred_intent": "app_device_issue",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.6836636288550901,
+      "customer_message": "@hulu_support Apple TV. Just a lot of buffering. Poor picture quality. And video jumps around. (Been a little better for past little while)"
+    },
+    {
+      "example_id": "gold_2147146",
+      "reasons": [
+        "intent_confusion",
+        "escalation_disagreement"
+      ],
+      "gold_intent": "playback_error",
+      "pred_intent": "other_ambiguous",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.4946314312850806,
+      "customer_message": "Hey, @hulu_support, your ads keep making our stream fail. Connection Error 5005 and 5003."
+    },
+    {
+      "example_id": "gold_561173",
+      "reasons": [
+        "intent_confusion",
+        "escalation_disagreement"
+      ],
+      "gold_intent": "live_tv_issues",
+      "pred_intent": "playback_error",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.48796797106106193,
+      "customer_message": "@115940 needs to fix its buffering problems with LiveTV or buy some more bandwidth, or I might switch to @115946 #connectionfine #beta"
+    },
+    {
+      "example_id": "gold_1378378",
+      "reasons": [
+        "short_messages"
+      ],
+      "gold_intent": "live_tv_issues",
+      "pred_intent": "live_tv_issues",
+      "gold_escalate": false,
+      "pred_escalate": false,
+      "top_similarity": 0.6452321797008284,
+      "customer_message": "@115940  live TV keeps freezing!"
+    },
+    {
+      "example_id": "gold_2644254",
+      "reasons": [
+        "escalation_disagreement"
+      ],
+      "gold_intent": "live_tv_issues",
+      "pred_intent": "live_tv_issues",
+      "gold_escalate": true,
+      "pred_escalate": false,
+      "top_similarity": 0.7716552008512536,
+      "customer_message": "Thank you @115940 for screwing up the live tv during a game."
+    },
+    {
+      "example_id": "gold_777026",
+      "reasons": [
+        "escalation_disagreement"
+      ],
+      "gold_intent": "live_tv_issues",
+      "pred_intent": "live_tv_issues",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.7417084500875208,
+      "customer_message": "@hulu_support will Hulu Live TV eventually support 5.1 audio playback?"
+    },
+    {
+      "example_id": "gold_2483929",
+      "reasons": [
+        "escalation_disagreement"
+      ],
+      "gold_intent": "live_tv_issues",
+      "pred_intent": "live_tv_issues",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.7568706324577682,
+      "customer_message": "Hey, Hulu. It's Wednesday. Still no NBC live (ever since Sunday Night Football). All other channels are fine. I'm in the Seattle area 98155. @115940 @hulu_support"
+    },
+    {
+      "example_id": "gold_2759437",
+      "reasons": [
+        "escalation_disagreement"
+      ],
+      "gold_intent": "live_tv_issues",
+      "pred_intent": "live_tv_issues",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.6468447555152429,
+      "customer_message": "@hulu_support No. I\u2019m unsound watch espn cause Hulu keeps falling apart"
+    },
+    {
+      "example_id": "gold_40981",
+      "reasons": [
+        "escalation_disagreement"
+      ],
+      "gold_intent": "live_tv_issues",
+      "pred_intent": "live_tv_issues",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.6024906973822173,
+      "customer_message": "@hulu_support Not working yet. This is really bad for live tv. You can't have this type of service!"
+    },
+    {
+      "example_id": "gold_2816513",
+      "reasons": [
+        "escalation_disagreement"
+      ],
+      "gold_intent": "live_tv_issues",
+      "pred_intent": "live_tv_issues",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.680185066936415,
+      "customer_message": "@hulu_support Ok, just did that. Hulu Live TV early access online works but the TV still doesn\u2019t :( maybe it\u2019s cuz Hulu Live tv is still in beta?"
+    },
+    {
+      "example_id": "gold_1355492",
+      "reasons": [
+        "intent_confusion"
+      ],
+      "gold_intent": "live_tv_issues",
+      "pred_intent": "app_device_issue",
+      "gold_escalate": false,
+      "pred_escalate": false,
+      "top_similarity": 0.48889513522249384,
+      "customer_message": "@115940 your live doesn\u2019t work for older devices Apple TV Roku Toshiba laptop PS3  I signed up only can view on my iPhone this is worthless"
+    },
+    {
+      "example_id": "gold_714588",
+      "reasons": [
+        "escalation_disagreement"
+      ],
+      "gold_intent": "app_device_issue",
+      "pred_intent": "app_device_issue",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.7274727590192255,
+      "customer_message": "@hulu_support Is there a way to go back to the old Hulu interface on my Roku? For me, the new interface is unusable, I'd like to go back."
+    },
+    {
+      "example_id": "gold_2982140",
+      "reasons": [
+        "escalation_disagreement"
+      ],
+      "gold_intent": "app_device_issue",
+      "pred_intent": "app_device_issue",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.6755479678982649,
+      "customer_message": "I need help with a BYA-403-010 error code on my Roku express even though I'm in my living room. @hulu_support"
+    },
+    {
+      "example_id": "gold_207804",
+      "reasons": [
+        "escalation_disagreement"
+      ],
+      "gold_intent": "app_device_issue",
+      "pred_intent": "app_device_issue",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.7634147867287258,
+      "customer_message": "@hulu_support having issues loading any content. Are there issues playing on Roku systems?"
+    },
+    {
+      "example_id": "gold_401977",
+      "reasons": [
+        "escalation_disagreement"
+      ],
+      "gold_intent": "app_device_issue",
+      "pred_intent": "app_device_issue",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.5035625157219346,
+      "customer_message": "@115940 @hulu_support Hey the new UI is crap, connection / loading times have been bad since the update, and it keeps crashing on ROKU. Fix?"
+    },
+    {
+      "example_id": "gold_63408",
+      "reasons": [
+        "escalation_disagreement"
+      ],
+      "gold_intent": "app_device_issue",
+      "pred_intent": "app_device_issue",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.6894888306730564,
+      "customer_message": "@hulu_support Please make you new UI on Roku 3 less 'clicky' - I shouldn't have to click half a dozen times to find and watch a show when your old UI was maybe 3 clicks tops.  CHANGE IT!"
+    },
+    {
+      "example_id": "gold_1928245",
+      "reasons": [
+        "escalation_disagreement"
+      ],
+      "gold_intent": "app_device_issue",
+      "pred_intent": "app_device_issue",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.6121030488981668,
+      "customer_message": "@115940 why do shows show up on my phone app but not Apple TV.  Also airplay barely works!   FIX!"
+    },
+    {
+      "example_id": "gold_2377725",
+      "reasons": [
+        "escalation_disagreement"
+      ],
+      "gold_intent": "app_device_issue",
+      "pred_intent": "app_device_issue",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.6469143813237108,
+      "customer_message": "@hulu_support How do I turn off autoplay for a kids\u2019 profile on an AppleTV?"
+    },
+    {
+      "example_id": "gold_1681450",
+      "reasons": [
+        "escalation_disagreement"
+      ],
+      "gold_intent": "app_device_issue",
+      "pred_intent": "app_device_issue",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.48969335847806184,
+      "customer_message": "@hulu_support Fire TV app doesnt work. Tried writing support email - got auto reply. Tried calling - 1+ hr wait? Lost potential customer \u270c\ufe0f\ud83d\udc4b"
+    },
+    {
+      "example_id": "gold_1187448",
+      "reasons": [
+        "escalation_disagreement"
+      ],
+      "gold_intent": "app_device_issue",
+      "pred_intent": "app_device_issue",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.6355411731195751,
+      "customer_message": "@hulu_support There is no Hulu dropdown menu on roku CBS app"
+    },
+    {
+      "example_id": "gold_962944",
+      "reasons": [
+        "escalation_disagreement"
+      ],
+      "gold_intent": "app_device_issue",
+      "pred_intent": "app_device_issue",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.7605713558113689,
+      "customer_message": "@hulu_support your smart tv app is awful. I can't watch more than a few minutes before i get an error. Might as well unsub!"
+    },
+    {
+      "example_id": "gold_1622827",
+      "reasons": [
+        "escalation_disagreement"
+      ],
+      "gold_intent": "app_device_issue",
+      "pred_intent": "app_device_issue",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.7058377309980362,
+      "customer_message": "@hulu_support Are there plans to add 5.1 audio capability to the Xbox One app? It works on Roku, why not Xbox One?"
+    },
+    {
+      "example_id": "gold_1577090",
+      "reasons": [
+        "intent_confusion",
+        "escalation_disagreement"
+      ],
+      "gold_intent": "app_device_issue",
+      "pred_intent": "other_ambiguous",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.8757594562037709,
+      "customer_message": "@115940 @115946 @126452 @115940 I am on @115821 #FireTV if that helps. Happened during the World Series too"
+    },
+    {
+      "example_id": "gold_191910",
+      "reasons": [
+        "escalation_disagreement"
+      ],
+      "gold_intent": "app_device_issue",
+      "pred_intent": "app_device_issue",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.5274186070581857,
+      "customer_message": "@hulu_support This does not tell me how to access watchlist which I can\u2019t on Roku. It tells me what devices are supported by not the workaround. not happy"
+    },
+    {
+      "example_id": "gold_1740549",
+      "reasons": [
+        "escalation_disagreement"
+      ],
+      "gold_intent": "app_device_issue",
+      "pred_intent": "app_device_issue",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.459411538386458,
+      "customer_message": "@hulu_support Np. I can test further. I\u2019m trying to remember if it was only when I used my Chromecast or not. I know one ep was 4:3, the next 16:9."
+    },
+    {
+      "example_id": "gold_347110",
+      "reasons": [
+        "intent_confusion"
+      ],
+      "gold_intent": "login_account",
+      "pred_intent": "billing_subscription",
+      "gold_escalate": true,
+      "pred_escalate": true,
+      "top_similarity": 0.6824680513065765,
+      "customer_message": "@hulu_support idk why im signed out on my wii, it wont let me sign in or give me an activ. code, im signed in online but cant get to my acct"
+    },
+    {
+      "example_id": "gold_652356",
+      "reasons": [
+        "intent_confusion"
+      ],
+      "gold_intent": "login_account",
+      "pred_intent": "app_device_issue",
+      "gold_escalate": true,
+      "pred_escalate": true,
+      "top_similarity": 0.42622943671925273,
+      "customer_message": "@hulu_support I an still receiving login errors and playback Issues. I am using a fire stick and uninstalling and reinstalling doesn't fix the issue."
+    },
+    {
+      "example_id": "gold_388173",
+      "reasons": [
+        "intent_confusion"
+      ],
+      "gold_intent": "login_account",
+      "pred_intent": "other_ambiguous",
+      "gold_escalate": true,
+      "pred_escalate": true,
+      "top_similarity": 0.6953627003767198,
+      "customer_message": "@hulu_support I was just informed of the Spotify/Hulu bundle. How do I sign in to Hulu to get the bundle?"
+    },
+    {
+      "example_id": "gold_2251699",
+      "reasons": [
+        "intent_confusion"
+      ],
+      "gold_intent": "login_account",
+      "pred_intent": "live_tv_issues",
+      "gold_escalate": true,
+      "pred_escalate": true,
+      "top_similarity": 0.6448011093667231,
+      "customer_message": "@hulu_support Am I able to access Hulu Live TV on my desktop computer? I don't see my DVR or live TV access when I login."
+    },
+    {
+      "example_id": "gold_2263645",
+      "reasons": [
+        "long_messages"
+      ],
+      "gold_intent": "login_account",
+      "pred_intent": "login_account",
+      "gold_escalate": true,
+      "pred_escalate": true,
+      "top_similarity": 0.5823953163339652,
+      "customer_message": "@115940 I've been trying 2 restart a TV Program for 72hrs and I keep getting &amp; error msg. Also I keep getting the msg. \"Hulu has stopped working\". And it keeps making me log in every time I restart it even if I can't get it working on a"
+    },
+    {
+      "example_id": "gold_1128868",
+      "reasons": [
+        "intent_confusion"
+      ],
+      "gold_intent": "login_account",
+      "pred_intent": "other_ambiguous",
+      "gold_escalate": true,
+      "pred_escalate": true,
+      "top_similarity": 0.5981386223902918,
+      "customer_message": "@hulu_support Not to create a 2nd one. It's an annoying extra step to select a profile 2 log in. With 1 profile, it'd be nice to bypass profile selection."
+    },
+    {
+      "example_id": "gold_45990",
+      "reasons": [
+        "intent_confusion",
+        "escalation_disagreement",
+        "rare_intents"
+      ],
+      "gold_intent": "how_to_feature",
+      "pred_intent": "billing_subscription",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.557331476867405,
+      "customer_message": "@hulu_support I just wanted to know, with the basic package (limited commercials), how many screens can you watch at the same time?"
+    },
+    {
+      "example_id": "gold_1494174",
+      "reasons": [
+        "intent_confusion",
+        "escalation_disagreement"
+      ],
+      "gold_intent": "content_availability",
+      "pred_intent": "other_ambiguous",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.5597051566994087,
+      "customer_message": "@hulu_support WHY IS BASKETBALL WIVES NOT ON HERE, I LITERALLY SUBSCRIBED FOR THAT IM SO DONE"
+    },
+    {
+      "example_id": "gold_2791262",
+      "reasons": [
+        "escalation_disagreement"
+      ],
+      "gold_intent": "content_availability",
+      "pred_intent": "content_availability",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.9732179476154591,
+      "customer_message": "Why is season 3 of Rick and Morty STILL NOT ON @115940 \ud83d\ude24"
+    },
+    {
+      "example_id": "gold_1187464",
+      "reasons": [
+        "escalation_disagreement"
+      ],
+      "gold_intent": "content_availability",
+      "pred_intent": "content_availability",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.6353897860681526,
+      "customer_message": "@115940 it says the newest episode of Lucifer was supposed o be available at midnight it\u2019s 1 am when will I get to watch it"
+    },
+    {
+      "example_id": "gold_2453804",
+      "reasons": [
+        "escalation_disagreement"
+      ],
+      "gold_intent": "content_availability",
+      "pred_intent": "content_availability",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.9048547918752068,
+      "customer_message": "Hey @115940 where be season 3 of Rick and Morty"
+    },
+    {
+      "example_id": "gold_1776739",
+      "reasons": [
+        "intent_confusion",
+        "escalation_disagreement"
+      ],
+      "gold_intent": "content_availability",
+      "pred_intent": "other_ambiguous",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.8470390690014987,
+      "customer_message": "@hulu_support Hi, why have @282601 and @17712 been late to upload?"
+    },
+    {
+      "example_id": "gold_2063231",
+      "reasons": [
+        "intent_confusion",
+        "escalation_disagreement"
+      ],
+      "gold_intent": "content_availability",
+      "pred_intent": "other_ambiguous",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.624905268787805,
+      "customer_message": "@115940 when are you taking Make It Or Break It off? I haven\u2019t finished the series yet!"
+    },
+    {
+      "example_id": "gold_2214737",
+      "reasons": [
+        "intent_confusion",
+        "escalation_disagreement"
+      ],
+      "gold_intent": "content_availability",
+      "pred_intent": "other_ambiguous",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.6262530987761527,
+      "customer_message": "@115940 why is last night @33581 not on Hulu yet?! @hulu_support"
+    },
+    {
+      "example_id": "gold_2577845",
+      "reasons": [
+        "intent_confusion",
+        "escalation_disagreement"
+      ],
+      "gold_intent": "content_availability",
+      "pred_intent": "other_ambiguous",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.5512704343583016,
+      "customer_message": "@hulu_support Show's aren't uploading anymore, nor do they show up in my \"watchlist\" what's going on, it's been an extremely frustrating few days."
+    },
+    {
+      "example_id": "gold_1057041",
+      "reasons": [
+        "intent_confusion",
+        "escalation_disagreement"
+      ],
+      "gold_intent": "content_availability",
+      "pred_intent": "app_device_issue",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.5576149427072026,
+      "customer_message": "@hulu_support When will Google Assistant support come to Hulu casting from Android via Chromecast?"
+    },
+    {
+      "example_id": "gold_1914172",
+      "reasons": [
+        "escalation_disagreement"
+      ],
+      "gold_intent": "content_availability",
+      "pred_intent": "content_availability",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.6353879230727593,
+      "customer_message": "@hulu_support Last Man Standing comedy TV. When will the episodes be available to stream?"
+    },
+    {
+      "example_id": "gold_2214147",
+      "reasons": [
+        "escalation_disagreement"
+      ],
+      "gold_intent": "content_availability",
+      "pred_intent": "content_availability",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 1.0,
+      "customer_message": "@115940 can you put season 3 of Rick and Morty on already. \ud83d\ude2d"
+    },
+    {
+      "example_id": "gold_998322",
+      "reasons": [
+        "intent_confusion",
+        "escalation_disagreement"
+      ],
+      "gold_intent": "content_availability",
+      "pred_intent": "other_ambiguous",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.6101038403506838,
+      "customer_message": "@hulu_support hulu isn\u2019t connecting. Seems it\u2019s affecting alot of users. When will it be fixed?"
+    },
+    {
+      "example_id": "gold_815865",
+      "reasons": [
+        "escalation_disagreement"
+      ],
+      "gold_intent": "content_availability",
+      "pred_intent": "content_availability",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.6633286223016833,
+      "customer_message": "@hulu_support Hi! I'm not seeing episode 5, season 6 of @19606 yet. Shouldn't it be available already? Past midnight on a Tuesday."
+    },
+    {
+      "example_id": "gold_2584541",
+      "reasons": [
+        "intent_confusion",
+        "escalation_disagreement"
+      ],
+      "gold_intent": "content_availability",
+      "pred_intent": "other_ambiguous",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.5052832892330397,
+      "customer_message": "@115940 What\u2019s going on with your system? Favorites won\u2019t automatically upload. Now the watched shows don\u2019t get marked off. Your service is starting to suck a bit."
+    },
+    {
+      "example_id": "gold_966569",
+      "reasons": [
+        "escalation_disagreement"
+      ],
+      "gold_intent": "content_availability",
+      "pred_intent": "content_availability",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.7638148647268441,
+      "customer_message": "Hey, @115940 @hulu_support ... why can I suddenly only access Season 2 (not 1, 3, 4, 5 and the current 6) of \"The Mindy Project\"?"
+    },
+    {
+      "example_id": "gold_1138538",
+      "reasons": [
+        "escalation_disagreement",
+        "rare_intents"
+      ],
+      "gold_intent": "service_outage",
+      "pred_intent": "service_outage",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.530468625262062,
+      "customer_message": "Keep blaming me for your service outage @115940. Fix your fucking playback failure message so you take the blame since it's *always* you."
+    },
+    {
+      "example_id": "gold_2209356",
+      "reasons": [
+        "intent_confusion",
+        "escalation_disagreement",
+        "rare_intents"
+      ],
+      "gold_intent": "service_outage",
+      "pred_intent": "content_availability",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.5675886719196171,
+      "customer_message": "Anyone else having trouble with Hulu? Had to refresh the page 8 times to get the new episode of Bobs Burgers to play. @hulu_support Is it just me or...?"
+    },
+    {
+      "example_id": "gold_2516231",
+      "reasons": [
+        "intent_confusion",
+        "escalation_disagreement",
+        "rare_intents"
+      ],
+      "gold_intent": "service_outage",
+      "pred_intent": "app_device_issue",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.561454248463205,
+      "customer_message": "@hulu_support I'm not wasting mine or anyone else's time doing that. It's not my connection.  I stream all other apps fine. How about you please Google \"issues streaming Hulu on firestick\". It's not just me"
+    },
+    {
+      "example_id": "gold_2818057",
+      "reasons": [
+        "intent_confusion",
+        "escalation_disagreement",
+        "long_messages",
+        "rare_intents"
+      ],
+      "gold_intent": "service_outage",
+      "pred_intent": "other_ambiguous",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.5328273349556231,
+      "customer_message": "Anyone else having an issue with @115940? We are trying to watch @180562 and every time we hit play, it loads a different show... Harlots, Handmaiden's Tale, The Mindy Project. It won't load Grey's. What say you @hulu_support?"
+    },
+    {
+      "example_id": "gold_1092867",
+      "reasons": [
+        "intent_confusion",
+        "escalation_disagreement",
+        "rare_intents"
+      ],
+      "gold_intent": "service_outage",
+      "pred_intent": "other_ambiguous",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.7743267216205351,
+      "customer_message": "@hulu_support why... why is Hulu down so often here in Oviedo, FL? It's too hot to go outside..help :("
+    },
+    {
+      "example_id": "gold_1616405",
+      "reasons": [
+        "escalation_disagreement",
+        "rare_intents"
+      ],
+      "gold_intent": "service_outage",
+      "pred_intent": "service_outage",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.6294805108136188,
+      "customer_message": "@hulu_support outage in Oceanside Ca. First month not a good impression folks"
+    },
+    {
+      "example_id": "gold_1158535",
+      "reasons": [
+        "intent_confusion",
+        "escalation_disagreement",
+        "rare_intents"
+      ],
+      "gold_intent": "service_outage",
+      "pred_intent": "other_ambiguous",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.6534101972335179,
+      "customer_message": "@hulu_support is Hulu down in central Florida? Been like this for the last 5 hours https://t.co/v6IMcMaKT9"
+    },
+    {
+      "example_id": "gold_2196323",
+      "reasons": [
+        "intent_confusion",
+        "escalation_disagreement",
+        "rare_intents"
+      ],
+      "gold_intent": "service_outage",
+      "pred_intent": "app_device_issue",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.6496917214461498,
+      "customer_message": "Why isnt my @115940 working? Is it my TV, my connection or @115940 itself?! Anyone else experiencing issues?"
+    },
+    {
+      "example_id": "gold_2157419",
+      "reasons": [
+        "intent_confusion",
+        "escalation_disagreement",
+        "rare_intents"
+      ],
+      "gold_intent": "service_outage",
+      "pred_intent": "app_device_issue",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.6373749407261833,
+      "customer_message": "@hulu_support there is an outage for casting. Across multiple accounts, chromecast devices and wifi we all are experiencing an \"Error\" splash screen on our tv's"
+    },
+    {
+      "example_id": "gold_1436312",
+      "reasons": [
+        "intent_confusion",
+        "escalation_disagreement",
+        "rare_intents"
+      ],
+      "gold_intent": "service_outage",
+      "pred_intent": "other_ambiguous",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.6151841429927964,
+      "customer_message": "anyone else having @115940 issue not loading today? @hulu_support"
+    },
+    {
+      "example_id": "gold_1093683",
+      "reasons": [
+        "intent_confusion",
+        "escalation_disagreement",
+        "rare_intents"
+      ],
+      "gold_intent": "service_outage",
+      "pred_intent": "other_ambiguous",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.6721647462062442,
+      "customer_message": "Is anyone else having trouble with @115940? It won't let me watch my #StargateAtlantis. @45417 @hulu_support"
+    },
+    {
+      "example_id": "gold_1377359",
+      "reasons": [
+        "intent_confusion",
+        "escalation_disagreement",
+        "rare_intents"
+      ],
+      "gold_intent": "service_outage",
+      "pred_intent": "other_ambiguous",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.47349563534483174,
+      "customer_message": "@hulu_support The website is not allowing me to stream their shows. Anyone else having this problem??"
+    },
+    {
+      "example_id": "gold_725480",
+      "reasons": [
+        "intent_confusion",
+        "escalation_disagreement",
+        "rare_intents"
+      ],
+      "gold_intent": "service_outage",
+      "pred_intent": "other_ambiguous",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.6525867678626095,
+      "customer_message": "Anyone else finding @115940 unusably broken for the past week? Can't get through one episode without constant errors."
+    },
+    {
+      "example_id": "gold_116359",
+      "reasons": [
+        "escalation_disagreement",
+        "short_messages",
+        "rare_intents"
+      ],
+      "gold_intent": "how_to_feature",
+      "pred_intent": "how_to_feature",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.9927251222935859,
+      "customer_message": "@141920 How do I get Hulu !?"
+    },
+    {
+      "example_id": "gold_2753119",
+      "reasons": [
+        "intent_confusion",
+        "escalation_disagreement",
+        "rare_intents"
+      ],
+      "gold_intent": "how_to_feature",
+      "pred_intent": "other_ambiguous",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.7188028088220657,
+      "customer_message": "@hulu_support That\u2019s no problem. How do I disconnect the accounts? Spoke to Spotify and was told Hulu would handle it."
+    },
+    {
+      "example_id": "gold_714050",
+      "reasons": [
+        "intent_confusion",
+        "escalation_disagreement",
+        "rare_intents"
+      ],
+      "gold_intent": "how_to_feature",
+      "pred_intent": "app_device_issue",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.7130154274366197,
+      "customer_message": "@hulu_support how do you watch tv on a laptop?"
+    },
+    {
+      "example_id": "gold_24584",
+      "reasons": [
+        "intent_confusion",
+        "escalation_disagreement",
+        "rare_intents"
+      ],
+      "gold_intent": "how_to_feature",
+      "pred_intent": "other_ambiguous",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.6898455201981306,
+      "customer_message": "Hey @115940, how do you have the ENTIRE series of @1662 EXCEPT for the series finale episodes? It doesn\u2019t make any sense and defeats the purpose of having the show on your website... https://t.co/utTce5oaFP"
+    },
+    {
+      "example_id": "gold_2916452",
+      "reasons": [
+        "intent_confusion",
+        "escalation_disagreement",
+        "long_messages",
+        "rare_intents"
+      ],
+      "gold_intent": "how_to_feature",
+      "pred_intent": "other_ambiguous",
+      "gold_escalate": false,
+      "pred_escalate": true,
+      "top_similarity": 0.7362747490057415,
+      "customer_message": "@hulu_support How can I communicate with you privately? When I try to message you, twitter informs me that you have opted NOT to receive Direct Messages from anyone whom you don't follow. Kind of strange for a business considering you don't"
+    }
+  ]
+}

@@ -1,0 +1,224 @@
+{
+  "status": "PROPOSAL_NOT_GROUND_TRUTH",
+  "methodology": [
+    "Normalize inbound customer texts (URLs/whitespace).",
+    "Embed with TF-IDF unigrams+bigrams (Phase 0; embeddings planned).",
+    "Cluster with KMeans.",
+    "Name clusters from top TF-IDF terms.",
+    "Inspect representative examples; human must finalize taxonomy."
+  ],
+  "n_texts_used": 3000,
+  "n_intents_proposed": 10,
+  "proposed_intents": [
+    {
+      "intent_id": "intent_03",
+      "intent_name": "hulu_support_hulu_app",
+      "description": "Auto-proposed from TF-IDF KMeans top terms: hulu_support, hulu, app, thanks, help, just, tv, watch",
+      "representative_examples": [
+        "@hulu_support I did yesterday, sat on hold for almost 40 min. Thought the issue was corrected, don't have time to sit on hold that long today.",
+        "@hulu_support Dont think there is a permanent fix for this issue. I'll just go with the flow till something better comes along. I spend 2 much time on it.",
+        "@hulu_support I just upgraded my internet, was cheaper than I thought. My upload speed is now 12mbps, download is 237mbps . I'm good to go now, Thank you.",
+        "@358727 @hulu_support Yeah I've had the same problem for about a month now and none of those suggested seem to help either.",
+        "@hulu_support Yes, all of it.  I've done all the trouble shooting. Looks like this is common after searching online for help."
+      ],
+      "possible_confusions": [
+        "live_live_tv_tv",
+        "working_game_hulu_support",
+        "115940_115940_hulu_support_app",
+        "account_hulu_support_hulu_account"
+      ],
+      "notes": "PROPOSAL ONLY. Requires human renaming, merging/splitting, and boundary documentation before labeling a golden set.",
+      "n_examples_in_cluster": 1226,
+      "status": "PROPOSAL_NOT_GROUND_TRUTH"
+    },
+    {
+      "intent_id": "intent_04",
+      "intent_name": "115940_115940_hulu_support_app",
+      "description": "Auto-proposed from TF-IDF KMeans top terms: 115940, 115940 hulu_support, app, watch, new, hulu, hey, commercials",
+      "representative_examples": [
+        "I wish someone at @115940  or @hulu_support could explain to me why I have to completely sign out to log out of hulu on xbox360",
+        "@hulu_support #AdentureTime always freezes on my PS4 @115940 app. I know others who have this issue as well... it\u2019s pretty common :(",
+        "Hey @115940, if you could stop logging me out when I'm in the middle of watching a show, that'll be awesome. #NotCoolDude #NotCool",
+        "@115940 this new setup sucks and makes everything lag.",
+        "Why are my @115940 commercials getting longer? \ud83d\ude11"
+      ],
+      "possible_confusions": [
+        "live_live_tv_tv",
+        "working_game_hulu_support",
+        "ads_free_free_trial",
+        "hulu_support_hulu_app",
+        "season_115940_rick"
+      ],
+      "notes": "PROPOSAL ONLY. Requires human renaming, merging/splitting, and boundary documentation before labeling a golden set.",
+      "n_examples_in_cluster": 642,
+      "status": "PROPOSAL_NOT_GROUND_TRUTH"
+    },
+    {
+      "intent_id": "intent_00",
+      "intent_name": "live_live_tv_tv",
+      "description": "Auto-proposed from TF-IDF KMeans top terms: live, live tv, tv, hulu live, hulu, hulu_support, 115940 live, 115940",
+      "representative_examples": [
+        "@hulu_support So for me to have internet speed to properly use Hulu Live TV. I would have to pay $79 a month with Hulu total is  $123 to much for me.",
+        "@hulu_support this is incredibly frustrating. Live tv still stopping for long periods. Even after resetting with technical help.",
+        "@hulu_support I love when I paid for live @115940 TV to watch football and @115940 makes me watch ads for 10 minutes and then doesn't take me to the game.. @115946 TV here I come...",
+        "@hulu_support Fire TV stick. It was 'live\" as I could not fast forward any more and clicked go live. Pretty terrible",
+        "@hulu_support \"live\" TV is 2 plays behind the score tracker again (score tracker is usually behind as well). I'm better watching this game tomorrow?"
+      ],
+      "possible_confusions": [
+        "working_game_hulu_support",
+        "ads_free_free_trial",
+        "hulu_support_hulu_app",
+        "115940_115940_hulu_support_app",
+        "episode_115940_new_episode"
+      ],
+      "notes": "PROPOSAL ONLY. Requires human renaming, merging/splitting, and boundary documentation before labeling a golden set.",
+      "n_examples_in_cluster": 272,
+      "status": "PROPOSAL_NOT_GROUND_TRUTH"
+    },
+    {
+      "intent_id": "intent_01",
+      "intent_name": "working_game_hulu_support",
+      "description": "Auto-proposed from TF-IDF KMeans top terms: working, game, hulu_support, hulu_support working, 115940, watch, hulu, live",
+      "representative_examples": [
+        "@hulu_support Trying to watch the Packers game now. Getting another 'issue'. What is your solution? https://t.co/HH7zYs5Svt",
+        "@115940 live is this the peak of performance? I can't watch three plays of a football game without connection error. Please advise",
+        "@364876 @hulu_support Dude, this shit is driving me crazy. I'm just trying to watch the game and it keeps freezing",
+        "Can't get football to play so I contact @hulu_support online chat.  They take an hour to arrive at no solution.  Game over != solution.",
+        "@hulu_support It\u2019s up now and working."
+      ],
+      "possible_confusions": [
+        "live_live_tv_tv",
+        "ads_free_free_trial",
+        "hulu_support_hulu_app",
+        "115940_115940_hulu_support_app",
+        "episode_115940_new_episode"
+      ],
+      "notes": "PROPOSAL ONLY. Requires human renaming, merging/splitting, and boundary documentation before labeling a golden set.",
+      "n_examples_in_cluster": 161,
+      "status": "PROPOSAL_NOT_GROUND_TRUTH"
+    },
+    {
+      "intent_id": "intent_09",
+      "intent_name": "want_netflix_doesn",
+      "description": "Auto-proposed from TF-IDF KMeans top terms: want, netflix, doesn, 115940, watch, work, dear 115940, dear",
+      "representative_examples": [
+        "I JUST WANT TO WATCH FREAKISH @115940  PLEASE WORK https://t.co/gqgDupIllM",
+        "@hulu_support Still doesn\u2019t work.  UI still awful. Seems like you don\u2019t want to fix it.",
+        "does @115940 have anime? maybe stuff that Netflix or Crunchyroll doesn\u2019t?",
+        "@115940, why not let me choose what I want to watch next instead of starting some random show?",
+        "@hulu_support every time I try to watch something I get \u201cplayback failure\u201d have no connection issues as Netflix and YouTube both work"
+      ],
+      "possible_confusions": [
+        "working_game_hulu_support",
+        "115940_115940_hulu_support_app"
+      ],
+      "notes": "PROPOSAL ONLY. Requires human renaming, merging/splitting, and boundary documentation before labeling a golden set.",
+      "n_examples_in_cluster": 139,
+      "status": "PROPOSAL_NOT_GROUND_TRUTH"
+    },
+    {
+      "intent_id": "intent_05",
+      "intent_name": "season_115940_rick",
+      "description": "Auto-proposed from TF-IDF KMeans top terms: season, 115940, rick, morty, rick morty, season rick, new season, 115940 season",
+      "representative_examples": [
+        "@115940 is there a reason Gold Rush isn't being uploaded since the new season started?",
+        "Just finished the first season of The Handmaid's Tale. Can I please have the second season now, @115940 ? #cliffhanger #YUDoDis #TeamOfred",
+        "@115940 I NEED #VANDERPUMPRULES SEASON 5 PLEEEEAAAAAAASSSSEEEE! #PumpRules",
+        "Hey @115940 @hulu_support could you please pass along to ur team I\u2019d love to see the first season of @46694 stay i noticed its expiring",
+        "@115940 can you explain why Hoarders season 4 works on the app on my phone but not when I watch it anyother way? I\u2019m confused"
+      ],
+      "possible_confusions": [
+        "115940_115940_hulu_support_app",
+        "episode_115940_new_episode"
+      ],
+      "notes": "PROPOSAL ONLY. Requires human renaming, merging/splitting, and boundary documentation before labeling a golden set.",
+      "n_examples_in_cluster": 124,
+      "status": "PROPOSAL_NOT_GROUND_TRUTH"
+    },
+    {
+      "intent_id": "intent_07",
+      "intent_name": "episode_115940_new_episode",
+      "description": "Auto-proposed from TF-IDF KMeans top terms: episode, 115940, new episode, hulu_support, new, week, isn, click",
+      "representative_examples": [
+        "Hey @hulu_support how come when I go to play an episode of a show...does it sometimes say \u201cthis episode is not supported by your current Hulu plan\u201d? I have the premium plan.....so, why won\u2019t it play? Is there a hidden plan above mine?!?",
+        "@hulu_support Trying to watch Hulu on my iPhone and it keeps saying to restart episode",
+        "That\u2019s the wrong name of the episode @115940 (no s) https://t.co/hLr8PmvOiK",
+        "@115940 your rick and morty episode descriptions are embarrassingly unreadable",
+        "WHY TF HAS THE NEW EPISODE OF GREYS NOT APPEARED ON HULU??? @115940 @115940 @115940"
+      ],
+      "possible_confusions": [
+        "live_live_tv_tv",
+        "working_game_hulu_support",
+        "ads_free_free_trial",
+        "115940_115940_hulu_support_app",
+        "season_115940_rick"
+      ],
+      "notes": "PROPOSAL ONLY. Requires human renaming, merging/splitting, and boundary documentation before labeling a golden set.",
+      "n_examples_in_cluster": 123,
+      "status": "PROPOSAL_NOT_GROUND_TRUTH"
+    },
+    {
+      "intent_id": "intent_02",
+      "intent_name": "ads_free_free_trial",
+      "description": "Auto-proposed from TF-IDF KMeans top terms: ads, free, free trial, trial, 115940, pay, hulu_support, commercials",
+      "representative_examples": [
+        "@hulu_support Paying for #Hulu $40/mo but still being forced to watch ads?! How greedy can you be?! Definitely spreading the word. #unsub",
+        "@hulu_support I tried to start a free trial, but was charged a fee with no warning. Chat help isn't working for me; it's just blank.",
+        "Hey @115940 free trial or not, I don't want you switching me from a $12 plan to a $44 plan without asking!!",
+        "@hulu_support Really \ud83d\ude34Audio for Ads overlaps show video Major syncing issues Start Stop Sign out &amp; in Restart Roku &amp; router Works &amp; doesn\u2019t \ud83d\udef0\ud83d\udcfa likely soon",
+        "Why do I even pay for ad free @115940? https://t.co/7qFOmmktBD"
+      ],
+      "possible_confusions": [
+        "live_live_tv_tv",
+        "working_game_hulu_support",
+        "115940_115940_hulu_support_app",
+        "episode_115940_new_episode"
+      ],
+      "notes": "PROPOSAL ONLY. Requires human renaming, merging/splitting, and boundary documentation before labeling a golden set.",
+      "n_examples_in_cluster": 106,
+      "status": "PROPOSAL_NOT_GROUND_TRUTH"
+    },
+    {
+      "intent_id": "intent_08",
+      "intent_name": "account_hulu_support_hulu_account",
+      "description": "Auto-proposed from TF-IDF KMeans top terms: account, hulu_support, hulu account, hulu, help, hulu_support account, don, log",
+      "representative_examples": [
+        "@hulu_support So I went ahead and hard wired my Fire TV with the Ethernet cable. When I start Hulu, pick the account. Just sits there, that's it.",
+        "@hulu_support That sucks that in this day and age a service I pay for doesn't respect my privacy.  I will cancel my account today I guess",
+        "@hulu_support I couldn\u2019t find it anywhere on the site for 30 mins or so. When I attempted to login to hbonow or other stuff told me account invalid",
+        "Sometimes I wonder why I have a @115940 account if shows never load! Even when I have full internet bars!!!",
+        "@115940 Question: my hulu account on my firestick keeps logging out every 20 minutes. Anything I can do to fix that?"
+      ],
+      "possible_confusions": [
+        "live_live_tv_tv",
+        "working_game_hulu_support",
+        "hulu_support_hulu_app",
+        "115940_115940_hulu_support_app"
+      ],
+      "notes": "PROPOSAL ONLY. Requires human renaming, merging/splitting, and boundary documentation before labeling a golden set.",
+      "n_examples_in_cluster": 105,
+      "status": "PROPOSAL_NOT_GROUND_TRUTH"
+    },
+    {
+      "intent_id": "intent_06",
+      "intent_name": "error_getting_hulu_support_getting",
+      "description": "Auto-proposed from TF-IDF KMeans top terms: error, getting, hulu_support getting, getting error, message, hulu_support, error message, loading error",
+      "representative_examples": [
+        "@hulu_support  All day I\u2019ve been getting error message when I try to play a show on my iPhone. Is this problem on my end or on yours?",
+        "@hulu_support Thanks but this did not help. I noticed it said US Bases. But is that inferring to bases located solely in the continental United States?  As I mentioned I am in Japan on a US Military installation. But I keep getting the message \u201cGeo Restriction\u201d. This was not always the case.",
+        "@hulu_support Getting a 500 error on the website.",
+        "@hulu_support Could\u2019ve used a reply last night.  Video kept stopping, starting, blacking out, eventually error code 201 or something. I\u2019ll try later",
+        "@hulu_support Error code: BYA-403-020; cant' play my live sports(again)please help"
+      ],
+      "possible_confusions": [],
+      "notes": "PROPOSAL ONLY. Requires human renaming, merging/splitting, and boundary documentation before labeling a golden set.",
+      "n_examples_in_cluster": 102,
+      "status": "PROPOSAL_NOT_GROUND_TRUTH"
+    }
+  ],
+  "ambiguous_multi_intent_notes": [
+    "Messages requesting both account action and troubleshooting are multi-intent.",
+    "Complaints that also ask for refunds may span billing + service_quality.",
+    "Human labeling should allow secondary_intent and ambiguous flags."
+  ]
+}

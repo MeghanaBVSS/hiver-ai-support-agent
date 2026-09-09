@@ -1,0 +1,12 @@
+{
+  "status": "OBSERVED",
+  "n_probe_messages": 15,
+  "deterministic_e2e_mean_ms": 27.47,
+  "deterministic_e2e_median_ms": 26.68,
+  "classifier_mean_ms": 0.86,
+  "retrieval_mean_ms": 27.44,
+  "index_build_time_note": "Previously observed ~27s for tfidf_svd on 4000 train cases (build_index); not re-run in freeze.",
+  "llm_agent_latency": "NOT MEASURED (no cloud API key in freeze run)",
+  "llm_judge_runtime": "OBSERVED ~48 minutes for 50 examples (qwen2.5:3b)",
+  "targeted_rejudge_runtime": "OBSERVED ~6 minutes for 15 examples (rubric v2)"
+}

@@ -1,0 +1,20 @@
+tweet_id,author_id,inbound,created_at,text,response_tweet_id,in_response_to_tweet_id
+1,AcmeHelp,False,Tue Oct 31 16:00:00 +0000 2017,@100 hi how can we help?,2,
+2,100,True,Tue Oct 31 16:01:00 +0000 2017,@AcmeHelp my login fails on the app,3,1
+3,AcmeHelp,False,Tue Oct 31 16:02:00 +0000 2017,@100 try resetting your password here https://example.com/reset,,2
+4,100,True,Tue Oct 31 16:03:00 +0000 2017,@AcmeHelp I need a refund for last charge,5,
+5,AcmeHelp,False,Tue Oct 31 16:04:00 +0000 2017,@100 we escalated your billing request to a specialist,,4
+10,BetaCare,False,Wed Nov 01 10:00:00 +0000 2017,@200 Thanks for writing in.,11,
+11,200,True,Wed Nov 01 10:01:00 +0000 2017,@BetaCare app crashes on launch,"12,13",10
+12,BetaCare,False,Wed Nov 01 10:02:00 +0000 2017,@200 please update to the latest version,,11
+13,BetaCare,False,Wed Nov 01 10:03:00 +0000 2017,@200 also try reinstalling if the update fails,,11
+20,300,True,Thu Nov 02 09:00:00 +0000 2017,@AcmeHelp is my account hacked?,21,
+21,AcmeHelp,False,Thu Nov 02 09:01:00 +0000 2017,@300 please DM us your account email for security review,,20
+30,400,True,Fri Nov 03 12:00:00 +0000 2017,@MissingBrand orphaned because parent is absent,31,99999
+31,AcmeHelp,False,Fri Nov 03 12:01:00 +0000 2017,@400 thanks we will look into this,,30
+40,AcmeHelp,False,Sat Nov 04 08:00:00 +0000 2017,@500 greeting from support,41,
+41,500,True,Sat Nov 04 08:01:00 +0000 2017,@AcmeHelp how do I change my password?,42,40
+42,AcmeHelp,False,Sat Nov 04 08:02:00 +0000 2017,@500 open Settings > Security > Password,,41
+50,600,True,Sun Nov 05 15:00:00 +0000 2017,@BetaCare playback is buffering constantly,51,
+51,BetaCare,False,Sun Nov 05 15:01:00 +0000 2017,@600 check your network or switch quality settings,,50
+60,700,True,Mon Nov 06 11:00:00 +0000 2017,@AcmeHelp general question about hours,,

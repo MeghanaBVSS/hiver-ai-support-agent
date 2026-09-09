@@ -1,0 +1,77 @@
+{
+  "status": "OBSERVED",
+  "source_path": "/home/mani/Music/Hiver/hiver-ai-support-agent/tests/fixtures/mini_twcs.csv",
+  "n_rows_analyzed": 19,
+  "ranked_candidates": [
+    {
+      "brand": "AcmeHelp",
+      "tweets_total_brand_related": 7,
+      "inbound_customer_tweets_mentioning_brand": 0,
+      "outbound_support_tweets": 7,
+      "conversations_brand_related": 6,
+      "customer_support_reply_pairs": 5,
+      "response_coverage_approx": 0.0,
+      "unique_inbound_texts": 0,
+      "avg_inbound_text_length": 0.0,
+      "lexical_diversity_unique_over_n": 0.0,
+      "suitability_intent_classification": "weak",
+      "suitability_historical_retrieval": "weak",
+      "suitability_golden_set_150_250": "poor",
+      "notes": [
+        "Inbound count uses @brand mentions in text; anonymized mentions may undercount.",
+        "Conversation count uses reconstructed threads containing the brand.",
+        "These metrics are estimates for ranking, not labels."
+      ],
+      "composite_score": 2.95,
+      "rank": 1
+    },
+    {
+      "brand": "BetaCare",
+      "tweets_total_brand_related": 4,
+      "inbound_customer_tweets_mentioning_brand": 0,
+      "outbound_support_tweets": 4,
+      "conversations_brand_related": 2,
+      "customer_support_reply_pairs": 2,
+      "response_coverage_approx": 0.0,
+      "unique_inbound_texts": 0,
+      "avg_inbound_text_length": 0.0,
+      "lexical_diversity_unique_over_n": 0.0,
+      "suitability_intent_classification": "weak",
+      "suitability_historical_retrieval": "weak",
+      "suitability_golden_set_150_250": "poor",
+      "notes": [
+        "Inbound count uses @brand mentions in text; anonymized mentions may undercount.",
+        "Conversation count uses reconstructed threads containing the brand.",
+        "These metrics are estimates for ranking, not labels."
+      ],
+      "composite_score": 1.1,
+      "rank": 2
+    }
+  ],
+  "recommendation": {
+    "status": "RECOMMENDED_FROM_DATA",
+    "brand": "AcmeHelp",
+    "evidence": {
+      "rank": 1,
+      "composite_score": 2.95,
+      "inbound_customer_tweets_mentioning_brand": 0,
+      "customer_support_reply_pairs": 5,
+      "conversations_brand_related": 6,
+      "response_coverage_approx": 0.0,
+      "suitability_intent_classification": "weak",
+      "suitability_historical_retrieval": "weak",
+      "suitability_golden_set_150_250": "poor"
+    },
+    "trade_offs": [
+      "Composite score weights volume and reply pairs; niche brands with cleaner issue structure may score lower but be easier to label.",
+      "Mention-based inbound detection can undercount when @handles are anonymized.",
+      "Strong runners-up to revisit: ['BetaCare']",
+      "SpotifyCares is only preferred if it ranks highly on these observed metrics."
+    ],
+    "alternatives": [
+      "BetaCare"
+    ]
+  },
+  "data_provenance": "SYNTHETIC_TEST_FIXTURE",
+  "provenance_note": "Derived from tests/fixtures/mini_twcs.csv for pipeline smoke checks. NOT the Kaggle corpus. Do not treat brand/intent findings as real-world results."
+}

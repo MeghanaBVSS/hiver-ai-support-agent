@@ -1,0 +1,298 @@
+[
+  {
+    "conversation_id": "conv_000738_1104054",
+    "n_turns": 232,
+    "has_missing_parent": false,
+    "brand": "hulu_support",
+    "texts": [
+      [
+        false,
+        "@251323 We definitely agree. Please try calling us/chatting us as our phone/chat team would be best able to take a closer look."
+      ],
+      [
+        true,
+        "@hulu_support Point is I shouldn't have to restart my Roku EVERY SINGLE TIME I want to watch live TV. Here's what I see when trying to watch LA/TOR now. https:/"
+      ],
+      [
+        false,
+        "@251323 Oh no! Restarting didn't help? If you're still running into trouble, please reach out here: https://t.co/6YdK7bvQN7."
+      ],
+      [
+        false,
+        "@435113 Apologies! The issue has since been resolved (https://t.co/az3EROTani). We hope you caught the end!"
+      ],
+      [
+        false,
+        "@543295 Our sincere apologies for the hiccup, Ross. Our team pushed out a fix for this. Please reboot device in use &amp; you'll be all set. \ud83d\udc9a"
+      ],
+      [
+        false,
+        "@543332 Our apologies, Timothy. We're looking into similar reports. What device is in use? Let us know if: https://t.co/HXpLyTU79x helps."
+      ],
+      [
+        false,
+        "@360795 Feel free to follow up here: https://t.co/6YdK7bvQN7 about that. Our phone/chat team will see what options we have available."
+      ],
+      [
+        true,
+        "@360795 @hulu_support Good luck with that ..."
+      ]
+    ]
+  },
+  {
+    "conversation_id": "conv_002356_1409337",
+    "n_turns": 159,
+    "has_missing_parent": false,
+    "brand": "hulu_support",
+    "texts": [
+      [
+        false,
+        "@447585 We're definitely sorry to hear the link didn't redirect you appropriately the first time. Rest assured we've expressed your input."
+      ],
+      [
+        true,
+        "@hulu_support I followed the link this morning and NOW it took me to a page citing other apps that can be used using Hulu as a provider. Wish I'd got this"
+      ],
+      [
+        false,
+        "@447585 That's not good! We haven't had similar reports regarding the link, but we'll share your feedback &amp; investigate on our end."
+      ],
+      [
+        true,
+        "@hulu_support Following the link, whether on phone or PC, it went straight to the home Service page. Unless that was the intent..."
+      ],
+      [
+        false,
+        "@118989 Sorry for the trouble. If there are ongoing issues, don't hesitate to let us know what device you're using as well as behavior."
+      ],
+      [
+        false,
+        "@460927 Sorry for the continued trouble, Doug! Which device is this occurring on? Try unplugging your device and modem for a few mins."
+      ],
+      [
+        true,
+        "@hulu_support I have a FireTV Stick. I rebooted my cable modem and my access point/router. Everything works; Netflix, PrimeVideo, other Hulu Channels."
+      ],
+      [
+        true,
+        "@hulu_support I am really trying to make this work. Can playback everything except for live Fox News. Error code: manifest-4-8410edc5"
+      ]
+    ]
+  },
+  {
+    "conversation_id": "conv_000879_11272",
+    "n_turns": 110,
+    "has_missing_parent": false,
+    "brand": "hulu_support",
+    "texts": [
+      [
+        false,
+        "@118149 Sorry for the trouble! Try a quick reboot of your device+modem/router. If no change, call/chat us: https://t.co/6YdK7bvQN7."
+      ],
+      [
+        true,
+        "@hulu_support Still having this issue!"
+      ],
+      [
+        false,
+        "\u26a0\ufe0f  We're currently investigating reports of playback trouble and login issues with a very high priority. We'll update here accordingly."
+      ],
+      [
+        true,
+        "@hulu_support Why isn\u2019t last nites episode of @168148 on @115940 ?!"
+      ],
+      [
+        true,
+        "@hulu_support I've been having to activate the same device (xbox one) every time I've tried to use Hulu for the last couple of days."
+      ],
+      [
+        true,
+        "@hulu_support I am just now starting to have this problem.  Live and on demand ... tried restarting my modem still nothing.  WTH"
+      ],
+      [
+        true,
+        "@hulu_support I still can\u2019t log into my device today"
+      ],
+      [
+        true,
+        "@hulu_support I have had playback trouble since joining. Getting ready to switch to something else.  Contacting support is impossible."
+      ]
+    ]
+  },
+  {
+    "conversation_id": "conv_000354_1051419",
+    "n_turns": 94,
+    "has_missing_parent": false,
+    "brand": "hulu_support",
+    "texts": [
+      [
+        false,
+        "@368467 Oh no! We'd hate to lose you, Maureen. \ud83d\udc9a  We'd love to gather any feedback you have for our devs here: https://t.co/n4qDfJdbFR."
+      ],
+      [
+        true,
+        "@hulu_support @368467 You guys are never going to stop the \"Oh No!\" stuff, are you? You desperately need someone else handling your Twitter support."
+      ],
+      [
+        false,
+        "@168341 Oh no! \ud83d\ude2d If troubleshooting (https://t.co/wAoEicy9CF) isn't resolving, call or chat for further help: https://t.co/6YdK7bvQN7."
+      ],
+      [
+        false,
+        "@379646 We're working on finalizing those details! We don't have a date to share just yet, but keep tabs on: https://t.co/r9MCqHxrfq"
+      ],
+      [
+        false,
+        "@413666 We're sorry to hear this! Have you seen: https://t.co/zS2PPOcsyE? If that doesn't help\u2014please @ us some pain-points. We'll help!"
+      ],
+      [
+        false,
+        "@420243 Oh no\u2014we'd hate to see you go! When you have a moment, reach out here: https://t.co/6YdK7bvQN7 so we can further assist!"
+      ],
+      [
+        true,
+        "@hulu_support No need to respond canceled"
+      ],
+      [
+        false,
+        "@420243 We'd hate to see you go Nathan! Our team is investigating this error. This: https://t.co/wAoEicy9CF should resume playback."
+      ]
+    ]
+  },
+  {
+    "conversation_id": "conv_000733_1103174",
+    "n_turns": 90,
+    "has_missing_parent": false,
+    "brand": "hulu_support",
+    "texts": [
+      [
+        false,
+        "@380332 Let's see if we can help! Which device are you using to stream? See if these steps lead to an improvement: https://t.co/HXpLyTU79x."
+      ],
+      [
+        true,
+        "@hulu_support Roku 4"
+      ],
+      [
+        false,
+        "@380332 Got it. Are you noticing buffering w/a certain channel? Try a quick reboot of your Roku+modem along w/: https://t.co/wAoEicy9CF."
+      ],
+      [
+        true,
+        "@hulu_support Done all that, this is a server, Hulu issue,"
+      ],
+      [
+        false,
+        "@380332 Sorry to hear those didn't do the trick! Please call us/chat us so we can take a closer look on our end: https://t.co/6YdK7bvQN7."
+      ],
+      [
+        false,
+        "@381902 We'd hate to lose you! \ud83d\ude2d Let's try: https://t.co/wAoEicy9CF. Call or chat if that doesn't take care of it (https://t.co/6YdK7bvQN7)."
+      ],
+      [
+        false,
+        "@162160 Our apologies for the trouble! Please let us know the details of the issue at hand and the device in use. We're here to help."
+      ],
+      [
+        true,
+        "@hulu_support It\u2019s the same every time, everyday. Buffering, buffering, buffering. Why doesn\u2019t Hulu stop lying about this issue? Not on my end but yours."
+      ]
+    ]
+  },
+  {
+    "conversation_id": "conv_011668_388172",
+    "n_turns": 2,
+    "has_missing_parent": false,
+    "brand": "hulu_support",
+    "texts": [
+      [
+        false,
+        "@207873 Hey CJ! Check out this page: https://t.co/eLkTYA6geI for details on how to sign up. Let us know if you have any questions!"
+      ],
+      [
+        true,
+        "@hulu_support I was just informed of the Spotify/Hulu bundle. How do I sign in to Hulu to get the bundle?"
+      ]
+    ]
+  },
+  {
+    "conversation_id": "conv_006664_2300751",
+    "n_turns": 4,
+    "has_missing_parent": false,
+    "brand": "comcastcares",
+    "texts": [
+      [
+        false,
+        "@667758 Hello, Brian, are you having issues with your internet connection? -JW"
+      ],
+      [
+        true,
+        "@115940 @comcastcares @hulu_support @16202 30 minutes into this episode and I\u2019ve had to restart the app 7 times now"
+      ],
+      [
+        false,
+        "@667758 Yikes! Apologies, Brian. Call / chat us (https://t.co/6YdK7bvQN7) if troubleshooting doesn't resolve: https://t.co/HiTFsfb2rK."
+      ],
+      [
+        true,
+        "Anyone else ever notice that no matter how many times an episode freezes-up on @115940, it never seems to happen during the ads? Meanwhile everyone points to th"
+      ]
+    ]
+  },
+  {
+    "conversation_id": "conv_009873_2773428",
+    "n_turns": 2,
+    "has_missing_parent": false,
+    "brand": "hulu_support",
+    "texts": [
+      [
+        false,
+        "@775160 We'll be sure the feedback gets passed along, Shari\u2014thanks for sharing! For now, it may help to know that eps 1-3 are up."
+      ],
+      [
+        true,
+        "I was all for the  #Runaways until I learned @115940 likes to roll out eps once a week. Nah if I wanted that + commercials I\u2019d watch regular cable. Remind me ab"
+      ]
+    ]
+  },
+  {
+    "conversation_id": "conv_001374_1222326",
+    "n_turns": 4,
+    "has_missing_parent": false,
+    "brand": "hulu_support",
+    "texts": [
+      [
+        false,
+        "@406821 The steps are the same! To delete your account after cancelling it, check out: https://t.co/6tk2WaR109. Hope this helps, Molly"
+      ],
+      [
+        true,
+        "@hulu_support I don\u2019t have the delete my free account option to click on"
+      ],
+      [
+        true,
+        "@hulu_support I would like to delete my account after canceling but I only see instructions for how to do so if you had a free one. Help?"
+      ],
+      [
+        false,
+        "@406821 Not to worry\u2014If another computer browser doesn't work, send us a quick ping or ring at: https://t.co/6YdK7bvQN7. We'll help. \ud83d\udc4d"
+      ]
+    ]
+  },
+  {
+    "conversation_id": "conv_006578_2263579",
+    "n_turns": 2,
+    "has_missing_parent": false,
+    "brand": "hulu_support",
+    "texts": [
+      [
+        false,
+        "@354200 Hi Anal\u00eda! We don't have international streaming rights at this time, but we'll be sure to share your interest w/ our team."
+      ],
+      [
+        true,
+        "@115940 I wish I could enjoy your service. I live in Argentina. Are you planning to expand to LATAM?"
+      ]
+    ]
+  }
+]

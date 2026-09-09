@@ -1,0 +1,401 @@
+{
+  "status": "OBSERVED",
+  "n": 50,
+  "dimensions": {
+    "correctness": {
+      "n": 50,
+      "exact_agreement": 0.36,
+      "agreement_within_1": 0.72,
+      "spearman": 0.1621298270264759,
+      "weighted_kappa": 0.15126772668672106,
+      "mean_judge_minus_human": -0.66
+    },
+    "groundedness": {
+      "n": 50,
+      "exact_agreement": 0.06,
+      "agreement_within_1": 0.12,
+      "spearman": -0.2881522852849563,
+      "weighted_kappa": -0.02558635394456288,
+      "mean_judge_minus_human": -2.86
+    },
+    "helpfulness": {
+      "n": 50,
+      "exact_agreement": 0.32,
+      "agreement_within_1": 0.82,
+      "spearman": 0.3605665378738239,
+      "weighted_kappa": 0.21090387374461972,
+      "mean_judge_minus_human": 0.84
+    },
+    "actionability": {
+      "n": 50,
+      "exact_agreement": 0.38,
+      "agreement_within_1": 0.88,
+      "spearman": 0.0922636321267014,
+      "weighted_kappa": 0.0956468424279584,
+      "mean_judge_minus_human": 0.14
+    },
+    "brand_style": {
+      "n": 50,
+      "exact_agreement": 0.06,
+      "agreement_within_1": 0.56,
+      "spearman": 0.15015273295726664,
+      "weighted_kappa": 0.010507880910682887,
+      "mean_judge_minus_human": 1.38
+    }
+  },
+  "disagreements": [
+    {
+      "example_id": "gold_1138538",
+      "dimension": "correctness",
+      "human": 3,
+      "judge": 1,
+      "delta": -2
+    },
+    {
+      "example_id": "gold_1475665",
+      "dimension": "correctness",
+      "human": 4,
+      "judge": 1,
+      "delta": -3
+    },
+    {
+      "example_id": "gold_199210",
+      "dimension": "correctness",
+      "human": 4,
+      "judge": 2,
+      "delta": -2
+    },
+    {
+      "example_id": "gold_2363665",
+      "dimension": "correctness",
+      "human": 4,
+      "judge": 2,
+      "delta": -2
+    },
+    {
+      "example_id": "gold_2365549",
+      "dimension": "correctness",
+      "human": 3,
+      "judge": 1,
+      "delta": -2
+    },
+    {
+      "example_id": "gold_2575590",
+      "dimension": "correctness",
+      "human": 4,
+      "judge": 2,
+      "delta": -2
+    },
+    {
+      "example_id": "gold_2596041",
+      "dimension": "correctness",
+      "human": 4,
+      "judge": 2,
+      "delta": -2
+    },
+    {
+      "example_id": "gold_284187",
+      "dimension": "correctness",
+      "human": 4,
+      "judge": 2,
+      "delta": -2
+    },
+    {
+      "example_id": "gold_2972726",
+      "dimension": "correctness",
+      "human": 4,
+      "judge": 2,
+      "delta": -2
+    },
+    {
+      "example_id": "gold_347110",
+      "dimension": "correctness",
+      "human": 4,
+      "judge": 2,
+      "delta": -2
+    },
+    {
+      "example_id": "gold_467845",
+      "dimension": "correctness",
+      "human": 4,
+      "judge": 2,
+      "delta": -2
+    },
+    {
+      "example_id": "gold_507602",
+      "dimension": "correctness",
+      "human": 4,
+      "judge": 2,
+      "delta": -2
+    },
+    {
+      "example_id": "gold_59915",
+      "dimension": "correctness",
+      "human": 4,
+      "judge": 2,
+      "delta": -2
+    },
+    {
+      "example_id": "gold_880253",
+      "dimension": "correctness",
+      "human": 4,
+      "judge": 2,
+      "delta": -2
+    },
+    {
+      "example_id": "gold_1004914",
+      "dimension": "groundedness",
+      "human": 5,
+      "judge": 1,
+      "delta": -4
+    },
+    {
+      "example_id": "gold_1138538",
+      "dimension": "groundedness",
+      "human": 5,
+      "judge": 2,
+      "delta": -3
+    },
+    {
+      "example_id": "gold_1197349",
+      "dimension": "groundedness",
+      "human": 5,
+      "judge": 2,
+      "delta": -3
+    },
+    {
+      "example_id": "gold_1224206",
+      "dimension": "groundedness",
+      "human": 5,
+      "judge": 3,
+      "delta": -2
+    },
+    {
+      "example_id": "gold_1331619",
+      "dimension": "groundedness",
+      "human": 5,
+      "judge": 2,
+      "delta": -3
+    },
+    {
+      "example_id": "gold_1372321",
+      "dimension": "groundedness",
+      "human": 5,
+      "judge": 1,
+      "delta": -4
+    },
+    {
+      "example_id": "gold_1377359",
+      "dimension": "groundedness",
+      "human": 5,
+      "judge": 1,
+      "delta": -4
+    },
+    {
+      "example_id": "gold_1436312",
+      "dimension": "groundedness",
+      "human": 5,
+      "judge": 1,
+      "delta": -4
+    },
+    {
+      "example_id": "gold_1461313",
+      "dimension": "groundedness",
+      "human": 5,
+      "judge": 1,
+      "delta": -4
+    },
+    {
+      "example_id": "gold_1475665",
+      "dimension": "groundedness",
+      "human": 5,
+      "judge": 2,
+      "delta": -3
+    },
+    {
+      "example_id": "gold_1494174",
+      "dimension": "groundedness",
+      "human": 5,
+      "judge": 1,
+      "delta": -4
+    },
+    {
+      "example_id": "gold_1681450",
+      "dimension": "groundedness",
+      "human": 5,
+      "judge": 3,
+      "delta": -2
+    },
+    {
+      "example_id": "gold_1767264",
+      "dimension": "groundedness",
+      "human": 5,
+      "judge": 2,
+      "delta": -3
+    },
+    {
+      "example_id": "gold_1914172",
+      "dimension": "groundedness",
+      "human": 5,
+      "judge": 1,
+      "delta": -4
+    },
+    {
+      "example_id": "gold_199210",
+      "dimension": "groundedness",
+      "human": 5,
+      "judge": 1,
+      "delta": -4
+    },
+    {
+      "example_id": "gold_2181625",
+      "dimension": "groundedness",
+      "human": 5,
+      "judge": 2,
+      "delta": -3
+    },
+    {
+      "example_id": "gold_2209356",
+      "dimension": "groundedness",
+      "human": 5,
+      "judge": 1,
+      "delta": -4
+    },
+    {
+      "example_id": "gold_2214147",
+      "dimension": "groundedness",
+      "human": 5,
+      "judge": 3,
+      "delta": -2
+    },
+    {
+      "example_id": "gold_2251699",
+      "dimension": "groundedness",
+      "human": 5,
+      "judge": 2,
+      "delta": -3
+    },
+    {
+      "example_id": "gold_2363665",
+      "dimension": "groundedness",
+      "human": 5,
+      "judge": 1,
+      "delta": -4
+    },
+    {
+      "example_id": "gold_2365549",
+      "dimension": "groundedness",
+      "human": 5,
+      "judge": 3,
+      "delta": -2
+    },
+    {
+      "example_id": "gold_2453804",
+      "dimension": "groundedness",
+      "human": 5,
+      "judge": 3,
+      "delta": -2
+    },
+    {
+      "example_id": "gold_2575590",
+      "dimension": "groundedness",
+      "human": 5,
+      "judge": 3,
+      "delta": -2
+    },
+    {
+      "example_id": "gold_2596041",
+      "dimension": "groundedness",
+      "human": 5,
+      "judge": 1,
+      "delta": -4
+    },
+    {
+      "example_id": "gold_2759437",
+      "dimension": "groundedness",
+      "human": 5,
+      "judge": 1,
+      "delta": -4
+    },
+    {
+      "example_id": "gold_2801307",
+      "dimension": "groundedness",
+      "human": 5,
+      "judge": 3,
+      "delta": -2
+    },
+    {
+      "example_id": "gold_284187",
+      "dimension": "groundedness",
+      "human": 5,
+      "judge": 1,
+      "delta": -4
+    },
+    {
+      "example_id": "gold_2911030",
+      "dimension": "groundedness",
+      "human": 5,
+      "judge": 3,
+      "delta": -2
+    },
+    {
+      "example_id": "gold_2972726",
+      "dimension": "groundedness",
+      "human": 5,
+      "judge": 3,
+      "delta": -2
+    },
+    {
+      "example_id": "gold_310432",
+      "dimension": "groundedness",
+      "human": 5,
+      "judge": 3,
+      "delta": -2
+    },
+    {
+      "example_id": "gold_347110",
+      "dimension": "groundedness",
+      "human": 5,
+      "judge": 3,
+      "delta": -2
+    },
+    {
+      "example_id": "gold_45990",
+      "dimension": "groundedness",
+      "human": 5,
+      "judge": 1,
+      "delta": -4
+    },
+    {
+      "example_id": "gold_467845",
+      "dimension": "groundedness",
+      "human": 5,
+      "judge": 1,
+      "delta": -4
+    },
+    {
+      "example_id": "gold_507602",
+      "dimension": "groundedness",
+      "human": 5,
+      "judge": 3,
+      "delta": -2
+    },
+    {
+      "example_id": "gold_561173",
+      "dimension": "groundedness",
+      "human": 5,
+      "judge": 3,
+      "delta": -2
+    },
+    {
+      "example_id": "gold_59915",
+      "dimension": "groundedness",
+      "human": 5,
+      "judge": 1,
+      "delta": -4
+    }
+  ],
+  "note": "Disagreements with |delta|>=2 are surfaced; do not hide them.",
+  "judge_model": "ollama:qwen2.5:3b",
+  "n_scored": 50
+}

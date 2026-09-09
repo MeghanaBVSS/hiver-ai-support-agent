@@ -1,0 +1,105 @@
+{
+  "status": "OBSERVED",
+  "source_path": "/home/mani/Music/Hiver/hiver-ai-support-agent/tests/fixtures/mini_twcs.csv",
+  "file": {
+    "path": "/home/mani/Music/Hiver/hiver-ai-support-agent/tests/fixtures/mini_twcs.csv",
+    "filename": "mini_twcs.csv",
+    "size_bytes": 1829,
+    "size_mb": 0.002,
+    "exists": true
+  },
+  "row_count": 19,
+  "column_count": 7,
+  "columns": [
+    "tweet_id",
+    "author_id",
+    "inbound",
+    "created_at",
+    "text",
+    "response_tweet_id",
+    "in_response_to_tweet_id"
+  ],
+  "schema": {
+    "ok": true,
+    "missing_columns": [],
+    "unexpected_columns": [],
+    "observed_columns": [
+      "tweet_id",
+      "author_id",
+      "inbound",
+      "created_at",
+      "text",
+      "response_tweet_id",
+      "in_response_to_tweet_id"
+    ],
+    "dtypes": {
+      "tweet_id": "str",
+      "author_id": "str",
+      "inbound": "bool",
+      "created_at": "string",
+      "text": "string",
+      "response_tweet_id": "str",
+      "in_response_to_tweet_id": "str"
+    },
+    "notes": []
+  },
+  "dtypes": {
+    "tweet_id": "str",
+    "author_id": "str",
+    "inbound": "bool",
+    "created_at": "string",
+    "text": "string",
+    "response_tweet_id": "str",
+    "in_response_to_tweet_id": "str"
+  },
+  "missing_values": {
+    "tweet_id": 0,
+    "author_id": 0,
+    "inbound": 0,
+    "created_at": 0,
+    "text": 0,
+    "response_tweet_id": 9,
+    "in_response_to_tweet_id": 7
+  },
+  "missing_rate": {
+    "tweet_id": 0.0,
+    "author_id": 0.0,
+    "inbound": 0.0,
+    "created_at": 0.0,
+    "text": 0.0,
+    "response_tweet_id": 0.47368421052631576,
+    "in_response_to_tweet_id": 0.3684210526315789
+  },
+  "duplicate_rows": 0,
+  "duplicate_tweet_ids": 0,
+  "unique_tweet_ids": 19,
+  "inbound_distribution": {
+    "False": 11,
+    "True": 8
+  },
+  "unique_authors": 9,
+  "unique_brand_authors_outbound_non_numeric": 2,
+  "top_outbound_brands": {
+    "AcmeHelp": 7,
+    "BetaCare": 4
+  },
+  "timestamps": {
+    "parseable": 19,
+    "unparseable": 0,
+    "min": "2017-10-31T16:00:00+00:00",
+    "max": "2017-11-06T11:00:00+00:00"
+  },
+  "rows_with_response_tweet_id": 10,
+  "rows_with_in_response_to_tweet_id": 12,
+  "unique_parent_refs": 11,
+  "missing_parent_refs_in_file": 1,
+  "parent_coverage_in_file": 0.9090909090909091,
+  "multi_response_id_rows_in_first_5k_non_null": 1,
+  "quality_issues": [
+    "Column 'response_tweet_id' has 9 missing values.",
+    "Column 'in_response_to_tweet_id' has 7 missing values.",
+    "1 parent tweet refs are missing from this file (orphans / incomplete extract)."
+  ],
+  "data_provenance": "SYNTHETIC_TEST_FIXTURE",
+  "provenance_note": "Derived from tests/fixtures/mini_twcs.csv for pipeline smoke checks. NOT the Kaggle corpus. Do not treat brand/intent findings as real-world results."
+}

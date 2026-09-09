@@ -1,0 +1,23 @@
+{
+  "status": "OBSERVED",
+  "brand": "hulu_support",
+  "retrieval_index_size": 4000,
+  "index_source": "train_labeled_only",
+  "n_eval_golden": 199,
+  "top1_similarity_mean": 0.3104822591500017,
+  "top1_similarity_median": 0.28181442618619945,
+  "top1_similarity_p25": 0.23937096560408294,
+  "top1_similarity_p75": 0.3444507657206457,
+  "retrieved_neighbor_same_gold_intent_rate": 0.35175879396984927,
+  "limitation": "Cosine similarity / neighbor-intent match are proxies only; they do not prove reply correctness, groundedness, or brand-style fit.",
+  "escalation_from_policy_on_retrieval": {
+    "escalation_precision": 0.45121951219512196,
+    "escalation_recall": 0.8505747126436781,
+    "unsafe_auto_handle_rate": 0.14942528735632185,
+    "auto_handle_coverage": 0.17587939698492464,
+    "notes": [
+      "Do not optimize auto_handle_coverage alone.",
+      "unsafe_auto_handle_rate is the primary safety metric."
+    ]
+  }
+}

@@ -1,0 +1,196 @@
+{
+  "status": "HUMAN_REVIEWED_PROPOSAL",
+  "brand": "hulu_support",
+  "n_intents": 10,
+  "intents": [
+    {
+      "intent_id": "playback_error",
+      "name": "playback_error",
+      "definition": "Customer cannot play on-demand/VOD content due to errors, buffering, spinning wheel, freezing, black screen, or stream failing to start (not specifically Live TV sports/channels).",
+      "in_scope_examples": [
+        "I keep getting playback errors on Roku",
+        "error 0320 when I try to play a show"
+      ],
+      "out_of_scope_examples": [
+        "Live TV football channel won't load",
+        "When will season 3 be added?"
+      ],
+      "likely_confusions": [
+        "live_tv_issues",
+        "app_device_issue",
+        "service_outage"
+      ],
+      "escalate_default": false,
+      "notes": ""
+    },
+    {
+      "intent_id": "live_tv_issues",
+      "name": "live_tv_issues",
+      "definition": "Problems with Hulu Live TV / live channels / live sports streams (channel missing, live stream glitching, game not playing).",
+      "in_scope_examples": [
+        "Sunday night football channel didn't work",
+        "Live TV on Roku not loading local CBS"
+      ],
+      "out_of_scope_examples": [
+        "On-demand episode won't play",
+        "I want a refund for Live TV"
+      ],
+      "likely_confusions": [
+        "playback_error",
+        "billing_subscription",
+        "service_outage"
+      ],
+      "escalate_default": false,
+      "notes": ""
+    },
+    {
+      "intent_id": "app_device_issue",
+      "name": "app_device_issue",
+      "definition": "App/device platform problems: crashes, install/update issues, Roku/Fire TV/Smart TV quirks, audio sync, profile UI on a device.",
+      "in_scope_examples": [
+        "Hulu app on Samsung TV won't show profiles",
+        "Sound doesn't match video on Fire Stick"
+      ],
+      "out_of_scope_examples": [
+        "I forgot my password",
+        "Playback error code only"
+      ],
+      "likely_confusions": [
+        "playback_error",
+        "login_account"
+      ],
+      "escalate_default": false,
+      "notes": ""
+    },
+    {
+      "intent_id": "login_account",
+      "name": "login_account",
+      "definition": "Login, sign-in, password, account access, email/username, or account/profile access barriers (not billing plan selection alone).",
+      "in_scope_examples": [
+        "Can't log into my account",
+        "Password reset not working"
+      ],
+      "out_of_scope_examples": [
+        "Fire Stick asks me to choose a plan"
+      ],
+      "likely_confusions": [
+        "billing_subscription",
+        "app_device_issue"
+      ],
+      "escalate_default": true,
+      "notes": ""
+    },
+    {
+      "intent_id": "billing_subscription",
+      "name": "billing_subscription",
+      "definition": "Charges, refunds, cancellations, plan price, free trial, commercials/ad-tier complaints tied to what the customer pays for.",
+      "in_scope_examples": [
+        "Paying $40/mo but still forced to watch ads",
+        "How do I cancel / get my money back"
+      ],
+      "out_of_scope_examples": [
+        "Ads are annoying but no billing ask"
+      ],
+      "likely_confusions": [
+        "feedback_complaint",
+        "live_tv_issues"
+      ],
+      "escalate_default": true,
+      "notes": ""
+    },
+    {
+      "intent_id": "content_availability",
+      "name": "content_availability",
+      "definition": "Missing/removed shows, seasons, episodes; requests for when content will be added or why it disappeared.",
+      "in_scope_examples": [
+        "When are you adding season 3 of Rick & Morty?",
+        "Gold Rush episodes aren't uploading"
+      ],
+      "out_of_scope_examples": [
+        "Episode exists but won't play"
+      ],
+      "likely_confusions": [
+        "playback_error",
+        "feedback_complaint"
+      ],
+      "escalate_default": false,
+      "notes": ""
+    },
+    {
+      "intent_id": "service_outage",
+      "name": "service_outage",
+      "definition": "Reports that Hulu is down / widespread outage / 'anyone else' service failure without a specific device-only bug.",
+      "in_scope_examples": [
+        "Anyone else having major issues with Hulu right now?",
+        "Is Hulu down?"
+      ],
+      "out_of_scope_examples": [
+        "Only one channel fails"
+      ],
+      "likely_confusions": [
+        "playback_error",
+        "live_tv_issues"
+      ],
+      "escalate_default": false,
+      "notes": ""
+    },
+    {
+      "intent_id": "how_to_feature",
+      "name": "how_to_feature",
+      "definition": "Informational how-to / feature questions (profiles, settings, Alexa, downloads) without an active outage/error incident.",
+      "in_scope_examples": [
+        "How do I create a profile?",
+        "Is there an Alexa skill for Hulu?"
+      ],
+      "out_of_scope_examples": [
+        "How do I get a refund?"
+      ],
+      "likely_confusions": [
+        "app_device_issue",
+        "billing_subscription"
+      ],
+      "escalate_default": false,
+      "notes": ""
+    },
+    {
+      "intent_id": "feedback_complaint",
+      "name": "feedback_complaint",
+      "definition": "General dissatisfaction, rant, or cancellation threat without a concrete troubleshooting/billing/content request.",
+      "in_scope_examples": [
+        "Ready to cancel, Hulu is the worst",
+        "Huge mistake subscribing, everything is glitchy (no ask)"
+      ],
+      "out_of_scope_examples": [
+        "I want a refund"
+      ],
+      "likely_confusions": [
+        "billing_subscription",
+        "playback_error"
+      ],
+      "escalate_default": false,
+      "notes": ""
+    },
+    {
+      "intent_id": "other_ambiguous",
+      "name": "other_ambiguous",
+      "definition": "Unclear, multi-intent without a dominant ask, too short to classify, or not covered by the above intents.",
+      "in_scope_examples": [
+        "@hulu_support help",
+        "@hulu_support ???"
+      ],
+      "out_of_scope_examples": [],
+      "likely_confusions": [
+        "live_tv_issues",
+        "billing_subscription",
+        "content_availability",
+        "playback_error"
+      ],
+      "escalate_default": true,
+      "notes": "Use sparingly; prefer a primary intent when one clearly dominates."
+    }
+  ],
+  "notes": [
+    "Derived from train-only exploration of real hulu_support messages.",
+    "Cluster names from KMeans were used only as hints, then rewritten."
+  ]
+}

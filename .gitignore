@@ -1,0 +1,64 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.python-version
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Data (do not commit raw Kaggle dumps / heavy caches)
+data/raw/**
+!data/raw/.gitkeep
+!data/raw/README.md
+data/interim/**
+!data/interim/.gitkeep
+data/processed/**
+!data/processed/.gitkeep
+!data/processed/agent_artifacts/
+!data/processed/agent_artifacts/policy_thresholds.json
+!data/processed/agent_artifacts/retriever/
+!data/processed/agent_artifacts/retriever/meta.json
+
+# Do not commit huge parquet/csv dumps by default
+*.parquet
+data/**/*.csv
+
+# Keep evaluation CSVs that are part of the submission package
+!evaluation/**/*.csv
+!tests/fixtures/**/*.csv
+
+# Local LLM / caches
+.ollama/
+**/__pycache__/
+*.joblib
+!/dev/null
+
+# Secrets
+kaggle.json
+*.pem
+credentials.json
+*secret*
+*credentials*
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+*.swp
+*.log
+tmp/
+.cache/

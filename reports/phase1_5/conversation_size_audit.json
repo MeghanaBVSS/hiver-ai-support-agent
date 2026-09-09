@@ -1,0 +1,71 @@
+{
+  "status": "OBSERVED",
+  "undirected_stats": {
+    "min": 1.0,
+    "p25": 2.0,
+    "median": 2.0,
+    "p75": 4.0,
+    "p90": 5.0,
+    "p95": 7.0,
+    "p99": 12.0,
+    "max": 232.0,
+    "mean": 3.149184458294656,
+    "count": 15082,
+    "bins": {
+      "n_eq_1": 15,
+      "n_eq_2": 9362,
+      "n_3_to_5": 4325,
+      "n_6_to_10": 1170,
+      "n_gt_10": 210,
+      "n_gt_20": 35,
+      "n_gt_50": 10,
+      "n_gt_100": 3
+    }
+  },
+  "directed_stats": {
+    "min": 1.0,
+    "p25": 2.0,
+    "median": 2.0,
+    "p75": 4.0,
+    "p90": 5.0,
+    "p95": 7.0,
+    "p99": 12.0,
+    "max": 232.0,
+    "mean": 3.149184458294656,
+    "count": 15082,
+    "bins": {
+      "n_eq_1": 15,
+      "n_eq_2": 9362,
+      "n_3_to_5": 4325,
+      "n_6_to_10": 1170,
+      "n_gt_10": 210,
+      "n_gt_20": 35,
+      "n_gt_50": 10,
+      "n_gt_100": 3
+    }
+  },
+  "comparison": {
+    "undirected": {
+      "n_conversations": 15082,
+      "max_turns": 232,
+      "mean_turns": 3.149184458294656,
+      "n_turns_ge_20": 42,
+      "n_missing_parent": 558
+    },
+    "directed": {
+      "n_conversations": 15082,
+      "max_turns": 232,
+      "mean_turns": 3.149184458294656,
+      "n_turns_ge_20": 42,
+      "n_missing_parent": 558
+    },
+    "recommendation": "Use directed/thread reconstruction for modeling units when undirected components produce extreme mergers (shared viral/broadcast reply graphs). Keep undirected analysis for exploratory connectivity audits."
+  },
+  "n_likely_unrelated_merges_in_top20": 15,
+  "reconstruction_decision": {
+    "pair_extraction": "customer\u2192first support reply (unchanged)",
+    "split_conversation_id": "conservative IDs (isolate by customer tweet when undirected component has >3 customer authors or >15 turns)",
+    "why": "Largest components show multi-customer support trees; undirected/directed stats match on this extract, but multi-customer roots still merge unrelated issues if used as split units.",
+    "used_for_modeling_splits": "conservative conversation IDs over brand pairs dataset"
+  }
+}

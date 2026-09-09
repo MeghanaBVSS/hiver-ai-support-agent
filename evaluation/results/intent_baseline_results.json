@@ -1,0 +1,417 @@
+{
+  "status": "OBSERVED",
+  "phase": "1.5",
+  "brand": "hulu_support",
+  "reproduced_at_utc": "2026-09-09T10:04:23.094375+00:00",
+  "random_seed": 42,
+  "n_train_labeled": 4000,
+  "n_valid_labeled": 800,
+  "n_golden": 199,
+  "majority_baseline": {
+    "accuracy": 0.12562814070351758,
+    "macro_f1": 0.022321428571428572,
+    "weighted_f1": 0.028041995692749462,
+    "per_class": {
+      "app_device_issue": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 19
+      },
+      "billing_subscription": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 19
+      },
+      "content_availability": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 20
+      },
+      "feedback_complaint": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 20
+      },
+      "how_to_feature": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 21
+      },
+      "live_tv_issues": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 21
+      },
+      "login_account": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 20
+      },
+      "other_ambiguous": {
+        "precision": 0.12562814070351758,
+        "recall": 1.0,
+        "f1": 0.22321428571428573,
+        "support": 25
+      },
+      "playback_error": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 21
+      },
+      "service_outage": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 13
+      }
+    },
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        19,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        19,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        20,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        20,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        21,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        21,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        20,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        25,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        21,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        13,
+        0,
+        0
+      ]
+    ],
+    "labels": [
+      "app_device_issue",
+      "billing_subscription",
+      "content_availability",
+      "feedback_complaint",
+      "how_to_feature",
+      "live_tv_issues",
+      "login_account",
+      "other_ambiguous",
+      "playback_error",
+      "service_outage"
+    ]
+  },
+  "tfidf_logreg_baseline": {
+    "accuracy": 0.6934673366834171,
+    "macro_f1": 0.6682599906920463,
+    "weighted_f1": 0.6749026123000524,
+    "per_class": {
+      "app_device_issue": {
+        "precision": 0.6,
+        "recall": 0.9473684210526315,
+        "f1": 0.7346938775510204,
+        "support": 19
+      },
+      "billing_subscription": {
+        "precision": 0.8636363636363636,
+        "recall": 1.0,
+        "f1": 0.926829268292683,
+        "support": 19
+      },
+      "content_availability": {
+        "precision": 0.75,
+        "recall": 0.6,
+        "f1": 0.6666666666666666,
+        "support": 20
+      },
+      "feedback_complaint": {
+        "precision": 1.0,
+        "recall": 0.85,
+        "f1": 0.918918918918919,
+        "support": 20
+      },
+      "how_to_feature": {
+        "precision": 0.5,
+        "recall": 0.09523809523809523,
+        "f1": 0.16,
+        "support": 21
+      },
+      "live_tv_issues": {
+        "precision": 0.8260869565217391,
+        "recall": 0.9047619047619048,
+        "f1": 0.8636363636363636,
+        "support": 21
+      },
+      "login_account": {
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571,
+        "support": 20
+      },
+      "other_ambiguous": {
+        "precision": 0.34615384615384615,
+        "recall": 0.72,
+        "f1": 0.4675324675324675,
+        "support": 25
+      },
+      "playback_error": {
+        "precision": 0.8888888888888888,
+        "recall": 0.7619047619047619,
+        "f1": 0.8205128205128205,
+        "support": 21
+      },
+      "service_outage": {
+        "precision": 1.0,
+        "recall": 0.15384615384615385,
+        "f1": 0.26666666666666666,
+        "support": 13
+      }
+    },
+    "confusion_matrix": [
+      [
+        18,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        19,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        12,
+        0,
+        0,
+        0,
+        0,
+        7,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        17,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      [
+        2,
+        2,
+        0,
+        0,
+        2,
+        2,
+        0,
+        12,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        19,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        15,
+        2,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        3,
+        0,
+        2,
+        0,
+        0,
+        18,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        3,
+        16,
+        0
+      ],
+      [
+        3,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        7,
+        0,
+        2
+      ]
+    ],
+    "labels": [
+      "app_device_issue",
+      "billing_subscription",
+      "content_availability",
+      "feedback_complaint",
+      "how_to_feature",
+      "live_tv_issues",
+      "login_account",
+      "other_ambiguous",
+      "playback_error",
+      "service_outage"
+    ]
+  },
+  "notes": [
+    "Vectorizer+classifier fit ONLY on train_labeled.",
+    "Golden evaluated once after fitting.",
+    "No hyperparameter search on golden."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "status": "IMPLEMENTED",
+  "class": "OpenAICompatibleJudge",
+  "rubric": "src.evaluation.judge.JUDGE_RUBRIC",
+  "prompt_builder": "src.evaluation.judge.build_judge_prompt",
+  "agreement_status": "NOT YET MEASURED",
+  "agreement_spec": {
+    "status": "NOT_YET_COMPUTED",
+    "requires": "human annotations on ~50 examples",
+    "metrics": [
+      "exact_agreement",
+      "agreement_within_one",
+      "spearman_correlation",
+      "cohens_kappa",
+      "weighted_kappa"
+    ],
+    "note": "Do not compute until real human annotations exist."
+  },
+  "note": "Human ratings blank; do not compute judge-human agreement yet.",
+  "sample_prompt_prefix": "You are evaluating a customer-support agent reply for Hulu. Score each dimension from 1 (poor) to 5 (excellent).\nDo NOT receive or invent gold labels. Do not assume facts that are not in the customer message or retrieved evidence.\n\nFixed rubric (1\u20135 ordinal scales):\n1 = clearly wrong / ungrounded / unhelpful / unsafe auto-handle or wrong escalate\n2 = major issues\n3 = mixed / partial\n4 = mostly goo"
+}

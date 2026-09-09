@@ -1,0 +1,582 @@
+[
+  {
+    "case_label": "normal_successful_auto_or_copy",
+    "example_id": "gold_2544720",
+    "input": "@115940 when will the new episode of @1760  and the @167381 be on hulu",
+    "gold_intent": "content_availability",
+    "gold_escalate": false,
+    "predicted_intent": "content_availability",
+    "intent_confidence": 0.780451753073906,
+    "evidence": [
+      {
+        "case_id": "case_450327",
+        "similarity": 0.7812531932317035,
+        "customer_message": "@115940 @hulu_support Where's the new episode of @1760 \ud83d\ude29",
+        "support_response": "@221742 Sorry for the delay! The new Empire is now up on all supported devices: https://t.co/3hYIXFIT24. Happy streaming!",
+        "metadata": {
+          "conversation_id": "root_450327",
+          "intent": "content_availability",
+          "timestamp": "",
+          "customer_tweet_id": "450327",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_2591150",
+        "similarity": 0.6807498255189218,
+        "customer_message": "@115940 is really making me angry lately. It\u2019s not showing when there are new episodes and when you watch a new episode it continues to say it\u2019s a new episode AND when resuming an episode, it\u2019s starting it over! \ud83d\ude21\ud83d\ude24\ud83e\udd2c\ud83d\ude20",
+        "support_response": "@279139 Oh no! Which device are you using to stream when you run into this behavior? Does this happen with all shows?",
+        "metadata": {
+          "conversation_id": "root_2591150",
+          "intent": "content_availability",
+          "timestamp": "",
+          "customer_tweet_id": "2591150",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_2577830",
+        "similarity": 0.6571646873835351,
+        "customer_message": "@hulu_support where is the new episode of empire",
+        "support_response": "@730886 Sorry for hiding it! You should be able to access directly using: https://t.co/7Xe9HrH4yX. On a device, check under Episodes.",
+        "metadata": {
+          "conversation_id": "root_2577830",
+          "intent": "content_availability",
+          "timestamp": "",
+          "customer_tweet_id": "2577830",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      }
+    ],
+    "evidence_strength": 0.5985141227880135,
+    "draft_reply": "@221742 Sorry for the delay! The new Empire is now up on all supported devices: https://t.co/3hYIXFIT24. Happy streaming!",
+    "should_escalate": false,
+    "escalation_reason": "auto_handle_strong_evidence",
+    "evaluation_note": "gold_esc=False; pred_esc=False; intent_match=True"
+  },
+  {
+    "case_label": "escalation_case",
+    "example_id": "gold_1224206",
+    "input": "Why do I have to pay for Hulu and have to watch commercials? \ud83e\udd14\ud83d\ude2d @115940",
+    "gold_intent": "billing_subscription",
+    "gold_escalate": true,
+    "predicted_intent": "billing_subscription",
+    "intent_confidence": 0.6893841901165697,
+    "evidence": [
+      {
+        "case_id": "case_2867839",
+        "similarity": 0.7656485048640962,
+        "customer_message": "The amount that I fucking pay for Hulu with Showtime and I still have to watch a shitton of commercials for non-Showtime shows is bullshit.",
+        "support_response": "@796450 Sorry for any frustration! It sounds like you're on our Limited Commercials plan. For No Commercials: https://t.co/cZHqrcmWQY.",
+        "metadata": {
+          "conversation_id": "root_2867839",
+          "intent": "billing_subscription",
+          "timestamp": "",
+          "customer_tweet_id": "2867839",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_418920",
+        "similarity": 0.6959949302484368,
+        "customer_message": "I PAY FOR NO COMMERCIALS @115940 SO WHY AM I SEEING ANY TYPE OF COMMERCIALS. NETFLIX DOESNT DO ME LIKE THIS \ud83d\udde3",
+        "support_response": "@214919 Do you have Hulu w/Live TV? Keep in mind, No Commercials only applies to Hulu's on-demand library: https://t.co/8wrwlQWDIl.",
+        "metadata": {
+          "conversation_id": "root_418920",
+          "intent": "billing_subscription",
+          "timestamp": "",
+          "customer_tweet_id": "418920",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_963955",
+        "similarity": 0.6913361333879153,
+        "customer_message": "Why do we pay for a subscription to @115940 and still have to watch commercials? You don\u2019t have to for @116602 \ud83d\ude12\ud83d\ude44",
+        "support_response": "@348799 Hi! Ads allow us to keep the price affordable (https://t.co/ft9S2GUD7v). If you prefer, we do offer: https://t.co/cZHqrcmWQY.",
+        "metadata": {
+          "conversation_id": "root_963955",
+          "intent": "billing_subscription",
+          "timestamp": "",
+          "customer_tweet_id": "963955",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      }
+    ],
+    "evidence_strength": 0.6284250128947826,
+    "draft_reply": "I'm escalating this to a Hulu specialist because: billing_refund. A human agent can take a closer look with your account context.",
+    "should_escalate": true,
+    "escalation_reason": "billing_refund",
+    "evaluation_note": "gold_esc=True; pred_esc=True; intent_match=True"
+  },
+  {
+    "case_label": "weak_evidence_or_over_escalation",
+    "example_id": "gold_2911030",
+    "input": "@hulu_support why is the app constantly pausing and buffering lately?  It's not connection because it is happening at several different locations and devices for me.  From ps4 to Android phone.",
+    "gold_intent": "playback_error",
+    "gold_escalate": false,
+    "predicted_intent": "playback_error",
+    "intent_confidence": 0.4150618248313257,
+    "evidence": [
+      {
+        "case_id": "case_240659",
+        "similarity": 0.48041109124626535,
+        "customer_message": "@115940 your phone app is so broken",
+        "support_response": "@173160 Yikes! What sort of trouble are you having? On an Android or an iPhone? Let us know more, + any error messages, so we can help!",
+        "metadata": {
+          "conversation_id": "root_240659",
+          "intent": "other_ambiguous",
+          "timestamp": "",
+          "customer_tweet_id": "240659",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_905532",
+        "similarity": 0.4592708992231167,
+        "customer_message": "@hulu_support Android phone and computer.",
+        "support_response": "@334971 Thanks! In that case, let's also try: https://t.co/6xNmexfdiX and https://t.co/bKrKTfspC1. Notice any change after those steps?",
+        "metadata": {
+          "conversation_id": "root_905533",
+          "intent": "other_ambiguous",
+          "timestamp": "",
+          "customer_tweet_id": "905532",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_1482149",
+        "similarity": 0.45002377076446265,
+        "customer_message": "@hulu_support Been there done that. Always blame devices and connection. Have ZERO problems with my internet, telling me PS4, Roku, Tablets, etc all fault",
+        "support_response": "@195886 Definitely not your fault. We're looking to resolve a Live TV issue at the moment. For now, please use: https://t.co/qeNe09yc0o.",
+        "metadata": {
+          "conversation_id": "root_1482150",
+          "intent": "app_device_issue",
+          "timestamp": "",
+          "customer_tweet_id": "1482149",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      }
+    ],
+    "evidence_strength": 0.48131491073966526,
+    "draft_reply": "I'm escalating this to a Hulu specialist because: low_intent_confidence. A human agent can take a closer look with your account context.",
+    "should_escalate": true,
+    "escalation_reason": "low_intent_confidence",
+    "evaluation_note": "gold_esc=False; pred_esc=True; intent_match=True"
+  },
+  {
+    "case_label": "ambiguous_case",
+    "example_id": "gold_199210",
+    "input": "@hulu_support The Purge: Election Year is showing up on my Hulu app but not my tv. It doesn\u2019t say it\u2019s part of the HBO preview weekend. Help",
+    "gold_intent": "other_ambiguous",
+    "gold_escalate": true,
+    "predicted_intent": "app_device_issue",
+    "intent_confidence": 0.2647340546304674,
+    "evidence": [
+      {
+        "case_id": "case_368855",
+        "similarity": 0.542675256946503,
+        "customer_message": "@115940 the connection between the tvOS TV app and the Hulu app is completely broken. Links are incorrect, new shows also not found from https://t.co/rvdiMtY2vI, even launching the Hulu app from https://t.co/rvdiMtY2vI currently opens the App Store first\u2026 :(",
+        "support_response": "@203393 Apologies! This is a known issue our team is investigating. For now, you can still watch all of our content from the Hulu app.",
+        "metadata": {
+          "conversation_id": "root_368855",
+          "intent": "other_ambiguous",
+          "timestamp": "",
+          "customer_tweet_id": "368855",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_2926751",
+        "similarity": 0.5104336523467284,
+        "customer_message": "@hulu_support That doesn't help me it only talks for Hulu",
+        "support_response": "@809752 It may only be enabled for our app. If disabling it following the steps provided doesn't do the trick, follow up here: https://t.co/6YdK7bvQN7.",
+        "metadata": {
+          "conversation_id": "root_2926752",
+          "intent": "other_ambiguous",
+          "timestamp": "",
+          "customer_tweet_id": "2926751",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_1755809",
+        "similarity": 0.4855480043288256,
+        "customer_message": "@hulu_support @528732 I can confirm this. Just bought a new Samsung TV this week, and 4x3 content is stretched to 16x9 in the Hulu app. \nThe Hulu app is also your older UI.",
+        "support_response": "@457534 Apologies, Ashley! Please chat w/ us here: https://t.co/6YdK7bvQN7 so we can gather a few more details to further investigate.",
+        "metadata": {
+          "conversation_id": "root_1755810",
+          "intent": "app_device_issue",
+          "timestamp": "",
+          "customer_tweet_id": "1755809",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      }
+    ],
+    "evidence_strength": 0.46477258062124227,
+    "draft_reply": "I'm escalating this to a Hulu specialist because: low_intent_confidence. A human agent can take a closer look with your account context.",
+    "should_escalate": true,
+    "escalation_reason": "low_intent_confidence",
+    "evaluation_note": "gold_esc=True; pred_esc=True; intent_match=False"
+  },
+  {
+    "case_label": "billing",
+    "example_id": "gold_310432",
+    "input": "@hulu_support I signed up for a free trial at the $5.99 rate and switched to $11.99 an hour later and now I'm getting charged $4. Why?",
+    "gold_intent": "billing_subscription",
+    "gold_escalate": true,
+    "predicted_intent": "billing_subscription",
+    "intent_confidence": 0.8157635668476593,
+    "evidence": [
+      {
+        "case_id": "case_706622",
+        "similarity": 0.7405431952052244,
+        "customer_message": "@hulu_support I got a free trial email, and was charged $11.99 when I signed up. No warning of not being eligible. Is a refund possible?",
+        "support_response": "@188028 Thanks for elaborating! Please call/chat \u27a1\ufe0f https://t.co/6YdK7bvQN7 so we can take a closer look &amp; explore available options. \ud83d\udd0d",
+        "metadata": {
+          "conversation_id": "root_706622",
+          "intent": "billing_subscription",
+          "timestamp": "",
+          "customer_tweet_id": "706622",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_1158520",
+        "similarity": 0.5618605825697864,
+        "customer_message": "@hulu_support Ok but what about the $39.99 charge? I thought it was a free 7 day trial?",
+        "support_response": "@392522 We definitely want to look into that charge, Erik. Please contact us by phone or chat here: https://t.co/6YdK7bvQN7.",
+        "metadata": {
+          "conversation_id": "root_1158518",
+          "intent": "billing_subscription",
+          "timestamp": "",
+          "customer_tweet_id": "1158520",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_3169",
+        "similarity": 0.5411439949046,
+        "customer_message": "@hulu_support you invited me back to Hulu for a free trial but still charged me . Why?  I want my money back.",
+        "support_response": "@116441 Thanks for tweeting us about this! So we can take a closer look with you, please give us a call or chat: https://t.co/6YdK7bvQN7",
+        "metadata": {
+          "conversation_id": "root_3169",
+          "intent": "billing_subscription",
+          "timestamp": "",
+          "customer_tweet_id": "3169",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      }
+    ],
+    "evidence_strength": 0.606457626496214,
+    "draft_reply": "I'm escalating this to a Hulu specialist because: billing_refund. A human agent can take a closer look with your account context.",
+    "should_escalate": true,
+    "escalation_reason": "billing_refund",
+    "evaluation_note": "gold_esc=True; pred_esc=True; intent_match=True"
+  },
+  {
+    "case_label": "login_account",
+    "example_id": "gold_954498",
+    "input": "@hulu_support wait time today to try and figure out why I haven\u2019t been able to log in for five days https://t.co/lgt47x96X7",
+    "gold_intent": "login_account",
+    "gold_escalate": true,
+    "predicted_intent": "login_account",
+    "intent_confidence": 0.6446057249853856,
+    "evidence": [
+      {
+        "case_id": "case_298230",
+        "similarity": 0.5876317981001706,
+        "customer_message": "@hulu_support I haven\u2019t been able to log in on the app for a week I\u2019d really like to be able to watch in my phone",
+        "support_response": "@187058 If unable to reset your password here: https://t.co/5gWvMDkGWx, please call the phone number here: https://t.co/eJgyvCWdBS \ud83d\udcf2 \ud83d\udc4d\ud83c\udffd",
+        "metadata": {
+          "conversation_id": "root_298230",
+          "intent": "login_account",
+          "timestamp": "",
+          "customer_tweet_id": "298230",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_2748266",
+        "similarity": 0.5085989918470566,
+        "customer_message": "@hulu_support haven\u2019t been able to stream Hulu on Apple TV 4gen for two days! When will this be fixed?!",
+        "support_response": "@769523 Yikes! What specific trouble are you coming across? Any errors? Let's try running through: https://t.co/HQL1KwGgWo. Any change?",
+        "metadata": {
+          "conversation_id": "root_2748266",
+          "intent": "content_availability",
+          "timestamp": "",
+          "customer_tweet_id": "2748266",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_1410128",
+        "similarity": 0.5084072094248057,
+        "customer_message": "@hulu_support Haven\u2019t been able to watch live tv for ABC, CBS or NBC for over two days on Hulu in NYC.  Anyone else?",
+        "support_response": "@447772 Oh no! What behavior are you coming across? What device are you using? Have you tried rebooting the device and modem/router?",
+        "metadata": {
+          "conversation_id": "root_1410128",
+          "intent": "live_tv_issues",
+          "timestamp": "",
+          "customer_tweet_id": "1410128",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      }
+    ],
+    "evidence_strength": 0.44752605027302683,
+    "draft_reply": "I'm escalating this to a Hulu specialist because: account_specific. A human agent can take a closer look with your account context.",
+    "should_escalate": true,
+    "escalation_reason": "account_specific",
+    "evaluation_note": "gold_esc=True; pred_esc=True; intent_match=True"
+  },
+  {
+    "case_label": "playback_live_boundary",
+    "example_id": "gold_1372321",
+    "input": "@hulu_support ok...I give up. Hulu TV \"live\" is constantly buffering and is now a solid half inning behind the WS. What do I do?",
+    "gold_intent": "playback_error",
+    "gold_escalate": false,
+    "predicted_intent": "live_tv_issues",
+    "intent_confidence": 0.3421273888733688,
+    "evidence": [
+      {
+        "case_id": "case_310110",
+        "similarity": 0.5621463519381904,
+        "customer_message": "@hulu_support Ok thanks alot",
+        "support_response": "@190044 You're welcome, Tom! If you ever need anything else, we'll be here to offer support. #happystreaming",
+        "metadata": {
+          "conversation_id": "root_310111",
+          "intent": "other_ambiguous",
+          "timestamp": "",
+          "customer_tweet_id": "310110",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_549963",
+        "similarity": 0.5271050189281017,
+        "customer_message": "@hulu_support Hulu Live TV Fox is apparently down.  Any ETA on when it\u2019s going to be up?  Wanting to see OK/TCU!",
+        "support_response": "@248085 Sorry to hear about the trouble, Dustin. What device is this on and what does the full error message read? What zip code are you in? Does this continue after unplugging the device, modem, and router for 2-3 mins? We're here to help!",
+        "metadata": {
+          "conversation_id": "root_549963",
+          "intent": "live_tv_issues",
+          "timestamp": "",
+          "customer_tweet_id": "549963",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_501385",
+        "similarity": 0.5185039778339976,
+        "customer_message": "@hulu_support Ok, it's not coming up on my Xbox, just standard Hulu.",
+        "support_response": "@234785 Got it, thanks for getting back to us! Is this an Xbox One or 360? Let's also double check: https://t.co/BLlbZHUTHB to make sure there aren't any alerts. Do you see the live options from Browse&gt; Networks&gt; Live? Do you get a particular error message or behavior?",
+        "metadata": {
+          "conversation_id": "root_501386",
+          "intent": "other_ambiguous",
+          "timestamp": "",
+          "customer_tweet_id": "501385",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      }
+    ],
+    "evidence_strength": 0.47557885170130854,
+    "draft_reply": "I'm escalating this to a Hulu specialist because: conflicting_evidence. A human agent can take a closer look with your account context.",
+    "should_escalate": true,
+    "escalation_reason": "conflicting_evidence",
+    "evaluation_note": "gold_esc=False; pred_esc=True; intent_match=False"
+  },
+  {
+    "case_label": "successful_grounded_reply",
+    "example_id": "gold_1587983",
+    "input": "@488406 @hulu_support Agreed. I hate the new setup. I hardly ever use it anymore. Almost no reason for me to have it",
+    "gold_intent": "feedback_complaint",
+    "gold_escalate": true,
+    "predicted_intent": "feedback_complaint",
+    "intent_confidence": 0.7871058842090349,
+    "evidence": [
+      {
+        "case_id": "case_124667",
+        "similarity": 0.5523329975262283,
+        "customer_message": "@115940 i really hate the new setup. The dark start to each show, and overlay during credits.",
+        "support_response": "@143922 Sorry for the frustration! On most devices, you can press the back button to get rid of the overlay. We'll share your feedback.",
+        "metadata": {
+          "conversation_id": "root_124667",
+          "intent": "feedback_complaint",
+          "timestamp": "",
+          "customer_tweet_id": "124667",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_1016311",
+        "similarity": 0.48609917786556606,
+        "customer_message": "@115940 Took awhile but I don't hate the new appanymore.  One question, is there a way on the new app to turn on the captions just on replay?",
+        "support_response": "@360461 Thanks for reaching back out! We're glad to hear it. As far as your suggestion goes, we'll make sure the devs hear it. \ud83d\udc4d",
+        "metadata": {
+          "conversation_id": "root_1016311",
+          "intent": "feedback_complaint",
+          "timestamp": "",
+          "customer_tweet_id": "1016311",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_2926755",
+        "similarity": 0.4749743849462992,
+        "customer_message": "Goddamnit @115940, I fucking HATE your new dashboard. You took some good and fucked it all up.",
+        "support_response": "@735390 We've been making enhancements based on viewer feedback (https://t.co/vIaXcS3oNC). If you have any specific requests, we'd love to hear them!",
+        "metadata": {
+          "conversation_id": "root_2926755",
+          "intent": "feedback_complaint",
+          "timestamp": "",
+          "customer_tweet_id": "2926755",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      }
+    ],
+    "evidence_strength": 0.5159788948105519,
+    "draft_reply": "@143922 Sorry for the frustration! On most devices, you can press the back button to get rid of the overlay. We'll share your feedback.",
+    "should_escalate": false,
+    "escalation_reason": "auto_handle_strong_evidence",
+    "evaluation_note": "gold_esc=True; pred_esc=False; intent_match=True"
+  },
+  {
+    "case_label": "content_availability",
+    "example_id": "gold_815865",
+    "input": "@hulu_support Hi! I'm not seeing episode 5, season 6 of @19606 yet. Shouldn't it be available already? Past midnight on a Tuesday.",
+    "gold_intent": "content_availability",
+    "gold_escalate": false,
+    "predicted_intent": "content_availability",
+    "intent_confidence": 0.8325341689817816,
+    "evidence": [
+      {
+        "case_id": "case_1215997",
+        "similarity": 0.6633286223016833,
+        "customer_message": "@hulu_support Hi, why is #TheBrave episode 5 not on Hulu yet?? It aired last night. )-:",
+        "support_response": "@405332 Apologies for any frustration\u2014our team is currently looking into this! Keep the show in your Watchlist/My Stuff for all updates.",
+        "metadata": {
+          "conversation_id": "root_1215997",
+          "intent": "content_availability",
+          "timestamp": "",
+          "customer_tweet_id": "1215997",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_2801277",
+        "similarity": 0.6579340144323726,
+        "customer_message": "@hulu_support Hi,  why isn't there a season 1 for Lethal Weapon?",
+        "support_response": "@781468 Hey Nancy! Our rights allow us to offer episodes from the current season. We'll express the interest in seeing S1 join us. \ud83d\udc4d\ud83c\udffb",
+        "metadata": {
+          "conversation_id": "root_2801277",
+          "intent": "content_availability",
+          "timestamp": "",
+          "customer_tweet_id": "2801277",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_419359",
+        "similarity": 0.585212295961911,
+        "customer_message": "@hulu_support Hi there, checking back in on this. How might I learn of any progress on this issue? Has any occurred?",
+        "support_response": "@215013 We don't have an update, but can assure you we're sensitive to the needs of each user. We'll keep sharing your input, Scott!",
+        "metadata": {
+          "conversation_id": "cust_419359",
+          "intent": "other_ambiguous",
+          "timestamp": "",
+          "customer_tweet_id": "419359",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      }
+    ],
+    "evidence_strength": 0.46547420898598574,
+    "draft_reply": "I'm escalating this to a Hulu specialist because: conflicting_evidence. A human agent can take a closer look with your account context.",
+    "should_escalate": true,
+    "escalation_reason": "conflicting_evidence",
+    "evaluation_note": "gold_esc=False; pred_esc=True; intent_match=True"
+  },
+  {
+    "case_label": "worst_observed_policy_mismatch",
+    "example_id": "gold_45990",
+    "input": "@hulu_support I just wanted to know, with the basic package (limited commercials), how many screens can you watch at the same time?",
+    "gold_intent": "how_to_feature",
+    "gold_escalate": false,
+    "predicted_intent": "billing_subscription",
+    "intent_confidence": 0.4702222598552148,
+    "evidence": [
+      {
+        "case_id": "case_357110",
+        "similarity": 0.557331476867405,
+        "customer_message": "@hulu_support I just bought Hulu (No Commercials) with Live TV $43.99/mo - but all I watch including reruns has commercials - why?",
+        "support_response": "@200796 Like traditional broadcast TV, our live service will have ad breaks. Though, On-Demand content should not: https://t.co/8wrwlQWDIl.",
+        "metadata": {
+          "conversation_id": "root_357110",
+          "intent": "billing_subscription",
+          "timestamp": "",
+          "customer_tweet_id": "357110",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_141914",
+        "similarity": 0.5539036750396147,
+        "customer_message": "@hulu_support I just waited the allotted time...thanks",
+        "support_response": "@148033 Got it. If you need a hand with anything else, please don't hesitate to reach back out. We're be happy to help. \ud83d\udc4d\ud83c\udffd",
+        "metadata": {
+          "conversation_id": "root_141915",
+          "intent": "other_ambiguous",
+          "timestamp": "",
+          "customer_tweet_id": "141914",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      },
+      {
+        "case_id": "case_2982128",
+        "similarity": 0.5161638671114155,
+        "customer_message": ".@115940 be breaking down all the time during commercials...",
+        "support_response": "@224385 Oh no! Thanks for reaching out about this, Micah. Can you let us know what you're watching when this happens, and which device(s) you use to stream? The more details you provide, the better we'll be able to help. For now, let's start with: https://t.co/HXpLyTU79x.",
+        "metadata": {
+          "conversation_id": "root_2982128",
+          "intent": "billing_subscription",
+          "timestamp": "",
+          "customer_tweet_id": "2982128",
+          "support_tweet_id": "",
+          "prior_customer_context": []
+        }
+      }
+    ],
+    "evidence_strength": 0.4655801871777603,
+    "draft_reply": "I'm escalating this to a Hulu specialist because: billing_refund. A human agent can take a closer look with your account context.",
+    "should_escalate": true,
+    "escalation_reason": "billing_refund",
+    "evaluation_note": "gold_esc=False; pred_esc=True; intent_match=False"
+  }
+]
