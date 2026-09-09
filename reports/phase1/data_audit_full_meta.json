@@ -1,6 +1,6 @@
 {
   "status": "OBSERVED",
-  "path": "/home/mani/Music/Hiver/hiver-ai-support-agent/data/raw/twcs.csv",
+  "path": "data/raw/twcs.csv",
   "size_bytes": 516508641,
   "row_count": 2811774,
   "columns": [

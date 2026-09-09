@@ -111,7 +111,7 @@ python -m src.cli.main acquire --instructions
 - `src/**` — library + CLI
 - `configs/default.yaml`, `.env.example`, `requirements.txt`, `Makefile`, `pytest.ini`
 - `tests/**` including synthetic fixture
-- `reports/engineering-notes.md`, `/home/mani/Music/interview-prep.md` (local study copy), `reports/project-engineering-guide.md`
+- `reports/engineering-notes.md`, `reports/project-engineering-guide.md`
 - `README.md` updated
 - `data/`, `evaluation/`, `notebooks/` structure
 

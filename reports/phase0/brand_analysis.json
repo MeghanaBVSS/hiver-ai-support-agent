@@ -1,6 +1,6 @@
 {
   "status": "OBSERVED",
-  "source_path": "/home/mani/Music/Hiver/hiver-ai-support-agent/tests/fixtures/mini_twcs.csv",
+  "source_path": "tests/fixtures/mini_twcs.csv",
   "n_rows_analyzed": 19,
   "ranked_candidates": [
     {

@@ -1,6 +1,6 @@
 {
   "status": "OBSERVED",
-  "source_path": "/home/mani/Music/Hiver/hiver-ai-support-agent/data/raw/twcs.csv",
+  "source_path": "data/raw/twcs.csv",
   "ranked_candidates": [
     {
       "brand": "hulu_support",

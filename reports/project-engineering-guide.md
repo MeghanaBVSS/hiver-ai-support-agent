@@ -254,7 +254,7 @@ Example observed demo:
 3. Why is semantic groundedness high but helpfulness low in the human ratings?
 4. How do you prove retrieval isn’t contaminated by golden?
 
-Interview Q&A lives outside the repo for local study: `/home/mani/Music/interview-prep.md`.
+See `reports/final-report.md` and `reports/decision-log-short.md` for interview-facing summaries.
 
 ---
 

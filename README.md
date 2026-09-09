@@ -2,9 +2,7 @@
 
 Trustworthy AI customer-support agent for **`hulu_support`** on the Kaggle Twitter Customer Support (TWCS) corpus.
 
-**Repository:** https://github.com/MeghanaBVSS/hiver-ai-support-agent  
-**Local path:** `/home/mani/Music/Hiver/hiver-ai-support-agent`  
-**Interview prep (local study copy, outside this repo):** `/home/mani/Music/interview-prep.md`
+**Repository:** https://github.com/MeghanaBVSS/hiver-ai-support-agent
 
 **Frozen headline:** unsafe auto-handle rate **6/87 ≈ 0.069** at coverage **33/199 ≈ 0.166** on golden N=199 (semantic retrieval + deterministic policy).  
 This is the fraction of **gold-escalate-positive** cases that were incorrectly auto-handled — **not** 6.9% of all messages.
@@ -86,7 +84,7 @@ Large / secret paths that must **not** be committed: `data/raw/twcs.csv`, interi
 ## 4. Environment setup
 
 ```bash
-cd /home/mani/Music/Hiver/hiver-ai-support-agent
+cd hiver-ai-support-agent
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
@@ -300,7 +298,6 @@ See `evaluation/reply_human/PROVENANCE.md`. `annotator_1` rated semantic vs base
 | Engineering notes | `reports/engineering-notes.md` |
 | Engineering PDF | `reports/project-engineering-guide.pdf` |
 | Submission package | `reports/SUBMISSION_PACKAGE.md` |
-| Interview prep | `/home/mani/Music/interview-prep.md` |
 
 ---
 

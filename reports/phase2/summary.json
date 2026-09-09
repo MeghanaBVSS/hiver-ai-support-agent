@@ -12,9 +12,9 @@
     "pct_duplicate_conversation_in_hits": 0.0,
     "note": "Neighbor intent agreement is a retrieval diagnostic, not reply correctness."
   },
-  "matrix_path": "/home/mani/Music/Hiver/hiver-ai-support-agent/evaluation/results/phase2_evaluation_matrix.json",
-  "failures_path": "/home/mani/Music/Hiver/hiver-ai-support-agent/reports/phase2/failure_analysis.json",
-  "human_ratings": "/home/mani/Music/Hiver/hiver-ai-support-agent/evaluation/reply_human/human_ratings.csv",
+  "matrix_path": "evaluation/results/phase2_evaluation_matrix.json",
+  "failures_path": "reports/phase2/failure_analysis.json",
+  "human_ratings": "evaluation/reply_human/human_ratings.csv",
   "n_human_pack": 50,
   "llm_status": "NOT_RUN_NO_KEY",
   "thresholds": {

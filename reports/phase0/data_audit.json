@@ -1,8 +1,8 @@
 {
   "status": "OBSERVED",
-  "source_path": "/home/mani/Music/Hiver/hiver-ai-support-agent/tests/fixtures/mini_twcs.csv",
+  "source_path": "tests/fixtures/mini_twcs.csv",
   "file": {
-    "path": "/home/mani/Music/Hiver/hiver-ai-support-agent/tests/fixtures/mini_twcs.csv",
+    "path": "tests/fixtures/mini_twcs.csv",
     "filename": "mini_twcs.csv",
     "size_bytes": 1829,
     "size_mb": 0.002,

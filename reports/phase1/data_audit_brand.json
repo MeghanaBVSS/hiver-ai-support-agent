@@ -1,8 +1,8 @@
 {
   "status": "OBSERVED",
-  "source_path": "/home/mani/Music/Hiver/hiver-ai-support-agent/data/processed/hulu_support_tweets.parquet",
+  "source_path": "data/processed/hulu_support_tweets.parquet",
   "file": {
-    "path": "/home/mani/Music/Hiver/hiver-ai-support-agent/data/processed/hulu_support_tweets.parquet",
+    "path": "data/processed/hulu_support_tweets.parquet",
     "filename": "hulu_support_tweets.parquet",
     "size_bytes": 4633402,
     "size_mb": 4.419,

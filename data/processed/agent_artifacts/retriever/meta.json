@@ -1,0 +1,8 @@
+{
+  "backend": "tfidf_svd",
+  "n_cases": 4000,
+  "top_k": 5,
+  "min_similarity": 0.15,
+  "diversity": true,
+  "embedding_model": "tfidf_svd"
+}
