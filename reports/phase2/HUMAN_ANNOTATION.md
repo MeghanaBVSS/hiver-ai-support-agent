@@ -51,9 +51,14 @@
 
 ## Second-annotator agreement vs original gold
 
-- n labeled: 50
+- n labeled: **50**
 - intent exact agreement: **62%**
+- intent Cohen's κ: **0.575**
 - escalate exact agreement: **72%**
+- escalate Cohen's κ: **0.435**
+- Full IAA + disagreements: `reports/validation/second_annotator_iaa.json`
+
+Independently validated on a subset using inter-annotator agreement (not full-N ground truth).
 
 ## Files
 

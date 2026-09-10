@@ -5,5 +5,19 @@
   "n_unlabeled": 0,
   "unlabeled_ids": [],
   "intent_exact_agreement_vs_gold": 0.62,
-  "escalate_exact_agreement_vs_gold": 0.72
+  "escalate_exact_agreement_vs_gold": 0.72,
+  "intent_cohen_kappa": 0.575324094769781,
+  "escalate_cohen_kappa": 0.435483870967742,
+  "intent_disagreements": 19,
+  "escalate_disagreements": 14,
+  "disagreement_count_by_annotator1_label": {
+    "other_ambiguous": 6,
+    "how_to_feature": 3,
+    "billing_subscription": 2,
+    "content_availability": 2,
+    "feedback_complaint": 2,
+    "playback_error": 2,
+    "app_device_issue": 1,
+    "service_outage": 1
+  }
 }

@@ -116,7 +116,7 @@ Deterministic agent and frozen evaluation **do not** require API keys.
 | `data/raw/sample.csv` | Tiny sample for dry-runs |
 | `tests/fixtures/mini_twcs.csv` | Synthetic fixture for unit tests |
 
-If `twcs.csv` is already present locally (it is on this machine), you can rebuild indexes and re-run eval without re-downloading.
+If `twcs.csv` is already present under `data/raw/`, you can rebuild indexes and re-run eval without re-downloading.
 
 ### Acquire TWCS
 
@@ -185,6 +185,15 @@ make eval-phase2
 
 Primary JSON: `evaluation/results/phase2_evaluation_matrix.json`.
 
+### Leakage + validation suite
+
+```bash
+make check-leakage
+make validate-eval
+```
+
+Writes `reports/validation/` (IAA with Cohen's κ, leakage PASS text, difficulty/FN/`other_ambiguous`/confidence/rule-aid analyses).
+
 ### Tests
 
 ```bash
@@ -193,7 +202,7 @@ make test
 python -m pytest -q
 ```
 
-Expected: **58 passed** (2 benign sklearn warnings possible in judge agreement smoke).
+Expected: **63 passed** (2 benign sklearn warnings possible in judge agreement smoke).
 
 ### Regenerate engineering PDF
 
@@ -265,6 +274,59 @@ Validation-tuned thresholds (golden not used for tuning):
 
 Exact escalation cells (semantic + policy): TP=81, FP=85, FN=6, TN=27; gold escalate⁺=87.
 
+### Intent vs escalation (separate heads)
+
+| Head | Acc | Macro / Esc F1 | Primary safety note |
+|---|---:|---:|---|
+| Intent | 0.693 | 0.668 | Shared TF-IDF+LR classifier |
+| Escalation | 0.544 | 0.640 | Unsafe auto-handle = FN/87 = 0.069 |
+
+### Validation enhancements
+
+```bash
+make check-leakage     # golden ∩ train/retrieval/prompts = 0 → PASS
+make validate-eval     # IAA (κ), difficulty slices, FN audit, other_ambiguous, confidence, rule-aid stack
+```
+
+Key artifacts: `reports/validation/VALIDATION_REPORT.md`, `second_annotator_iaa.json`, `leakage_check.txt`, `final_system_metrics.json`.
+
+Second-annotator subset (N=50): intent agreement **62%** (κ=**0.575**); escalate **72%** (κ=**0.435**).  
+Terminology: **human-annotated golden evaluation set** — not “ground truth.”
+
+### Decision policy (explicit)
+
+```
+IF account-specific action     → ESCALATE
+IF billing/refund dispute      → ESCALATE
+IF security/privacy            → ESCALATE
+IF ambiguous / weak evidence   → ESCALATE
+IF unsafe / unsupported op     → ESCALATE
+ELSE IF strong evidence gates  → auto-handle
+ELSE                           → ESCALATE
+```
+
+Intent classification ≠ escalation decision.
+
+### Architecture
+
+```
+Customer Message
+       │
+       ▼
+Preprocessing
+       │
+       ▼
+Intent Classification (TF-IDF+LR + confidence)
+       │
+       ├──────────────────┐
+       ▼                  ▼
+Semantic Retrieval   Escalation Policy
+       │                  │
+       └────────┬─────────┘
+                ▼
+         Final Prediction → Intent + Escalate? + Confidence
+```
+
 ### Retrieval diagnostics (not reply correctness)
 
 Index **4000**; top-1 intent agree **0.432**; top-3 **0.568**; mean similarity **0.638**.
@@ -297,6 +359,7 @@ See `evaluation/reply_human/PROVENANCE.md`. `annotator_1` rated semantic vs base
 | Judge calibration | `reports/phase3/judge_calibration.md` |
 | Engineering notes | `reports/engineering-notes.md` |
 | Engineering PDF | `reports/project-engineering-guide.pdf` |
+| Validation report | `reports/validation/VALIDATION_REPORT.md` |
 | Submission package | `reports/SUBMISSION_PACKAGE.md` |
 
 ---
@@ -310,7 +373,8 @@ See `evaluation/reply_human/PROVENANCE.md`. `annotator_1` rated semantic vs base
 5. `make test`
 6. `make run-agent`
 7. `make eval-phase2` (optional recompute)
-8. `make docs`
+8. `make check-leakage` and `make validate-eval`
+9. `make docs`
 
 Committed evaluation CSVs/JSON under `evaluation/` and reports under `reports/` are enough to **read** the frozen results without re-running the full data pipeline.
 
@@ -318,11 +382,14 @@ Committed evaluation CSVs/JSON under `evaluation/` and reports under `reports/` 
 
 ## 12. Known limitations
 
+- Golden set is a taxonomy-guided human-annotated evaluation set; IAA covers 50/199 examples (intent κ=0.575, escalate κ=0.435)
+- Rule-aid may introduce confirmation bias during labeling (high rule↔gold agreement is partly circular)
 - Safety is achieved partly by **over-escalation** (coverage only ~16.6%)
 - Default embeddings are **lexical** (`tfidf_svd`); paraphrase recall is limited
-- Golden labels: single primary annotator; second-pass agreement 62% intent / 72% escalate
-- LLM judge ≠ ground truth (weak groundedness agreement)
-- Historical ~2017 tweets ≠ current Hulu policy
+- Evaluation set is relatively small; hard slice has only 9 examples
+- Taxonomy boundaries are subjective (playback vs live_tv)
+- Historical ~2017 tweets ≠ current Hulu policy; historical replies are evidence, not escalation truth
+- LLM judge is an evaluator only (weak groundedness agreement) — not golden labels
 - Semantic+LLM golden reply quality **not measured** in freeze
 - Near-duplicate leakage beyond exact text not fully scanned
 

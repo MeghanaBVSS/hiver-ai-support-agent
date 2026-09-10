@@ -2,28 +2,35 @@
 
 ## Purpose
 
-Provide an independent label set on ~50 examples for later agreement analysis
-(intent agreement, escalation agreement, Cohen's kappa).
+Provide an independent label set on ~50 examples for inter-annotator agreement
+(intent agreement, escalation agreement, **Cohen's kappa**).
 
-**Do NOT calculate agreement until these labels exist.**
+## Status
 
-## What you will see
+Labels in `evaluation/golden/second_annotator.csv` are **complete** (50/50).
+Agreement + kappa are computed by:
+
+```bash
+python -m src.cli.validate_evaluation
+# → reports/validation/second_annotator_iaa.json
+```
+
+## What the second annotator sees
 
 In `evaluation/golden/second_annotator.csv`:
 
 - `example_id`
 - `customer_message`
 - `conversation_context` (prior customer messages only)
-- blank `gold_intent_2`
-- blank `gold_escalate_2`
-- blank `annotator2_notes`
+- `gold_intent_2` / `gold_escalate_2` / `annotator2_notes` (filled by annotator_2)
 
-## What you must NOT see / use
+## What must NOT be used while labeling
 
 - first annotator labels (`gold_intent`, `gold_escalate`, …)
 - model predictions
 - retrieval results
 - baseline predictions
+- rule-aid suggestions
 
 ## References (definitions only)
 
@@ -40,7 +47,6 @@ In `evaluation/golden/second_annotator.csv`:
 
 Use `other_ambiguous` only when there is **insufficient information to reliably assign one supported intent**.
 
-## After labeling
+## Observed agreement (do not invent)
 
-Save the CSV. A later harness pass can compute agreement metrics.
-Do not fill labels with model outputs.
+See `reports/validation/VALIDATION_REPORT.md` for exact agreement, Cohen's κ, and disagreement breakdowns.

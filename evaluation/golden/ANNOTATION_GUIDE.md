@@ -8,11 +8,18 @@ File: `evaluation/golden/golden_set.csv`
 
 ## Labeling status (IMPORTANT)
 
-Status: **KNOWN LIMITATION** / **NOT YET VALIDATED** by an independent second annotator.
+The golden set is a **taxonomy-guided human-annotated evaluation set** (N=199), labeled by `phase1_engineer`.
 
-The current golden set was labeled by a **single annotator** (`phase1_engineer`).
+It must **not** be described as “ground truth,” “99% accurate ground truth,” or “fully validated gold labels.”
 
-It must **not** be described as independently validated human ground truth.
+**Independent validation (subset):** a second annotator pack (`evaluation/golden/second_annotator.csv`, N=50) was labeled without first-annotator labels, model predictions, or rule-aid suggestions in the pack. Measured agreement:
+
+| Task | Exact agreement | Cohen's κ |
+|---|---:|---:|
+| Intent | 0.62 | 0.575 |
+| Escalation | 0.72 | 0.435 |
+
+See `reports/validation/second_annotator_iaa.json` and `reports/validation/VALIDATION_REPORT.md`.
 
 Actual process:
 
@@ -21,8 +28,9 @@ Actual process:
 3. Rule-aid involvement (regex/priority rules encoding the taxonomy)
 4. Full review/fix pass
 5. Phase 1.5 metadata enrichment (`escalation_reason`, `annotator_confidence`) **without changing** preserved `gold_intent` / `gold_escalate`
+6. Second-annotator subset IAA (intent + escalation + Cohen's κ)
 
-Risks include **confirmation bias** toward rule-aid suggestions and single-annotator idiosyncrasy.
+Risks include **confirmation bias** toward rule-aid suggestions and residual single-annotator idiosyncrasy on the full N=199 (IAA covers 50 examples only).
 
 ## Columns
 
@@ -38,58 +46,3 @@ Risks include **confirmation bias** toward rule-aid suggestions and single-annot
 | difficulty | easy / medium / hard (annotator judgment) |
 | annotator_notes | free text |
 | annotator_id | who labeled |
-
-## Allowed intents
-
-See `reports/phase1/intent_taxonomy.json`.
-
-### `other_ambiguous` (= conceptual `ambiguous_or_other`)
-
-Definition: **insufficient information to reliably assign one supported intent.**
-
-- Qualifies: too short, unclear, multi-intent without a dominant ask, residual
-- Does **not** qualify: a clear supported intent with minor noise
-- Must **not** become a dumping ground — prefer a supported intent when one dominates
-
-## Escalation
-
-See `evaluation/golden/ESCALATION_RUBRIC.md`.
-
-Escalation labels are **policy judgments** for safe auto-handle decisions.
-Do **not** infer escalation solely from whether Hulu historically escalated.
-
-### WHEN TO ESCALATE
-
-- account-specific actions
-- billing/refund disputes
-- security/privacy
-- ambiguous requests
-- insufficient evidence
-- potentially harmful/unsafe automation
-- unsupported operational actions
-
-### WHEN NOT TO ESCALATE
-
-- generic informational support
-- troubleshooting with strong evidence / safe generic guidance
-
-## Difficulty rubric (annotator judgment — not objective truth)
-
-- **easy:** single clear intent, little ambiguity
-- **medium:** some device/context mix or mild ambiguity
-- **hard:** multi-intent, sarcasm, very short, or conflicting cues
-
-## Confidence rubric
-
-- **high:** clear single intent, little boundary doubt
-- **medium:** some ambiguity or rule/review involvement
-- **low:** hard/ambiguous/other cases
-
-## Isolation rules
-
-Golden examples must not appear in train fitting data, retrieval index, or prompt exemplars.
-
-## Second annotator
-
-See `evaluation/golden/SECOND_ANNOTATOR_INSTRUCTIONS.md` and `second_annotator.csv`.
-Do not show first-annotator labels or model outputs to the second annotator.

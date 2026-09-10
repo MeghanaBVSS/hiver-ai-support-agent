@@ -92,16 +92,31 @@ class EscalationMetrics:
 
     escalation_precision: float | None
     escalation_recall: float | None
+    escalation_f1: float | None
+    escalation_accuracy: float | None
     unsafe_auto_handle_rate: float | None
     auto_handle_coverage: float | None
+    tp: int
+    fp: int
+    fn: int
+    tn: int
+    confusion_matrix: list[list[int]]
     notes: tuple[str, ...]
 
     def to_dict(self) -> dict[str, Any]:
         return {
             "escalation_precision": self.escalation_precision,
             "escalation_recall": self.escalation_recall,
+            "escalation_f1": self.escalation_f1,
+            "escalation_accuracy": self.escalation_accuracy,
             "unsafe_auto_handle_rate": self.unsafe_auto_handle_rate,
             "auto_handle_coverage": self.auto_handle_coverage,
+            "tp": self.tp,
+            "fp": self.fp,
+            "fn": self.fn,
+            "tn": self.tn,
+            "confusion_matrix": self.confusion_matrix,
+            "confusion_matrix_labels": ["auto_handle", "escalate"],
             "notes": list(self.notes),
         }
 
@@ -115,33 +130,56 @@ def compute_escalation_metrics(
     Definitions:
     - escalation_precision: among predicted escalations, fraction that should escalate
     - escalation_recall: among true escalations, fraction predicted
+    - escalation_f1: harmonic mean of precision and recall
+    - escalation_accuracy: overall escalate/auto agreement
     - unsafe_auto_handle_rate: among cases that should escalate, fraction auto-handled
       (false negatives for escalation) — primary safety metric
     - auto_handle_coverage: fraction predicted auto-handle
+    Confusion matrix rows/cols: [auto_handle=False escalate, escalate=True escalate]
+    stored as [[TN, FP], [FN, TP]] with True=escalate.
     """
     true = np.asarray([bool(x) for x in y_true_escalate])
     pred = np.asarray([bool(x) for x in y_pred_escalate])
     if len(true) == 0:
-        return EscalationMetrics(None, None, None, None, ("empty input",))
+        return EscalationMetrics(
+            None, None, None, None, None, None, 0, 0, 0, 0, [[0, 0], [0, 0]], ("empty input",)
+        )
 
-    pred_pos = pred.sum()
-    true_pos = true.sum()
-    tp = ((pred) & (true)).sum()
-    fn = ((~pred) & (true)).sum()
+    pred_pos = int(pred.sum())
+    true_pos = int(true.sum())
+    tp = int(((pred) & (true)).sum())
+    fp = int(((pred) & (~true)).sum())
+    fn = int(((~pred) & (true)).sum())
+    tn = int(((~pred) & (~true)).sum())
 
     precision = float(tp / pred_pos) if pred_pos else None
     recall = float(tp / true_pos) if true_pos else None
+    if precision is not None and recall is not None and (precision + recall) > 0:
+        f1 = float(2 * precision * recall / (precision + recall))
+    else:
+        f1 = None
+    accuracy = float((tp + tn) / len(true)) if len(true) else None
     unsafe = float(fn / true_pos) if true_pos else 0.0
     coverage = float((~pred).mean())
+    # sklearn-style labels [False, True] => [[tn, fp], [fn, tp]]
+    cm = [[tn, fp], [fn, tp]]
 
     return EscalationMetrics(
         escalation_precision=precision,
         escalation_recall=recall,
+        escalation_f1=f1,
+        escalation_accuracy=accuracy,
         unsafe_auto_handle_rate=unsafe,
         auto_handle_coverage=coverage,
+        tp=tp,
+        fp=fp,
+        fn=fn,
+        tn=tn,
+        confusion_matrix=cm,
         notes=(
             "Do not optimize auto_handle_coverage alone.",
-            "unsafe_auto_handle_rate is the primary safety metric.",
+            "unsafe_auto_handle_rate is the primary safety metric (escalation false negatives).",
+            "Intent classification and escalation are separate decision heads.",
         ),
     )
 

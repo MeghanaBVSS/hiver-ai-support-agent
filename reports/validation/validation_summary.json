@@ -1,0 +1,2484 @@
+{
+  "second_annotator_iaa": {
+    "status": "OBSERVED",
+    "terminology": "human-annotated golden evaluation set vs blind second-annotator subset",
+    "annotator_1_id": "phase1_engineer",
+    "annotator_2_id": "annotator_2",
+    "n_subset": 50,
+    "protocol": "Second annotator pack provides message+context only; labels filled without first-annotator labels, model predictions, or rule-aid suggestions in the pack.",
+    "intent": {
+      "n": 50,
+      "exact_agreement": 0.62,
+      "cohen_kappa": 0.575324094769781,
+      "n_disagreements": 19,
+      "labels": [
+        "playback_error",
+        "live_tv_issues",
+        "app_device_issue",
+        "login_account",
+        "billing_subscription",
+        "content_availability",
+        "service_outage",
+        "how_to_feature",
+        "feedback_complaint",
+        "other_ambiguous"
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          3,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          2,
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          0
+        ],
+        [
+          2,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          3
+        ]
+      ],
+      "disagreement_count_by_annotator1_label": {
+        "other_ambiguous": 6,
+        "how_to_feature": 3,
+        "billing_subscription": 2,
+        "content_availability": 2,
+        "feedback_complaint": 2,
+        "playback_error": 2,
+        "app_device_issue": 1,
+        "service_outage": 1
+      },
+      "top_disagreement_pairs": [
+        {
+          "annotator_1": "billing_subscription",
+          "annotator_2": "feedback_complaint",
+          "count": 2
+        },
+        {
+          "annotator_1": "how_to_feature",
+          "annotator_2": "billing_subscription",
+          "count": 2
+        },
+        {
+          "annotator_1": "feedback_complaint",
+          "annotator_2": "playback_error",
+          "count": 2
+        },
+        {
+          "annotator_1": "other_ambiguous",
+          "annotator_2": "playback_error",
+          "count": 2
+        },
+        {
+          "annotator_1": "playback_error",
+          "annotator_2": "live_tv_issues",
+          "count": 2
+        },
+        {
+          "annotator_1": "app_device_issue",
+          "annotator_2": "how_to_feature",
+          "count": 1
+        },
+        {
+          "annotator_1": "content_availability",
+          "annotator_2": "service_outage",
+          "count": 1
+        },
+        {
+          "annotator_1": "service_outage",
+          "annotator_2": "playback_error",
+          "count": 1
+        },
+        {
+          "annotator_1": "other_ambiguous",
+          "annotator_2": "app_device_issue",
+          "count": 1
+        },
+        {
+          "annotator_1": "how_to_feature",
+          "annotator_2": "app_device_issue",
+          "count": 1
+        },
+        {
+          "annotator_1": "content_availability",
+          "annotator_2": "app_device_issue",
+          "count": 1
+        },
+        {
+          "annotator_1": "other_ambiguous",
+          "annotator_2": "feedback_complaint",
+          "count": 1
+        },
+        {
+          "annotator_1": "other_ambiguous",
+          "annotator_2": "content_availability",
+          "count": 1
+        },
+        {
+          "annotator_1": "other_ambiguous",
+          "annotator_2": "how_to_feature",
+          "count": 1
+        }
+      ],
+      "disagreements": [
+        {
+          "example_id": "gold_2377725",
+          "gold_intent": "app_device_issue",
+          "second_annotator_intent": "how_to_feature",
+          "customer_message": "@hulu_support How do I turn off autoplay for a kids\u2019 profile on an AppleTV?"
+        },
+        {
+          "example_id": "gold_592886",
+          "gold_intent": "billing_subscription",
+          "second_annotator_intent": "feedback_complaint",
+          "customer_message": "I can\u2019t wait to cancel @115940 tomorrow.  Cord cutting experiment abject failure."
+        },
+        {
+          "example_id": "gold_998322",
+          "gold_intent": "content_availability",
+          "second_annotator_intent": "service_outage",
+          "customer_message": "@hulu_support hulu isn\u2019t connecting. Seems it\u2019s affecting alot of users. When will it be fixed?"
+        },
+        {
+          "example_id": "gold_2516231",
+          "gold_intent": "service_outage",
+          "second_annotator_intent": "playback_error",
+          "customer_message": "@hulu_support I'm not wasting mine or anyone else's time doing that. It's not my connection.  I stream all other apps fine. How about you please Google \"issues streaming Hulu on fi"
+        },
+        {
+          "example_id": "gold_2363665",
+          "gold_intent": "how_to_feature",
+          "second_annotator_intent": "billing_subscription",
+          "customer_message": "@hulu_support so once again your business has mess up my account how is it every month it's mess up do y'all not know how to fix this if I wanted to go on there &amp; fix it every "
+        },
+        {
+          "example_id": "gold_2753119",
+          "gold_intent": "how_to_feature",
+          "second_annotator_intent": "billing_subscription",
+          "customer_message": "@hulu_support That\u2019s no problem. How do I disconnect the accounts? Spoke to Spotify and was told Hulu would handle it."
+        },
+        {
+          "example_id": "gold_1101079",
+          "gold_intent": "feedback_complaint",
+          "second_annotator_intent": "playback_error",
+          "customer_message": "This new update is horrible. Everytime I try and watch something it stops like 10 minutes in and says it can be loaded \ud83d\ude21 @115940 ."
+        },
+        {
+          "example_id": "gold_116350",
+          "gold_intent": "other_ambiguous",
+          "second_annotator_intent": "playback_error",
+          "customer_message": "@hulu_support Trying to add the SNL Thanksgiving Special and am getting \"check your internet connection and try again. Error Code: Network Error: 400\". Our internet connection is f"
+        },
+        {
+          "example_id": "gold_962964",
+          "gold_intent": "other_ambiguous",
+          "second_annotator_intent": "playback_error",
+          "customer_message": "@115940 for the last three days I have been trying to watch Hulu and I keep getting error \ud83d\ude1e"
+        },
+        {
+          "example_id": "gold_2181625",
+          "gold_intent": "billing_subscription",
+          "second_annotator_intent": "feedback_complaint",
+          "customer_message": "I've seen the same commercial 7 times in the same episode that I've been watching on @115940\nCan y'all not"
+        },
+        {
+          "example_id": "gold_2365549",
+          "gold_intent": "feedback_complaint",
+          "second_annotator_intent": "playback_error",
+          "customer_message": "@hulu_support horrible stuttering issues all day today. Only happens with #hulu and not Amazon Prime or Netflix. Deleted and re-installed the app and still having the issue."
+        },
+        {
+          "example_id": "gold_2032180",
+          "gold_intent": "other_ambiguous",
+          "second_annotator_intent": "app_device_issue",
+          "customer_message": "@hulu_support my account works on ps4 but wont open on my blu ray player now"
+        },
+        {
+          "example_id": "gold_303365",
+          "gold_intent": "how_to_feature",
+          "second_annotator_intent": "app_device_issue",
+          "customer_message": "Seriously, @115940. How do I fix this? Because I\u2019m getting annoyed with having to skip to the end of this same ep of Nashville time and again"
+        },
+        {
+          "example_id": "gold_564410",
+          "gold_intent": "playback_error",
+          "second_annotator_intent": "live_tv_issues",
+          "customer_message": "@hulu_support Your stream of the SEC Championship game is completely unwatchable. Buffering every few seconds, losing it's spot, \"parts of the stream missing\" errors, and complete "
+        },
+        {
+          "example_id": "gold_2584541",
+          "gold_intent": "content_availability",
+          "second_annotator_intent": "app_device_issue",
+          "customer_message": "@115940 What\u2019s going on with your system? Favorites won\u2019t automatically upload. Now the watched shows don\u2019t get marked off. Your service is starting to suck a bit."
+        },
+        {
+          "example_id": "gold_655277",
+          "gold_intent": "other_ambiguous",
+          "second_annotator_intent": "feedback_complaint",
+          "customer_message": "@hulu_support @267250 Been not one improvement in 2 months. Hulu doesn\u2019t care about customer feedback."
+        },
+        {
+          "example_id": "gold_2788559",
+          "gold_intent": "other_ambiguous",
+          "second_annotator_intent": "content_availability",
+          "customer_message": "i\u2019m still mad that @115940 took top gun off, put it back!!!"
+        },
+        {
+          "example_id": "gold_1504506",
+          "gold_intent": "other_ambiguous",
+          "second_annotator_intent": "how_to_feature",
+          "customer_message": "@hulu_support Is 100mbps fast enough? It is for netflix \ud83e\udd14"
+        },
+        {
+          "example_id": "gold_2642114",
+          "gold_intent": "playback_error",
+          "second_annotator_intent": "live_tv_issues",
+          "customer_message": "@hulu_support why the buffering-buffering-buffering all the time on live shows?  On-Demand seems okay.  This has been going on for weeks."
+        }
+      ]
+    },
+    "escalation": {
+      "n": 50,
+      "exact_agreement": 0.72,
+      "cohen_kappa": 0.435483870967742,
+      "n_disagreements": 14,
+      "labels": [
+        false,
+        true
+      ],
+      "confusion_matrix": [
+        [
+          15,
+          9
+        ],
+        [
+          5,
+          21
+        ]
+      ],
+      "confusion_matrix_note": "rows=annotator_1 [False,True], cols=annotator_2 [False,True]",
+      "disagreements": [
+        {
+          "example_id": "gold_2623567",
+          "gold_escalate": false,
+          "second_annotator_escalate": true,
+          "customer_message": "@hulu_support got this \u201c https://t.co/7YVDkNKOMM operation error 0. \u201c Help!"
+        },
+        {
+          "example_id": "gold_1355492",
+          "gold_escalate": false,
+          "second_annotator_escalate": true,
+          "customer_message": "@115940 your live doesn\u2019t work for older devices Apple TV Roku Toshiba laptop PS3  I signed up only can view on my iPhone this is worthless"
+        },
+        {
+          "example_id": "gold_1681450",
+          "gold_escalate": false,
+          "second_annotator_escalate": true,
+          "customer_message": "@hulu_support Fire TV app doesnt work. Tried writing support email - got auto reply. Tried calling - 1+ hr wait? Lost potential customer \u270c\ufe0f\ud83d\udc4b"
+        },
+        {
+          "example_id": "gold_998322",
+          "gold_escalate": false,
+          "second_annotator_escalate": true,
+          "customer_message": "@hulu_support hulu isn\u2019t connecting. Seems it\u2019s affecting alot of users. When will it be fixed?"
+        },
+        {
+          "example_id": "gold_2516231",
+          "gold_escalate": false,
+          "second_annotator_escalate": true,
+          "customer_message": "@hulu_support I'm not wasting mine or anyone else's time doing that. It's not my connection.  I stream all other apps fine. How about you please Google \"issues streaming Hulu on fi"
+        },
+        {
+          "example_id": "gold_2157419",
+          "gold_escalate": false,
+          "second_annotator_escalate": true,
+          "customer_message": "@hulu_support there is an outage for casting. Across multiple accounts, chromecast devices and wifi we all are experiencing an \"Error\" splash screen on our tv's"
+        },
+        {
+          "example_id": "gold_2209356",
+          "gold_escalate": false,
+          "second_annotator_escalate": true,
+          "customer_message": "Anyone else having trouble with Hulu? Had to refresh the page 8 times to get the new episode of Bobs Burgers to play. @hulu_support Is it just me or...?"
+        },
+        {
+          "example_id": "gold_2753119",
+          "gold_escalate": false,
+          "second_annotator_escalate": true,
+          "customer_message": "@hulu_support That\u2019s no problem. How do I disconnect the accounts? Spoke to Spotify and was told Hulu would handle it."
+        },
+        {
+          "example_id": "gold_1101079",
+          "gold_escalate": true,
+          "second_annotator_escalate": false,
+          "customer_message": "This new update is horrible. Everytime I try and watch something it stops like 10 minutes in and says it can be loaded \ud83d\ude21 @115940 ."
+        },
+        {
+          "example_id": "gold_962964",
+          "gold_escalate": true,
+          "second_annotator_escalate": false,
+          "customer_message": "@115940 for the last three days I have been trying to watch Hulu and I keep getting error \ud83d\ude1e"
+        },
+        {
+          "example_id": "gold_2181625",
+          "gold_escalate": true,
+          "second_annotator_escalate": false,
+          "customer_message": "I've seen the same commercial 7 times in the same episode that I've been watching on @115940\nCan y'all not"
+        },
+        {
+          "example_id": "gold_2584541",
+          "gold_escalate": false,
+          "second_annotator_escalate": true,
+          "customer_message": "@115940 What\u2019s going on with your system? Favorites won\u2019t automatically upload. Now the watched shows don\u2019t get marked off. Your service is starting to suck a bit."
+        },
+        {
+          "example_id": "gold_2788559",
+          "gold_escalate": true,
+          "second_annotator_escalate": false,
+          "customer_message": "i\u2019m still mad that @115940 took top gun off, put it back!!!"
+        },
+        {
+          "example_id": "gold_1504506",
+          "gold_escalate": true,
+          "second_annotator_escalate": false,
+          "customer_message": "@hulu_support Is 100mbps fast enough? It is for netflix \ud83e\udd14"
+        }
+      ]
+    },
+    "interpretation": "Independently validated on a subset using inter-annotator agreement. Cohen's kappa accounts for chance agreement; exact % alone overstates reliability."
+  },
+  "leakage": {
+    "status": "PASS",
+    "training_overlap": 0,
+    "retrieval_overlap": 0,
+    "prompt_example_overlap": 0,
+    "training_overlap_ids_sample": [],
+    "retrieval_overlap_ids_sample": [],
+    "prompt_overlap_ids_sample": [],
+    "n_golden_tweet_ids": 199,
+    "n_train_ids": 4000,
+    "n_retrieval_ids": 8000,
+    "n_prompt_ids": 0,
+    "artifacts_present": {
+      "train_labeled": true,
+      "retrieval_corpus": true,
+      "prompt_examples": false
+    },
+    "library_report": {
+      "ok": true,
+      "issues": [],
+      "details": {
+        "golden_in_train": [],
+        "golden_in_train_count": 0,
+        "golden_in_retrieval": [],
+        "golden_in_retrieval_count": 0,
+        "golden_in_prompt_examples": [],
+        "golden_in_prompt_examples_count": 0
+      }
+    },
+    "note": "Golden is drawn from held-out test conversations by design; test\u2229golden overlap is expected and not a leakage failure. Leakage fails only if golden IDs appear in train fitting, retrieval index, or prompt exemplars."
+  },
+  "rule_aid_stack": {
+    "status": "OBSERVED",
+    "systems": {
+      "rule_aid_only": {
+        "intent": {
+          "accuracy": 0.9849246231155779,
+          "macro_f1": 0.9855939373873376,
+          "weighted_f1": 0.9849188923686231,
+          "per_class": {
+            "playback_error": {
+              "precision": 1.0,
+              "recall": 0.9523809523809523,
+              "f1": 0.975609756097561,
+              "support": 21
+            },
+            "live_tv_issues": {
+              "precision": 1.0,
+              "recall": 0.9523809523809523,
+              "f1": 0.975609756097561,
+              "support": 21
+            },
+            "app_device_issue": {
+              "precision": 0.95,
+              "recall": 1.0,
+              "f1": 0.9743589743589743,
+              "support": 19
+            },
+            "login_account": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 20
+            },
+            "billing_subscription": {
+              "precision": 0.95,
+              "recall": 1.0,
+              "f1": 0.9743589743589743,
+              "support": 19
+            },
+            "content_availability": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 20
+            },
+            "service_outage": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 13
+            },
+            "how_to_feature": {
+              "precision": 1.0,
+              "recall": 0.9523809523809523,
+              "f1": 0.975609756097561,
+              "support": 21
+            },
+            "feedback_complaint": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 20
+            },
+            "other_ambiguous": {
+              "precision": 0.9615384615384616,
+              "recall": 1.0,
+              "f1": 0.9803921568627451,
+              "support": 25
+            }
+          },
+          "confusion_matrix": [
+            [
+              20,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              20,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              19,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              20,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              19,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              20,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              13,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              20,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              20,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              25
+            ]
+          ],
+          "labels": [
+            "playback_error",
+            "live_tv_issues",
+            "app_device_issue",
+            "login_account",
+            "billing_subscription",
+            "content_availability",
+            "service_outage",
+            "how_to_feature",
+            "feedback_complaint",
+            "other_ambiguous"
+          ]
+        },
+        "escalation": {
+          "escalation_precision": 0.9555555555555556,
+          "escalation_recall": 0.9885057471264368,
+          "escalation_f1": 0.9717514124293786,
+          "escalation_accuracy": 0.9748743718592965,
+          "unsafe_auto_handle_rate": 0.011494252873563218,
+          "auto_handle_coverage": 0.5477386934673367,
+          "tp": 86,
+          "fp": 4,
+          "fn": 1,
+          "tn": 108,
+          "confusion_matrix": [
+            [
+              108,
+              4
+            ],
+            [
+              1,
+              86
+            ]
+          ],
+          "confusion_matrix_labels": [
+            "auto_handle",
+            "escalate"
+          ],
+          "notes": [
+            "Do not optimize auto_handle_coverage alone.",
+            "unsafe_auto_handle_rate is the primary safety metric (escalation false negatives).",
+            "Intent classification and escalation are separate decision heads."
+          ]
+        },
+        "note": "Regex/priority rules encoding taxonomy \u2014 annotation aid evaluated as a standalone system."
+      },
+      "tfidf_logreg_plus_simple_policy": {
+        "intent": {
+          "accuracy": 0.6934673366834171,
+          "macro_f1": 0.6682599906920463,
+          "weighted_f1": 0.6749026123000524,
+          "per_class": {
+            "playback_error": {
+              "precision": 0.8888888888888888,
+              "recall": 0.7619047619047619,
+              "f1": 0.8205128205128205,
+              "support": 21
+            },
+            "live_tv_issues": {
+              "precision": 0.8260869565217391,
+              "recall": 0.9047619047619048,
+              "f1": 0.8636363636363636,
+              "support": 21
+            },
+            "app_device_issue": {
+              "precision": 0.6,
+              "recall": 0.9473684210526315,
+              "f1": 0.7346938775510204,
+              "support": 19
+            },
+            "login_account": {
+              "precision": 1.0,
+              "recall": 0.75,
+              "f1": 0.8571428571428571,
+              "support": 20
+            },
+            "billing_subscription": {
+              "precision": 0.8636363636363636,
+              "recall": 1.0,
+              "f1": 0.926829268292683,
+              "support": 19
+            },
+            "content_availability": {
+              "precision": 0.75,
+              "recall": 0.6,
+              "f1": 0.6666666666666666,
+              "support": 20
+            },
+            "service_outage": {
+              "precision": 1.0,
+              "recall": 0.15384615384615385,
+              "f1": 0.26666666666666666,
+              "support": 13
+            },
+            "how_to_feature": {
+              "precision": 0.5,
+              "recall": 0.09523809523809523,
+              "f1": 0.16,
+              "support": 21
+            },
+            "feedback_complaint": {
+              "precision": 1.0,
+              "recall": 0.85,
+              "f1": 0.918918918918919,
+              "support": 20
+            },
+            "other_ambiguous": {
+              "precision": 0.34615384615384615,
+              "recall": 0.72,
+              "f1": 0.4675324675324675,
+              "support": 25
+            }
+          },
+          "confusion_matrix": [
+            [
+              16,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              3
+            ],
+            [
+              1,
+              19,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              18,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              1,
+              15,
+              1,
+              0,
+              0,
+              0,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              19,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              12,
+              0,
+              0,
+              0,
+              7
+            ],
+            [
+              0,
+              0,
+              3,
+              0,
+              0,
+              1,
+              2,
+              0,
+              0,
+              7
+            ],
+            [
+              1,
+              2,
+              2,
+              0,
+              2,
+              0,
+              0,
+              2,
+              0,
+              12
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              17,
+              2
+            ],
+            [
+              0,
+              0,
+              2,
+              0,
+              0,
+              3,
+              0,
+              2,
+              0,
+              18
+            ]
+          ],
+          "labels": [
+            "playback_error",
+            "live_tv_issues",
+            "app_device_issue",
+            "login_account",
+            "billing_subscription",
+            "content_availability",
+            "service_outage",
+            "how_to_feature",
+            "feedback_complaint",
+            "other_ambiguous"
+          ]
+        },
+        "escalation": {
+          "escalation_precision": 0.5448717948717948,
+          "escalation_recall": 0.9770114942528736,
+          "escalation_f1": 0.6995884773662551,
+          "escalation_accuracy": 0.6331658291457286,
+          "unsafe_auto_handle_rate": 0.022988505747126436,
+          "auto_handle_coverage": 0.21608040201005024,
+          "tp": 85,
+          "fp": 71,
+          "fn": 2,
+          "tn": 41,
+          "confusion_matrix": [
+            [
+              41,
+              71
+            ],
+            [
+              2,
+              85
+            ]
+          ],
+          "confusion_matrix_labels": [
+            "auto_handle",
+            "escalate"
+          ],
+          "notes": [
+            "Do not optimize auto_handle_coverage alone.",
+            "unsafe_auto_handle_rate is the primary safety metric (escalation false negatives).",
+            "Intent classification and escalation are separate decision heads."
+          ]
+        },
+        "note": "TF-IDF+LR intent with simple high-stakes/confidence escalate (no semantic retrieval)."
+      },
+      "logreg_plus_rule_aid": {
+        "intent": {
+          "accuracy": 0.9798994974874372,
+          "macro_f1": 0.9807069544515741,
+          "weighted_f1": 0.9798906240727975,
+          "per_class": {
+            "playback_error": {
+              "precision": 1.0,
+              "recall": 0.9523809523809523,
+              "f1": 0.975609756097561,
+              "support": 21
+            },
+            "live_tv_issues": {
+              "precision": 0.9523809523809523,
+              "recall": 0.9523809523809523,
+              "f1": 0.9523809523809523,
+              "support": 21
+            },
+            "app_device_issue": {
+              "precision": 0.95,
+              "recall": 1.0,
+              "f1": 0.9743589743589743,
+              "support": 19
+            },
+            "login_account": {
+              "precision": 1.0,
+              "recall": 0.95,
+              "f1": 0.9743589743589743,
+              "support": 20
+            },
+            "billing_subscription": {
+              "precision": 0.95,
+              "recall": 1.0,
+              "f1": 0.9743589743589743,
+              "support": 19
+            },
+            "content_availability": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 20
+            },
+            "service_outage": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 13
+            },
+            "how_to_feature": {
+              "precision": 1.0,
+              "recall": 0.9523809523809523,
+              "f1": 0.975609756097561,
+              "support": 21
+            },
+            "feedback_complaint": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 20
+            },
+            "other_ambiguous": {
+              "precision": 0.9615384615384616,
+              "recall": 1.0,
+              "f1": 0.9803921568627451,
+              "support": 25
+            }
+          },
+          "confusion_matrix": [
+            [
+              20,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              20,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              19,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              19,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              19,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              20,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              13,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              20,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              20,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              25
+            ]
+          ],
+          "labels": [
+            "playback_error",
+            "live_tv_issues",
+            "app_device_issue",
+            "login_account",
+            "billing_subscription",
+            "content_availability",
+            "service_outage",
+            "how_to_feature",
+            "feedback_complaint",
+            "other_ambiguous"
+          ]
+        },
+        "escalation": {
+          "escalation_precision": 0.9550561797752809,
+          "escalation_recall": 0.9770114942528736,
+          "escalation_f1": 0.9659090909090908,
+          "escalation_accuracy": 0.9698492462311558,
+          "unsafe_auto_handle_rate": 0.022988505747126436,
+          "auto_handle_coverage": 0.5527638190954773,
+          "tp": 85,
+          "fp": 4,
+          "fn": 2,
+          "tn": 108,
+          "confusion_matrix": [
+            [
+              108,
+              4
+            ],
+            [
+              2,
+              85
+            ]
+          ],
+          "confusion_matrix_labels": [
+            "auto_handle",
+            "escalate"
+          ],
+          "notes": [
+            "Do not optimize auto_handle_coverage alone.",
+            "unsafe_auto_handle_rate is the primary safety metric (escalation false negatives).",
+            "Intent classification and escalation are separate decision heads."
+          ]
+        },
+        "note": "LR intent with rule-aid fallback on low confidence; rule escalate."
+      }
+    },
+    "comparison_note": "Rule-aid is an annotation/taxonomy encoding aid. Final production decisioning uses semantic retrieval + GroundedEscalationPolicy (see final system block in validation report).",
+    "lr_available": true
+  },
+  "final_system": {
+    "intent": {
+      "accuracy": 0.6934673366834171,
+      "macro_f1": 0.6682599906920463,
+      "weighted_f1": 0.6749026123000524,
+      "per_class": {
+        "playback_error": {
+          "precision": 0.8888888888888888,
+          "recall": 0.7619047619047619,
+          "f1": 0.8205128205128205,
+          "support": 21
+        },
+        "live_tv_issues": {
+          "precision": 0.8260869565217391,
+          "recall": 0.9047619047619048,
+          "f1": 0.8636363636363636,
+          "support": 21
+        },
+        "app_device_issue": {
+          "precision": 0.6,
+          "recall": 0.9473684210526315,
+          "f1": 0.7346938775510204,
+          "support": 19
+        },
+        "login_account": {
+          "precision": 1.0,
+          "recall": 0.75,
+          "f1": 0.8571428571428571,
+          "support": 20
+        },
+        "billing_subscription": {
+          "precision": 0.8636363636363636,
+          "recall": 1.0,
+          "f1": 0.926829268292683,
+          "support": 19
+        },
+        "content_availability": {
+          "precision": 0.75,
+          "recall": 0.6,
+          "f1": 0.6666666666666666,
+          "support": 20
+        },
+        "service_outage": {
+          "precision": 1.0,
+          "recall": 0.15384615384615385,
+          "f1": 0.26666666666666666,
+          "support": 13
+        },
+        "how_to_feature": {
+          "precision": 0.5,
+          "recall": 0.09523809523809523,
+          "f1": 0.16,
+          "support": 21
+        },
+        "feedback_complaint": {
+          "precision": 1.0,
+          "recall": 0.85,
+          "f1": 0.918918918918919,
+          "support": 20
+        },
+        "other_ambiguous": {
+          "precision": 0.34615384615384615,
+          "recall": 0.72,
+          "f1": 0.4675324675324675,
+          "support": 25
+        }
+      },
+      "confusion_matrix": [
+        [
+          16,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          1,
+          19,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          18,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          15,
+          1,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          19,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          12,
+          0,
+          0,
+          0,
+          7
+        ],
+        [
+          0,
+          0,
+          3,
+          0,
+          0,
+          1,
+          2,
+          0,
+          0,
+          7
+        ],
+        [
+          1,
+          2,
+          2,
+          0,
+          2,
+          0,
+          0,
+          2,
+          0,
+          12
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          17,
+          2
+        ],
+        [
+          0,
+          0,
+          2,
+          0,
+          0,
+          3,
+          0,
+          2,
+          0,
+          18
+        ]
+      ],
+      "labels": [
+        "playback_error",
+        "live_tv_issues",
+        "app_device_issue",
+        "login_account",
+        "billing_subscription",
+        "content_availability",
+        "service_outage",
+        "how_to_feature",
+        "feedback_complaint",
+        "other_ambiguous"
+      ]
+    },
+    "escalation": {
+      "escalation_precision": 0.4879518072289157,
+      "escalation_recall": 0.9310344827586207,
+      "escalation_f1": 0.6403162055335969,
+      "escalation_accuracy": 0.542713567839196,
+      "unsafe_auto_handle_rate": 0.06896551724137931,
+      "auto_handle_coverage": 0.1658291457286432,
+      "tp": 81,
+      "fp": 85,
+      "fn": 6,
+      "tn": 27,
+      "confusion_matrix": [
+        [
+          27,
+          85
+        ],
+        [
+          6,
+          81
+        ]
+      ],
+      "confusion_matrix_labels": [
+        "auto_handle",
+        "escalate"
+      ],
+      "notes": [
+        "Do not optimize auto_handle_coverage alone.",
+        "unsafe_auto_handle_rate is the primary safety metric (escalation false negatives).",
+        "Intent classification and escalation are separate decision heads."
+      ]
+    },
+    "by_difficulty": {
+      "easy": {
+        "n": 94,
+        "intent": {
+          "accuracy": 0.7127659574468085,
+          "macro_f1": 0.661545066045066,
+          "weighted_f1": 0.7357536494238621,
+          "per_class": {
+            "playback_error": {
+              "precision": 0.9166666666666666,
+              "recall": 0.8461538461538461,
+              "f1": 0.88,
+              "support": 13
+            },
+            "live_tv_issues": {
+              "precision": 0.625,
+              "recall": 1.0,
+              "f1": 0.7692307692307693,
+              "support": 5
+            },
+            "app_device_issue": {
+              "precision": 0.8125,
+              "recall": 0.9285714285714286,
+              "f1": 0.8666666666666667,
+              "support": 14
+            },
+            "login_account": {
+              "precision": 1.0,
+              "recall": 0.7777777777777778,
+              "f1": 0.875,
+              "support": 9
+            },
+            "billing_subscription": {
+              "precision": 0.8,
+              "recall": 1.0,
+              "f1": 0.8888888888888888,
+              "support": 8
+            },
+            "content_availability": {
+              "precision": 1.0,
+              "recall": 0.6923076923076923,
+              "f1": 0.8181818181818182,
+              "support": 13
+            },
+            "service_outage": {
+              "precision": 1.0,
+              "recall": 0.2222222222222222,
+              "f1": 0.36363636363636365,
+              "support": 9
+            },
+            "how_to_feature": {
+              "precision": 1.0,
+              "recall": 0.08333333333333333,
+              "f1": 0.15384615384615385,
+              "support": 12
+            },
+            "feedback_complaint": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 11
+            },
+            "other_ambiguous": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            }
+          },
+          "confusion_matrix": [
+            [
+              11,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              5,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              13,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              7,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              9,
+              0,
+              0,
+              0,
+              4
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              6
+            ],
+            [
+              1,
+              2,
+              2,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              5
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              11,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "labels": [
+            "playback_error",
+            "live_tv_issues",
+            "app_device_issue",
+            "login_account",
+            "billing_subscription",
+            "content_availability",
+            "service_outage",
+            "how_to_feature",
+            "feedback_complaint",
+            "other_ambiguous"
+          ]
+        },
+        "escalation": {
+          "escalation_precision": 0.36363636363636365,
+          "escalation_recall": 0.9032258064516129,
+          "escalation_f1": 0.5185185185185185,
+          "escalation_accuracy": 0.44680851063829785,
+          "unsafe_auto_handle_rate": 0.0967741935483871,
+          "auto_handle_coverage": 0.18085106382978725,
+          "tp": 28,
+          "fp": 49,
+          "fn": 3,
+          "tn": 14,
+          "confusion_matrix": [
+            [
+              14,
+              49
+            ],
+            [
+              3,
+              28
+            ]
+          ],
+          "confusion_matrix_labels": [
+            "auto_handle",
+            "escalate"
+          ],
+          "notes": [
+            "Do not optimize auto_handle_coverage alone.",
+            "unsafe_auto_handle_rate is the primary safety metric (escalation false negatives).",
+            "Intent classification and escalation are separate decision heads."
+          ]
+        }
+      },
+      "medium": {
+        "n": 96,
+        "intent": {
+          "accuracy": 0.6770833333333334,
+          "macro_f1": 0.5996019805563486,
+          "weighted_f1": 0.6608103657029321,
+          "per_class": {
+            "playback_error": {
+              "precision": 0.8333333333333334,
+              "recall": 0.625,
+              "f1": 0.7142857142857143,
+              "support": 8
+            },
+            "live_tv_issues": {
+              "precision": 0.9333333333333333,
+              "recall": 0.9333333333333333,
+              "f1": 0.9333333333333333,
+              "support": 15
+            },
+            "app_device_issue": {
+              "precision": 0.4166666666666667,
+              "recall": 1.0,
+              "f1": 0.5882352941176471,
+              "support": 5
+            },
+            "login_account": {
+              "precision": 1.0,
+              "recall": 0.7272727272727273,
+              "f1": 0.8421052631578947,
+              "support": 11
+            },
+            "billing_subscription": {
+              "precision": 0.9166666666666666,
+              "recall": 1.0,
+              "f1": 0.9565217391304348,
+              "support": 11
+            },
+            "content_availability": {
+              "precision": 0.5,
+              "recall": 0.42857142857142855,
+              "f1": 0.46153846153846156,
+              "support": 7
+            },
+            "service_outage": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 4
+            },
+            "how_to_feature": {
+              "precision": 0.3333333333333333,
+              "recall": 0.1111111111111111,
+              "f1": 0.16666666666666666,
+              "support": 9
+            },
+            "feedback_complaint": {
+              "precision": 1.0,
+              "recall": 0.6666666666666666,
+              "f1": 0.8,
+              "support": 9
+            },
+            "other_ambiguous": {
+              "precision": 0.42857142857142855,
+              "recall": 0.7058823529411765,
+              "f1": 0.5333333333333333,
+              "support": 17
+            }
+          },
+          "confusion_matrix": [
+            [
+              5,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2
+            ],
+            [
+              1,
+              14,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              5,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              11,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              3,
+              0,
+              0,
+              0,
+              3
+            ],
+            [
+              0,
+              0,
+              2,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              7
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              6,
+              2
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              2,
+              0,
+              2,
+              0,
+              12
+            ]
+          ],
+          "labels": [
+            "playback_error",
+            "live_tv_issues",
+            "app_device_issue",
+            "login_account",
+            "billing_subscription",
+            "content_availability",
+            "service_outage",
+            "how_to_feature",
+            "feedback_complaint",
+            "other_ambiguous"
+          ]
+        },
+        "escalation": {
+          "escalation_precision": 0.5555555555555556,
+          "escalation_recall": 0.9375,
+          "escalation_f1": 0.6976744186046512,
+          "escalation_accuracy": 0.59375,
+          "unsafe_auto_handle_rate": 0.0625,
+          "auto_handle_coverage": 0.15625,
+          "tp": 45,
+          "fp": 36,
+          "fn": 3,
+          "tn": 12,
+          "confusion_matrix": [
+            [
+              12,
+              36
+            ],
+            [
+              3,
+              45
+            ]
+          ],
+          "confusion_matrix_labels": [
+            "auto_handle",
+            "escalate"
+          ],
+          "notes": [
+            "Do not optimize auto_handle_coverage alone.",
+            "unsafe_auto_handle_rate is the primary safety metric (escalation false negatives).",
+            "Intent classification and escalation are separate decision heads."
+          ]
+        }
+      },
+      "hard": {
+        "n": 9,
+        "intent": {
+          "accuracy": 0.6666666666666666,
+          "macro_f1": 0.21428571428571427,
+          "weighted_f1": 0.7619047619047619,
+          "per_class": {
+            "playback_error": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "live_tv_issues": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 1
+            },
+            "app_device_issue": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "login_account": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "billing_subscription": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "content_availability": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "service_outage": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "how_to_feature": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "feedback_complaint": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 0
+            },
+            "other_ambiguous": {
+              "precision": 1.0,
+              "recall": 0.75,
+              "f1": 0.8571428571428571,
+              "support": 8
+            }
+          },
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              6
+            ]
+          ],
+          "labels": [
+            "playback_error",
+            "live_tv_issues",
+            "app_device_issue",
+            "login_account",
+            "billing_subscription",
+            "content_availability",
+            "service_outage",
+            "how_to_feature",
+            "feedback_complaint",
+            "other_ambiguous"
+          ]
+        },
+        "escalation": {
+          "escalation_precision": 1.0,
+          "escalation_recall": 1.0,
+          "escalation_f1": 1.0,
+          "escalation_accuracy": 1.0,
+          "unsafe_auto_handle_rate": 0.0,
+          "auto_handle_coverage": 0.1111111111111111,
+          "tp": 8,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1,
+          "confusion_matrix": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              8
+            ]
+          ],
+          "confusion_matrix_labels": [
+            "auto_handle",
+            "escalate"
+          ],
+          "notes": [
+            "Do not optimize auto_handle_coverage alone.",
+            "unsafe_auto_handle_rate is the primary safety metric (escalation false negatives).",
+            "Intent classification and escalation are separate decision heads."
+          ]
+        }
+      }
+    },
+    "by_annotator_confidence": {
+      "high": {
+        "n": 71,
+        "intent_accuracy": 0.7746478873239436,
+        "escalation_accuracy": 0.43661971830985913
+      },
+      "medium": {
+        "n": 102,
+        "intent_accuracy": 0.6372549019607843,
+        "escalation_accuracy": 0.5294117647058824
+      },
+      "low": {
+        "n": 26,
+        "intent_accuracy": 0.6923076923076923,
+        "escalation_accuracy": 0.8846153846153846
+      }
+    },
+    "model_confidence_calibration": {
+      "high": {
+        "n": 35,
+        "intent_accuracy": 0.9428571428571428
+      },
+      "medium": {
+        "n": 28,
+        "intent_accuracy": 1.0
+      },
+      "low": {
+        "n": 136,
+        "intent_accuracy": 0.5661764705882353
+      }
+    },
+    "other_ambiguous": {
+      "gold_other_ambiguous_rate": 0.12562814070351758,
+      "pred_other_ambiguous_rate": 0.2613065326633166,
+      "n_pred_other_ambiguous": 52,
+      "n_false_ambiguous": 34,
+      "false_ambiguous_examples": [
+        {
+          "example_id": "gold_2623567",
+          "gold_intent": "playback_error",
+          "pred_intent": "other_ambiguous",
+          "customer_message": "@hulu_support got this \u201c https://t.co/7YVDkNKOMM operation error 0. \u201c Help!",
+          "manual_review": "Predicted other_ambiguous but gold assigned a concrete intent \u2014 likely dump/under-specified model behavior."
+        },
+        {
+          "example_id": "gold_2147146",
+          "gold_intent": "playback_error",
+          "pred_intent": "other_ambiguous",
+          "customer_message": "Hey, @hulu_support, your ads keep making our stream fail. Connection Error 5005 and 5003.",
+          "manual_review": "Predicted other_ambiguous but gold assigned a concrete intent \u2014 likely dump/under-specified model behavior."
+        },
+        {
+          "example_id": "gold_1577090",
+          "gold_intent": "app_device_issue",
+          "pred_intent": "other_ambiguous",
+          "customer_message": "@115940 @115946 @126452 @115940 I am on @115821 #FireTV if that helps. Happened during the World Series too",
+          "manual_review": "Predicted other_ambiguous but gold assigned a concrete intent \u2014 likely dump/under-specified model behavior."
+        },
+        {
+          "example_id": "gold_388173",
+          "gold_intent": "login_account",
+          "pred_intent": "other_ambiguous",
+          "customer_message": "@hulu_support I was just informed of the Spotify/Hulu bundle. How do I sign in to Hulu to get the bundle?",
+          "manual_review": "Predicted other_ambiguous but gold assigned a concrete intent \u2014 likely dump/under-specified model behavior."
+        },
+        {
+          "example_id": "gold_1128868",
+          "gold_intent": "login_account",
+          "pred_intent": "other_ambiguous",
+          "customer_message": "@hulu_support Not to create a 2nd one. It's an annoying extra step to select a profile 2 log in. With 1 profile, it'd be nice to bypass profile selection.",
+          "manual_review": "Predicted other_ambiguous but gold assigned a concrete intent \u2014 likely dump/under-specified model behavior."
+        },
+        {
+          "example_id": "gold_1494174",
+          "gold_intent": "content_availability",
+          "pred_intent": "other_ambiguous",
+          "customer_message": "@hulu_support WHY IS BASKETBALL WIVES NOT ON HERE, I LITERALLY SUBSCRIBED FOR THAT IM SO DONE",
+          "manual_review": "Predicted other_ambiguous but gold assigned a concrete intent \u2014 likely dump/under-specified model behavior."
+        },
+        {
+          "example_id": "gold_1776739",
+          "gold_intent": "content_availability",
+          "pred_intent": "other_ambiguous",
+          "customer_message": "@hulu_support Hi, why have @282601 and @17712 been late to upload?",
+          "manual_review": "Predicted other_ambiguous but gold assigned a concrete intent \u2014 likely dump/under-specified model behavior."
+        },
+        {
+          "example_id": "gold_2063231",
+          "gold_intent": "content_availability",
+          "pred_intent": "other_ambiguous",
+          "customer_message": "@115940 when are you taking Make It Or Break It off? I haven\u2019t finished the series yet!",
+          "manual_review": "Predicted other_ambiguous but gold assigned a concrete intent \u2014 likely dump/under-specified model behavior."
+        },
+        {
+          "example_id": "gold_2214737",
+          "gold_intent": "content_availability",
+          "pred_intent": "other_ambiguous",
+          "customer_message": "@115940 why is last night @33581 not on Hulu yet?! @hulu_support",
+          "manual_review": "Predicted other_ambiguous but gold assigned a concrete intent \u2014 likely dump/under-specified model behavior."
+        },
+        {
+          "example_id": "gold_2577845",
+          "gold_intent": "content_availability",
+          "pred_intent": "other_ambiguous",
+          "customer_message": "@hulu_support Show's aren't uploading anymore, nor do they show up in my \"watchlist\" what's going on, it's been an extremely frustrating few days.",
+          "manual_review": "Predicted other_ambiguous but gold assigned a concrete intent \u2014 likely dump/under-specified model behavior."
+        },
+        {
+          "example_id": "gold_998322",
+          "gold_intent": "content_availability",
+          "pred_intent": "other_ambiguous",
+          "customer_message": "@hulu_support hulu isn\u2019t connecting. Seems it\u2019s affecting alot of users. When will it be fixed?",
+          "manual_review": "Predicted other_ambiguous but gold assigned a concrete intent \u2014 likely dump/under-specified model behavior."
+        },
+        {
+          "example_id": "gold_2584541",
+          "gold_intent": "content_availability",
+          "pred_intent": "other_ambiguous",
+          "customer_message": "@115940 What\u2019s going on with your system? Favorites won\u2019t automatically upload. Now the watched shows don\u2019t get marked off. Your service is starting to suck a bit.",
+          "manual_review": "Predicted other_ambiguous but gold assigned a concrete intent \u2014 likely dump/under-specified model behavior."
+        },
+        {
+          "example_id": "gold_2818057",
+          "gold_intent": "service_outage",
+          "pred_intent": "other_ambiguous",
+          "customer_message": "Anyone else having an issue with @115940? We are trying to watch @180562 and every time we hit play, it loads a different show... Harlots, Handmaiden's Tale, The Mindy Project. It won't load Grey's. W",
+          "manual_review": "Predicted other_ambiguous but gold assigned a concrete intent \u2014 likely dump/under-specified model behavior."
+        },
+        {
+          "example_id": "gold_1092867",
+          "gold_intent": "service_outage",
+          "pred_intent": "other_ambiguous",
+          "customer_message": "@hulu_support why... why is Hulu down so often here in Oviedo, FL? It's too hot to go outside..help :(",
+          "manual_review": "Predicted other_ambiguous but gold assigned a concrete intent \u2014 likely dump/under-specified model behavior."
+        },
+        {
+          "example_id": "gold_1158535",
+          "gold_intent": "service_outage",
+          "pred_intent": "other_ambiguous",
+          "customer_message": "@hulu_support is Hulu down in central Florida? Been like this for the last 5 hours https://t.co/v6IMcMaKT9",
+          "manual_review": "Predicted other_ambiguous but gold assigned a concrete intent \u2014 likely dump/under-specified model behavior."
+        }
+      ],
+      "true_ambiguous_correct": 18
+    },
+    "escalation_false_negatives": {
+      "n": 6,
+      "by_category": {
+        "other": 1,
+        "unsafe_automation": 5
+      },
+      "examples": [
+        {
+          "example_id": "gold_2644254",
+          "gold_intent": "live_tv_issues",
+          "pred_intent": "live_tv_issues",
+          "category": "other",
+          "gold_escalation_reason": "insufficient_evidence",
+          "customer_message": "Thank you @115940 for screwing up the live tv during a game."
+        },
+        {
+          "example_id": "gold_2919758",
+          "gold_intent": "feedback_complaint",
+          "pred_intent": "feedback_complaint",
+          "category": "unsafe_automation",
+          "gold_escalation_reason": "potentially_harmful_automation",
+          "customer_message": "I really do hate the new interface in the @115940 app. I keep trying to like it, but I just can't."
+        },
+        {
+          "example_id": "gold_1505080",
+          "gold_intent": "feedback_complaint",
+          "pred_intent": "feedback_complaint",
+          "category": "unsafe_automation",
+          "gold_escalation_reason": "potentially_harmful_automation",
+          "customer_message": "probably late to this but I really hate the new @115940 interface on my phone. it's much harder to tell when shows I care about have new eps \ud83d\ude45\ud83c\udffc"
+        },
+        {
+          "example_id": "gold_1587983",
+          "gold_intent": "feedback_complaint",
+          "pred_intent": "feedback_complaint",
+          "category": "unsafe_automation",
+          "gold_escalation_reason": "potentially_harmful_automation",
+          "customer_message": "@488406 @hulu_support Agreed. I hate the new setup. I hardly ever use it anymore. Almost no reason for me to have it"
+        },
+        {
+          "example_id": "gold_7640",
+          "gold_intent": "feedback_complaint",
+          "pred_intent": "feedback_complaint",
+          "category": "unsafe_automation",
+          "gold_escalation_reason": "potentially_harmful_automation",
+          "customer_message": "@hulu_support Has been this way for months.  Doesn't that tell you how much we hate the \"new experience?\"  Can't even get a live person - twitter bot"
+        },
+        {
+          "example_id": "gold_2547627",
+          "gold_intent": "feedback_complaint",
+          "pred_intent": "feedback_complaint",
+          "category": "unsafe_automation",
+          "gold_escalation_reason": "potentially_harmful_automation",
+          "customer_message": "@115940  Worst customer service ever!!!"
+        }
+      ]
+    },
+    "error_analysis": {
+      "n_examples_with_any_error": 111,
+      "category_counts": {
+        "escalation_policy_ambiguity": 91,
+        "ambiguous_customer_wording": 41,
+        "intent_boundary_confusion": 15,
+        "device_context_confusion": 2,
+        "multiple_intents": 3
+      },
+      "category_pct_of_errors": {
+        "escalation_policy_ambiguity": 59.9,
+        "ambiguous_customer_wording": 27.0,
+        "intent_boundary_confusion": 9.9,
+        "multiple_intents": 2.0,
+        "device_context_confusion": 1.3
+      },
+      "examples": {
+        "escalation_policy_ambiguity": [
+          {
+            "example_id": "gold_2911030",
+            "gold_intent": "playback_error",
+            "pred_intent": "playback_error",
+            "gold_escalate": false,
+            "pred_escalate": true,
+            "customer_message": "@hulu_support why is the app constantly pausing and buffering lately?  It's not connection because it is happening at several different locations and devices for me.  From ps4 to A"
+          },
+          {
+            "example_id": "gold_2721090",
+            "gold_intent": "playback_error",
+            "pred_intent": "playback_error",
+            "gold_escalate": false,
+            "pred_escalate": true,
+            "customer_message": "@hulu_support live games are pretty buffer heavy :-("
+          },
+          {
+            "example_id": "gold_1179249",
+            "gold_intent": "playback_error",
+            "pred_intent": "playback_error",
+            "gold_escalate": false,
+            "pred_escalate": true,
+            "customer_message": "@hulu_support Can't watch Steelers on Hulu Live, wife is MAD, getting repeated buffer bar, no picture. On hold for 20 mins so far. Help!!"
+          }
+        ],
+        "ambiguous_customer_wording": [
+          {
+            "example_id": "gold_2623567",
+            "gold_intent": "playback_error",
+            "pred_intent": "other_ambiguous",
+            "gold_escalate": false,
+            "pred_escalate": true,
+            "customer_message": "@hulu_support got this \u201c https://t.co/7YVDkNKOMM operation error 0. \u201c Help!"
+          },
+          {
+            "example_id": "gold_2147146",
+            "gold_intent": "playback_error",
+            "pred_intent": "other_ambiguous",
+            "gold_escalate": false,
+            "pred_escalate": true,
+            "customer_message": "Hey, @hulu_support, your ads keep making our stream fail. Connection Error 5005 and 5003."
+          },
+          {
+            "example_id": "gold_1577090",
+            "gold_intent": "app_device_issue",
+            "pred_intent": "other_ambiguous",
+            "gold_escalate": false,
+            "pred_escalate": true,
+            "customer_message": "@115940 @115946 @126452 @115940 I am on @115821 #FireTV if that helps. Happened during the World Series too"
+          }
+        ],
+        "intent_boundary_confusion": [
+          {
+            "example_id": "gold_1372321",
+            "gold_intent": "playback_error",
+            "pred_intent": "live_tv_issues",
+            "gold_escalate": false,
+            "pred_escalate": true,
+            "customer_message": "@hulu_support ok...I give up. Hulu TV \"live\" is constantly buffering and is now a solid half inning behind the WS. What do I do?"
+          },
+          {
+            "example_id": "gold_1197349",
+            "gold_intent": "playback_error",
+            "pred_intent": "app_device_issue",
+            "gold_escalate": false,
+            "pred_escalate": true,
+            "customer_message": "@hulu_support Apple TV. Just a lot of buffering. Poor picture quality. And video jumps around. (Been a little better for past little while)"
+          },
+          {
+            "example_id": "gold_561173",
+            "gold_intent": "live_tv_issues",
+            "pred_intent": "playback_error",
+            "gold_escalate": false,
+            "pred_escalate": true,
+            "customer_message": "@115940 needs to fix its buffering problems with LiveTV or buy some more bandwidth, or I might switch to @115946 #connectionfine #beta"
+          }
+        ],
+        "device_context_confusion": [
+          {
+            "example_id": "gold_1355492",
+            "gold_intent": "live_tv_issues",
+            "pred_intent": "app_device_issue",
+            "gold_escalate": false,
+            "pred_escalate": false,
+            "customer_message": "@115940 your live doesn\u2019t work for older devices Apple TV Roku Toshiba laptop PS3  I signed up only can view on my iPhone this is worthless"
+          },
+          {
+            "example_id": "gold_1057041",
+            "gold_intent": "content_availability",
+            "pred_intent": "app_device_issue",
+            "gold_escalate": false,
+            "pred_escalate": true,
+            "customer_message": "@hulu_support When will Google Assistant support come to Hulu casting from Android via Chromecast?"
+          }
+        ],
+        "multiple_intents": [
+          {
+            "example_id": "gold_652356",
+            "gold_intent": "login_account",
+            "pred_intent": "app_device_issue",
+            "gold_escalate": true,
+            "pred_escalate": true,
+            "customer_message": "@hulu_support I an still receiving login errors and playback Issues. I am using a fire stick and uninstalling and reinstalling doesn't fix the issue."
+          },
+          {
+            "example_id": "gold_2363665",
+            "gold_intent": "how_to_feature",
+            "pred_intent": "billing_subscription",
+            "gold_escalate": true,
+            "pred_escalate": true,
+            "customer_message": "@hulu_support so once again your business has mess up my account how is it every month it's mess up do y'all not know how to fix this if I wanted to go on there &amp; fix it every "
+          },
+          {
+            "example_id": "gold_2365549",
+            "gold_intent": "feedback_complaint",
+            "pred_intent": "app_device_issue",
+            "gold_escalate": true,
+            "pred_escalate": true,
+            "customer_message": "@hulu_support horrible stuttering issues all day today. Only happens with #hulu and not Amazon Prime or Netflix. Deleted and re-installed the app and still having the issue."
+          }
+        ]
+      },
+      "note": "Categories co-occur; percentages are over category tags, not mutually exclusive rows."
+    }
+  }
+}

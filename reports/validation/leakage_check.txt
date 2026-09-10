@@ -1,0 +1,6 @@
+Golden-set leakage check
+------------------------
+Training overlap:       0
+Retrieval overlap:      0
+Prompt-example overlap: 0
+Status: PASS

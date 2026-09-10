@@ -1,4 +1,4 @@
-.PHONY: help install test phase0 audit brands docs acquire-instructions data-sample clean build-index eval-phase2 run-agent
+.PHONY: help install test phase0 audit brands docs acquire-instructions data-sample clean build-index eval-phase2 run-agent check-leakage validate-eval
 
 PYTHON ?= .venv/bin/python
 PIP ?= .venv/bin/pip
@@ -11,6 +11,8 @@ help:
 	@echo "  make phase0               Run Phase 0 pipeline (requires DATA_PATH or data/raw/*)"
 	@echo "  make build-index          Build Phase-2 train-only retrieval index"
 	@echo "  make eval-phase2          Run Phase-2 evaluation matrix on golden"
+	@echo "  make check-leakage        Verify golden not in train/retrieval/prompts"
+	@echo "  make validate-eval        IAA + leakage + sliced metrics + FN/error analysis"
 	@echo "  make run-agent            Demo: deterministic agent (set MSG=...)"
 	@echo "  make audit                Run dataset audit"
 	@echo "  make brands               Rank brand candidates"
@@ -36,6 +38,12 @@ build-index:
 
 eval-phase2:
 	$(PYTHON) -m src.cli.eval_phase2
+
+check-leakage:
+	$(PYTHON) -m src.cli.check_leakage
+
+validate-eval:
+	$(PYTHON) -m src.cli.validate_evaluation
 
 run-agent:
 	$(PYTHON) -m src.cli.run_agent --mode deterministic --message "$(or $(MSG),Hulu keeps buffering when I try to watch live TV)"

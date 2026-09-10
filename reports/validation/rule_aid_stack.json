@@ -1,0 +1,712 @@
+{
+  "status": "OBSERVED",
+  "systems": {
+    "rule_aid_only": {
+      "intent": {
+        "accuracy": 0.9849246231155779,
+        "macro_f1": 0.9855939373873376,
+        "weighted_f1": 0.9849188923686231,
+        "per_class": {
+          "playback_error": {
+            "precision": 1.0,
+            "recall": 0.9523809523809523,
+            "f1": 0.975609756097561,
+            "support": 21
+          },
+          "live_tv_issues": {
+            "precision": 1.0,
+            "recall": 0.9523809523809523,
+            "f1": 0.975609756097561,
+            "support": 21
+          },
+          "app_device_issue": {
+            "precision": 0.95,
+            "recall": 1.0,
+            "f1": 0.9743589743589743,
+            "support": 19
+          },
+          "login_account": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 20
+          },
+          "billing_subscription": {
+            "precision": 0.95,
+            "recall": 1.0,
+            "f1": 0.9743589743589743,
+            "support": 19
+          },
+          "content_availability": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 20
+          },
+          "service_outage": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 13
+          },
+          "how_to_feature": {
+            "precision": 1.0,
+            "recall": 0.9523809523809523,
+            "f1": 0.975609756097561,
+            "support": 21
+          },
+          "feedback_complaint": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 20
+          },
+          "other_ambiguous": {
+            "precision": 0.9615384615384616,
+            "recall": 1.0,
+            "f1": 0.9803921568627451,
+            "support": 25
+          }
+        },
+        "confusion_matrix": [
+          [
+            20,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            20,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            19,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            20,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            19,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            20,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            13,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            20,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            20,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            25
+          ]
+        ],
+        "labels": [
+          "playback_error",
+          "live_tv_issues",
+          "app_device_issue",
+          "login_account",
+          "billing_subscription",
+          "content_availability",
+          "service_outage",
+          "how_to_feature",
+          "feedback_complaint",
+          "other_ambiguous"
+        ]
+      },
+      "escalation": {
+        "escalation_precision": 0.9555555555555556,
+        "escalation_recall": 0.9885057471264368,
+        "escalation_f1": 0.9717514124293786,
+        "escalation_accuracy": 0.9748743718592965,
+        "unsafe_auto_handle_rate": 0.011494252873563218,
+        "auto_handle_coverage": 0.5477386934673367,
+        "tp": 86,
+        "fp": 4,
+        "fn": 1,
+        "tn": 108,
+        "confusion_matrix": [
+          [
+            108,
+            4
+          ],
+          [
+            1,
+            86
+          ]
+        ],
+        "confusion_matrix_labels": [
+          "auto_handle",
+          "escalate"
+        ],
+        "notes": [
+          "Do not optimize auto_handle_coverage alone.",
+          "unsafe_auto_handle_rate is the primary safety metric (escalation false negatives).",
+          "Intent classification and escalation are separate decision heads."
+        ]
+      },
+      "note": "Regex/priority rules encoding taxonomy \u2014 annotation aid evaluated as a standalone system."
+    },
+    "tfidf_logreg_plus_simple_policy": {
+      "intent": {
+        "accuracy": 0.6934673366834171,
+        "macro_f1": 0.6682599906920463,
+        "weighted_f1": 0.6749026123000524,
+        "per_class": {
+          "playback_error": {
+            "precision": 0.8888888888888888,
+            "recall": 0.7619047619047619,
+            "f1": 0.8205128205128205,
+            "support": 21
+          },
+          "live_tv_issues": {
+            "precision": 0.8260869565217391,
+            "recall": 0.9047619047619048,
+            "f1": 0.8636363636363636,
+            "support": 21
+          },
+          "app_device_issue": {
+            "precision": 0.6,
+            "recall": 0.9473684210526315,
+            "f1": 0.7346938775510204,
+            "support": 19
+          },
+          "login_account": {
+            "precision": 1.0,
+            "recall": 0.75,
+            "f1": 0.8571428571428571,
+            "support": 20
+          },
+          "billing_subscription": {
+            "precision": 0.8636363636363636,
+            "recall": 1.0,
+            "f1": 0.926829268292683,
+            "support": 19
+          },
+          "content_availability": {
+            "precision": 0.75,
+            "recall": 0.6,
+            "f1": 0.6666666666666666,
+            "support": 20
+          },
+          "service_outage": {
+            "precision": 1.0,
+            "recall": 0.15384615384615385,
+            "f1": 0.26666666666666666,
+            "support": 13
+          },
+          "how_to_feature": {
+            "precision": 0.5,
+            "recall": 0.09523809523809523,
+            "f1": 0.16,
+            "support": 21
+          },
+          "feedback_complaint": {
+            "precision": 1.0,
+            "recall": 0.85,
+            "f1": 0.918918918918919,
+            "support": 20
+          },
+          "other_ambiguous": {
+            "precision": 0.34615384615384615,
+            "recall": 0.72,
+            "f1": 0.4675324675324675,
+            "support": 25
+          }
+        },
+        "confusion_matrix": [
+          [
+            16,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3
+          ],
+          [
+            1,
+            19,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            18,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            15,
+            1,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            19,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            12,
+            0,
+            0,
+            0,
+            7
+          ],
+          [
+            0,
+            0,
+            3,
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            7
+          ],
+          [
+            1,
+            2,
+            2,
+            0,
+            2,
+            0,
+            0,
+            2,
+            0,
+            12
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            17,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            0,
+            0,
+            3,
+            0,
+            2,
+            0,
+            18
+          ]
+        ],
+        "labels": [
+          "playback_error",
+          "live_tv_issues",
+          "app_device_issue",
+          "login_account",
+          "billing_subscription",
+          "content_availability",
+          "service_outage",
+          "how_to_feature",
+          "feedback_complaint",
+          "other_ambiguous"
+        ]
+      },
+      "escalation": {
+        "escalation_precision": 0.5448717948717948,
+        "escalation_recall": 0.9770114942528736,
+        "escalation_f1": 0.6995884773662551,
+        "escalation_accuracy": 0.6331658291457286,
+        "unsafe_auto_handle_rate": 0.022988505747126436,
+        "auto_handle_coverage": 0.21608040201005024,
+        "tp": 85,
+        "fp": 71,
+        "fn": 2,
+        "tn": 41,
+        "confusion_matrix": [
+          [
+            41,
+            71
+          ],
+          [
+            2,
+            85
+          ]
+        ],
+        "confusion_matrix_labels": [
+          "auto_handle",
+          "escalate"
+        ],
+        "notes": [
+          "Do not optimize auto_handle_coverage alone.",
+          "unsafe_auto_handle_rate is the primary safety metric (escalation false negatives).",
+          "Intent classification and escalation are separate decision heads."
+        ]
+      },
+      "note": "TF-IDF+LR intent with simple high-stakes/confidence escalate (no semantic retrieval)."
+    },
+    "logreg_plus_rule_aid": {
+      "intent": {
+        "accuracy": 0.9798994974874372,
+        "macro_f1": 0.9807069544515741,
+        "weighted_f1": 0.9798906240727975,
+        "per_class": {
+          "playback_error": {
+            "precision": 1.0,
+            "recall": 0.9523809523809523,
+            "f1": 0.975609756097561,
+            "support": 21
+          },
+          "live_tv_issues": {
+            "precision": 0.9523809523809523,
+            "recall": 0.9523809523809523,
+            "f1": 0.9523809523809523,
+            "support": 21
+          },
+          "app_device_issue": {
+            "precision": 0.95,
+            "recall": 1.0,
+            "f1": 0.9743589743589743,
+            "support": 19
+          },
+          "login_account": {
+            "precision": 1.0,
+            "recall": 0.95,
+            "f1": 0.9743589743589743,
+            "support": 20
+          },
+          "billing_subscription": {
+            "precision": 0.95,
+            "recall": 1.0,
+            "f1": 0.9743589743589743,
+            "support": 19
+          },
+          "content_availability": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 20
+          },
+          "service_outage": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 13
+          },
+          "how_to_feature": {
+            "precision": 1.0,
+            "recall": 0.9523809523809523,
+            "f1": 0.975609756097561,
+            "support": 21
+          },
+          "feedback_complaint": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 20
+          },
+          "other_ambiguous": {
+            "precision": 0.9615384615384616,
+            "recall": 1.0,
+            "f1": 0.9803921568627451,
+            "support": 25
+          }
+        },
+        "confusion_matrix": [
+          [
+            20,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            20,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            19,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            19,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            19,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            20,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            13,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            20,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            20,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            25
+          ]
+        ],
+        "labels": [
+          "playback_error",
+          "live_tv_issues",
+          "app_device_issue",
+          "login_account",
+          "billing_subscription",
+          "content_availability",
+          "service_outage",
+          "how_to_feature",
+          "feedback_complaint",
+          "other_ambiguous"
+        ]
+      },
+      "escalation": {
+        "escalation_precision": 0.9550561797752809,
+        "escalation_recall": 0.9770114942528736,
+        "escalation_f1": 0.9659090909090908,
+        "escalation_accuracy": 0.9698492462311558,
+        "unsafe_auto_handle_rate": 0.022988505747126436,
+        "auto_handle_coverage": 0.5527638190954773,
+        "tp": 85,
+        "fp": 4,
+        "fn": 2,
+        "tn": 108,
+        "confusion_matrix": [
+          [
+            108,
+            4
+          ],
+          [
+            2,
+            85
+          ]
+        ],
+        "confusion_matrix_labels": [
+          "auto_handle",
+          "escalate"
+        ],
+        "notes": [
+          "Do not optimize auto_handle_coverage alone.",
+          "unsafe_auto_handle_rate is the primary safety metric (escalation false negatives).",
+          "Intent classification and escalation are separate decision heads."
+        ]
+      },
+      "note": "LR intent with rule-aid fallback on low confidence; rule escalate."
+    }
+  },
+  "comparison_note": "Rule-aid is an annotation/taxonomy encoding aid. Final production decisioning uses semantic retrieval + GroundedEscalationPolicy (see final system block in validation report).",
+  "lr_available": true
+}

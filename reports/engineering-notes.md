@@ -181,14 +181,14 @@ Status tags: **IMPLEMENTED** | **OBSERVED** | **KNOWN LIMITATION** | **NOT YET V
 
 ### What changed
 
-1. **Golden labeling honesty (KNOWN LIMITATION):** docs now state single-annotator, taxonomy-guided, rule-aid, review/fix; not independently validated ground truth. Added `annotator_confidence` and `escalation_reason` **without changing** `gold_intent`/`gold_escalate`.
+1. **Golden labeling honesty:** taxonomy-guided human-annotated evaluation set (N=199); not “ground truth.” Second-annotator subset IAA completed (intent 62% / κ=0.575; escalate 72% / κ=0.435). See `reports/validation/`.
 2. **Escalation rubric (IMPLEMENTED):** policy judgments with explicit reason codes; not historical Hulu escalation.
 3. **`other_ambiguous` audit (OBSERVED):** documented as conceptual `ambiguous_or_other` = insufficient information for one supported intent; not renamed in data (labels preserved). Frequencies + confusion reported.
 4. **Brand score audit (OBSERVED):** exact formula, weights, cap normalization, mega-brand penalty, sensitivity. Hulu robust under original CAP=5000; **not** robust if CAP raised (Spotify/Uber/Amazon can lead).
 5. **Conversation size audit (OBSERVED):** percentiles + largest components; multi-customer merges confirmed; conservative split IDs remain the modeling choice.
 6. **Leakage re-check (OBSERVED):** all integrity checks **PASS**.
 7. **Baselines re-run (OBSERVED):** clean invocation + execution manifest; metrics reproduced (not hardcoded).
-8. **Second-annotator package (IMPLEMENTED / NOT YET VALIDATED):** 50 blank-label examples; agreement deferred.
+8. **Second-annotator package (IMPLEMENTED / OBSERVED):** 50 labeled examples; intent agreement 62% (κ=0.575), escalate 72% (κ=0.435). See `reports/validation/second_annotator_iaa.json`.
 
 ### Artifacts
 

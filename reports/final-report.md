@@ -27,6 +27,33 @@ Kaggle TWCS via HF mirror. Brand extract → pairs → conversation split. Train
 
 Conversation-level splits; exact duplicate-text purge; retrieval index **train-only**; golden/test IDs blocked; contamination checks at index build.
 
+Demonstrated check (`make check-leakage`):
+
+```
+Golden-set leakage check
+------------------------
+Training overlap:       0
+Retrieval overlap:      0
+Prompt-example overlap: 0
+Status: PASS
+```
+
+## 5b. Evaluation set terminology
+
+Golden N=199 is a **taxonomy-guided human-annotated evaluation set**, not “ground truth.”  
+Independently validated on a **50-example** second-annotator subset (intent agreement 62%, κ=0.575; escalate 72%, κ=0.435).
+
+## 5c. Intent vs escalation (final system)
+
+| Head | Accuracy | Macro/Esc F1 | Notes |
+|---|---:|---:|---|
+| Intent | 0.693 | 0.668 | TF-IDF+LR |
+| Escalation | 0.544 | 0.640 | Policy decision; unsafe FN rate 0.069 |
+
+By difficulty (intent macro-F1 / escalation F1): easy 0.662 / 0.519; medium 0.600 / 0.698; hard 0.214 / 1.000 (N_hard=9).  
+Escalation false negatives (dangerous): **6** — see `reports/validation/final_system_metrics.json`.  
+`other_ambiguous` pred rate 0.261 with **34** false-ambiguous predictions (dump risk).
+
 ## 6. Intent taxonomy
 
 10 human-reviewed intents (playback, live_tv, app/device, login, billing, content, outage, how_to, feedback, other_ambiguous). Discovered on train; reviewed.
@@ -53,7 +80,7 @@ Final authority. Signals: confidence, similarity, evidence strength/agreement, a
 
 ## 12. Evaluation methodology
 
-Golden N=199 intent+escalation. Human reply pack N=50 (`annotator_1`). Second-pass intent/escalate N=50 (`annotator_2`, not independent IAA). LLM judge `qwen2.5:3b` evaluator-only.
+Golden N=199 intent+escalation (**human-annotated evaluation set**). Human reply pack N=50 (`annotator_1`). Second-pass intent/escalate N=50 (`annotator_2`) with Cohen's κ. LLM judge `qwen2.5:3b` evaluator-only. Validation suite: `make validate-eval`.
 
 ## 13. Results
 
@@ -80,7 +107,7 @@ Golden N=199 intent+escalation. Human reply pack N=50 (`annotator_1`). Second-pa
 **Headline unsafe auto-handle = 6/87 ≈ 0.069 looks strong.** Caveats (quantitative):
 
 - Denominator is **gold-escalate positives (87)**, not all 199 messages.
-- Golden N=199, **single primary annotator** + rule aid; `annotator_2` agreement only **62% intent / 72% escalate** — label ceiling ≠ 100%.
+- Golden N=199 is a **taxonomy-guided human-annotated evaluation set** (not “ground truth”); `annotator_2` subset IAA **62% intent (κ=0.575) / 72% escalate (κ=0.435)** — label ceiling ≠ 100%.
 - Low unsafe rate coexists with **coverage only 33/199 ≈ 16.6%** and high escalate rate — safety via refusal; escalation disagreement = **91** (85 over + 6 under).
 - Human **helpfulness 2.58 < retrieve-and-copy 3.06** — safer ≠ more helpful.
 - Intent **0.693** is the shared LR classifier, not a retrieval win; semantic retrieval changes **evidence + policy**, not the intent model.
@@ -93,7 +120,13 @@ Golden N=199 intent+escalation. Human reply pack N=50 (`annotator_1`). Second-pa
 
 ## 16. Limitations
 
-Single-annotator gold; lexical embeddings; uncalibrated confidence; over-escalation; judge weak on groundedness; no cloud LLM eval; Twitter public text ≠ authenticated support.
+- Primary golden labels are taxonomy-guided; full-N independent adjudication is incomplete (IAA on 50/199).
+- Rule-aid may introduce confirmation bias (high rule↔gold agreement is partly circular).
+- Evaluation set is relatively small (N=199); hard slice has only 9 examples.
+- Taxonomy boundaries are subjective (playback vs live_tv).
+- Lexical embeddings; uncalibrated confidence still drives many low-conf escalations.
+- Historical tweets ≠ current Hulu policy; historical replies are evidence, not escalation truth.
+- LLM judge weak on groundedness; Semantic+LLM golden reply quality NOT MEASURED.
 
 ## 17. What I would do with one more week
 

@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "training_overlap": 0,
+  "retrieval_overlap": 0,
+  "prompt_example_overlap": 0,
+  "training_overlap_ids_sample": [],
+  "retrieval_overlap_ids_sample": [],
+  "prompt_overlap_ids_sample": [],
+  "n_golden_tweet_ids": 199,
+  "n_train_ids": 4000,
+  "n_retrieval_ids": 8000,
+  "n_prompt_ids": 0,
+  "artifacts_present": {
+    "train_labeled": true,
+    "retrieval_corpus": true,
+    "prompt_examples": false
+  },
+  "library_report": {
+    "ok": true,
+    "issues": [],
+    "details": {
+      "golden_in_train": [],
+      "golden_in_train_count": 0,
+      "golden_in_retrieval": [],
+      "golden_in_retrieval_count": 0,
+      "golden_in_prompt_examples": [],
+      "golden_in_prompt_examples_count": 0
+    }
+  },
+  "note": "Golden is drawn from held-out test conversations by design; test\u2229golden overlap is expected and not a leakage failure. Leakage fails only if golden IDs appear in train fitting, retrieval index, or prompt exemplars."
+}

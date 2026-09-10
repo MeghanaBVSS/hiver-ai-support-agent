@@ -1,0 +1,454 @@
+{
+  "status": "OBSERVED",
+  "terminology": "human-annotated golden evaluation set vs blind second-annotator subset",
+  "annotator_1_id": "phase1_engineer",
+  "annotator_2_id": "annotator_2",
+  "n_subset": 50,
+  "protocol": "Second annotator pack provides message+context only; labels filled without first-annotator labels, model predictions, or rule-aid suggestions in the pack.",
+  "intent": {
+    "n": 50,
+    "exact_agreement": 0.62,
+    "cohen_kappa": 0.575324094769781,
+    "n_disagreements": 19,
+    "labels": [
+      "playback_error",
+      "live_tv_issues",
+      "app_device_issue",
+      "login_account",
+      "billing_subscription",
+      "content_availability",
+      "service_outage",
+      "how_to_feature",
+      "feedback_complaint",
+      "other_ambiguous"
+    ],
+    "confusion_matrix": [
+      [
+        5,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        3,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        2,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        0
+      ],
+      [
+        2,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        3
+      ]
+    ],
+    "disagreement_count_by_annotator1_label": {
+      "other_ambiguous": 6,
+      "how_to_feature": 3,
+      "billing_subscription": 2,
+      "content_availability": 2,
+      "feedback_complaint": 2,
+      "playback_error": 2,
+      "app_device_issue": 1,
+      "service_outage": 1
+    },
+    "top_disagreement_pairs": [
+      {
+        "annotator_1": "billing_subscription",
+        "annotator_2": "feedback_complaint",
+        "count": 2
+      },
+      {
+        "annotator_1": "how_to_feature",
+        "annotator_2": "billing_subscription",
+        "count": 2
+      },
+      {
+        "annotator_1": "feedback_complaint",
+        "annotator_2": "playback_error",
+        "count": 2
+      },
+      {
+        "annotator_1": "other_ambiguous",
+        "annotator_2": "playback_error",
+        "count": 2
+      },
+      {
+        "annotator_1": "playback_error",
+        "annotator_2": "live_tv_issues",
+        "count": 2
+      },
+      {
+        "annotator_1": "app_device_issue",
+        "annotator_2": "how_to_feature",
+        "count": 1
+      },
+      {
+        "annotator_1": "content_availability",
+        "annotator_2": "service_outage",
+        "count": 1
+      },
+      {
+        "annotator_1": "service_outage",
+        "annotator_2": "playback_error",
+        "count": 1
+      },
+      {
+        "annotator_1": "other_ambiguous",
+        "annotator_2": "app_device_issue",
+        "count": 1
+      },
+      {
+        "annotator_1": "how_to_feature",
+        "annotator_2": "app_device_issue",
+        "count": 1
+      },
+      {
+        "annotator_1": "content_availability",
+        "annotator_2": "app_device_issue",
+        "count": 1
+      },
+      {
+        "annotator_1": "other_ambiguous",
+        "annotator_2": "feedback_complaint",
+        "count": 1
+      },
+      {
+        "annotator_1": "other_ambiguous",
+        "annotator_2": "content_availability",
+        "count": 1
+      },
+      {
+        "annotator_1": "other_ambiguous",
+        "annotator_2": "how_to_feature",
+        "count": 1
+      }
+    ],
+    "disagreements": [
+      {
+        "example_id": "gold_2377725",
+        "gold_intent": "app_device_issue",
+        "second_annotator_intent": "how_to_feature",
+        "customer_message": "@hulu_support How do I turn off autoplay for a kids\u2019 profile on an AppleTV?"
+      },
+      {
+        "example_id": "gold_592886",
+        "gold_intent": "billing_subscription",
+        "second_annotator_intent": "feedback_complaint",
+        "customer_message": "I can\u2019t wait to cancel @115940 tomorrow.  Cord cutting experiment abject failure."
+      },
+      {
+        "example_id": "gold_998322",
+        "gold_intent": "content_availability",
+        "second_annotator_intent": "service_outage",
+        "customer_message": "@hulu_support hulu isn\u2019t connecting. Seems it\u2019s affecting alot of users. When will it be fixed?"
+      },
+      {
+        "example_id": "gold_2516231",
+        "gold_intent": "service_outage",
+        "second_annotator_intent": "playback_error",
+        "customer_message": "@hulu_support I'm not wasting mine or anyone else's time doing that. It's not my connection.  I stream all other apps fine. How about you please Google \"issues streaming Hulu on fi"
+      },
+      {
+        "example_id": "gold_2363665",
+        "gold_intent": "how_to_feature",
+        "second_annotator_intent": "billing_subscription",
+        "customer_message": "@hulu_support so once again your business has mess up my account how is it every month it's mess up do y'all not know how to fix this if I wanted to go on there &amp; fix it every "
+      },
+      {
+        "example_id": "gold_2753119",
+        "gold_intent": "how_to_feature",
+        "second_annotator_intent": "billing_subscription",
+        "customer_message": "@hulu_support That\u2019s no problem. How do I disconnect the accounts? Spoke to Spotify and was told Hulu would handle it."
+      },
+      {
+        "example_id": "gold_1101079",
+        "gold_intent": "feedback_complaint",
+        "second_annotator_intent": "playback_error",
+        "customer_message": "This new update is horrible. Everytime I try and watch something it stops like 10 minutes in and says it can be loaded \ud83d\ude21 @115940 ."
+      },
+      {
+        "example_id": "gold_116350",
+        "gold_intent": "other_ambiguous",
+        "second_annotator_intent": "playback_error",
+        "customer_message": "@hulu_support Trying to add the SNL Thanksgiving Special and am getting \"check your internet connection and try again. Error Code: Network Error: 400\". Our internet connection is f"
+      },
+      {
+        "example_id": "gold_962964",
+        "gold_intent": "other_ambiguous",
+        "second_annotator_intent": "playback_error",
+        "customer_message": "@115940 for the last three days I have been trying to watch Hulu and I keep getting error \ud83d\ude1e"
+      },
+      {
+        "example_id": "gold_2181625",
+        "gold_intent": "billing_subscription",
+        "second_annotator_intent": "feedback_complaint",
+        "customer_message": "I've seen the same commercial 7 times in the same episode that I've been watching on @115940\nCan y'all not"
+      },
+      {
+        "example_id": "gold_2365549",
+        "gold_intent": "feedback_complaint",
+        "second_annotator_intent": "playback_error",
+        "customer_message": "@hulu_support horrible stuttering issues all day today. Only happens with #hulu and not Amazon Prime or Netflix. Deleted and re-installed the app and still having the issue."
+      },
+      {
+        "example_id": "gold_2032180",
+        "gold_intent": "other_ambiguous",
+        "second_annotator_intent": "app_device_issue",
+        "customer_message": "@hulu_support my account works on ps4 but wont open on my blu ray player now"
+      },
+      {
+        "example_id": "gold_303365",
+        "gold_intent": "how_to_feature",
+        "second_annotator_intent": "app_device_issue",
+        "customer_message": "Seriously, @115940. How do I fix this? Because I\u2019m getting annoyed with having to skip to the end of this same ep of Nashville time and again"
+      },
+      {
+        "example_id": "gold_564410",
+        "gold_intent": "playback_error",
+        "second_annotator_intent": "live_tv_issues",
+        "customer_message": "@hulu_support Your stream of the SEC Championship game is completely unwatchable. Buffering every few seconds, losing it's spot, \"parts of the stream missing\" errors, and complete "
+      },
+      {
+        "example_id": "gold_2584541",
+        "gold_intent": "content_availability",
+        "second_annotator_intent": "app_device_issue",
+        "customer_message": "@115940 What\u2019s going on with your system? Favorites won\u2019t automatically upload. Now the watched shows don\u2019t get marked off. Your service is starting to suck a bit."
+      },
+      {
+        "example_id": "gold_655277",
+        "gold_intent": "other_ambiguous",
+        "second_annotator_intent": "feedback_complaint",
+        "customer_message": "@hulu_support @267250 Been not one improvement in 2 months. Hulu doesn\u2019t care about customer feedback."
+      },
+      {
+        "example_id": "gold_2788559",
+        "gold_intent": "other_ambiguous",
+        "second_annotator_intent": "content_availability",
+        "customer_message": "i\u2019m still mad that @115940 took top gun off, put it back!!!"
+      },
+      {
+        "example_id": "gold_1504506",
+        "gold_intent": "other_ambiguous",
+        "second_annotator_intent": "how_to_feature",
+        "customer_message": "@hulu_support Is 100mbps fast enough? It is for netflix \ud83e\udd14"
+      },
+      {
+        "example_id": "gold_2642114",
+        "gold_intent": "playback_error",
+        "second_annotator_intent": "live_tv_issues",
+        "customer_message": "@hulu_support why the buffering-buffering-buffering all the time on live shows?  On-Demand seems okay.  This has been going on for weeks."
+      }
+    ]
+  },
+  "escalation": {
+    "n": 50,
+    "exact_agreement": 0.72,
+    "cohen_kappa": 0.435483870967742,
+    "n_disagreements": 14,
+    "labels": [
+      false,
+      true
+    ],
+    "confusion_matrix": [
+      [
+        15,
+        9
+      ],
+      [
+        5,
+        21
+      ]
+    ],
+    "confusion_matrix_note": "rows=annotator_1 [False,True], cols=annotator_2 [False,True]",
+    "disagreements": [
+      {
+        "example_id": "gold_2623567",
+        "gold_escalate": false,
+        "second_annotator_escalate": true,
+        "customer_message": "@hulu_support got this \u201c https://t.co/7YVDkNKOMM operation error 0. \u201c Help!"
+      },
+      {
+        "example_id": "gold_1355492",
+        "gold_escalate": false,
+        "second_annotator_escalate": true,
+        "customer_message": "@115940 your live doesn\u2019t work for older devices Apple TV Roku Toshiba laptop PS3  I signed up only can view on my iPhone this is worthless"
+      },
+      {
+        "example_id": "gold_1681450",
+        "gold_escalate": false,
+        "second_annotator_escalate": true,
+        "customer_message": "@hulu_support Fire TV app doesnt work. Tried writing support email - got auto reply. Tried calling - 1+ hr wait? Lost potential customer \u270c\ufe0f\ud83d\udc4b"
+      },
+      {
+        "example_id": "gold_998322",
+        "gold_escalate": false,
+        "second_annotator_escalate": true,
+        "customer_message": "@hulu_support hulu isn\u2019t connecting. Seems it\u2019s affecting alot of users. When will it be fixed?"
+      },
+      {
+        "example_id": "gold_2516231",
+        "gold_escalate": false,
+        "second_annotator_escalate": true,
+        "customer_message": "@hulu_support I'm not wasting mine or anyone else's time doing that. It's not my connection.  I stream all other apps fine. How about you please Google \"issues streaming Hulu on fi"
+      },
+      {
+        "example_id": "gold_2157419",
+        "gold_escalate": false,
+        "second_annotator_escalate": true,
+        "customer_message": "@hulu_support there is an outage for casting. Across multiple accounts, chromecast devices and wifi we all are experiencing an \"Error\" splash screen on our tv's"
+      },
+      {
+        "example_id": "gold_2209356",
+        "gold_escalate": false,
+        "second_annotator_escalate": true,
+        "customer_message": "Anyone else having trouble with Hulu? Had to refresh the page 8 times to get the new episode of Bobs Burgers to play. @hulu_support Is it just me or...?"
+      },
+      {
+        "example_id": "gold_2753119",
+        "gold_escalate": false,
+        "second_annotator_escalate": true,
+        "customer_message": "@hulu_support That\u2019s no problem. How do I disconnect the accounts? Spoke to Spotify and was told Hulu would handle it."
+      },
+      {
+        "example_id": "gold_1101079",
+        "gold_escalate": true,
+        "second_annotator_escalate": false,
+        "customer_message": "This new update is horrible. Everytime I try and watch something it stops like 10 minutes in and says it can be loaded \ud83d\ude21 @115940 ."
+      },
+      {
+        "example_id": "gold_962964",
+        "gold_escalate": true,
+        "second_annotator_escalate": false,
+        "customer_message": "@115940 for the last three days I have been trying to watch Hulu and I keep getting error \ud83d\ude1e"
+      },
+      {
+        "example_id": "gold_2181625",
+        "gold_escalate": true,
+        "second_annotator_escalate": false,
+        "customer_message": "I've seen the same commercial 7 times in the same episode that I've been watching on @115940\nCan y'all not"
+      },
+      {
+        "example_id": "gold_2584541",
+        "gold_escalate": false,
+        "second_annotator_escalate": true,
+        "customer_message": "@115940 What\u2019s going on with your system? Favorites won\u2019t automatically upload. Now the watched shows don\u2019t get marked off. Your service is starting to suck a bit."
+      },
+      {
+        "example_id": "gold_2788559",
+        "gold_escalate": true,
+        "second_annotator_escalate": false,
+        "customer_message": "i\u2019m still mad that @115940 took top gun off, put it back!!!"
+      },
+      {
+        "example_id": "gold_1504506",
+        "gold_escalate": true,
+        "second_annotator_escalate": false,
+        "customer_message": "@hulu_support Is 100mbps fast enough? It is for netflix \ud83e\udd14"
+      }
+    ]
+  },
+  "interpretation": "Independently validated on a subset using inter-annotator agreement. Cohen's kappa accounts for chance agreement; exact % alone overstates reliability."
+}
