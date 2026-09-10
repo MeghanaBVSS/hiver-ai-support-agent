@@ -160,6 +160,9 @@ Writes under `data/processed/agent_artifacts/` (classifier, retriever joblib, co
 ### Deterministic demo
 
 ```bash
+python run.py
+# or with an explicit message:
+python run.py --message "Hulu keeps buffering when I try to watch live TV"
 python -m src.cli.run_agent --mode deterministic \
   --message "Hulu keeps buffering when I try to watch live TV"
 
